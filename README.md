@@ -11,5 +11,5 @@ With 3D Tower Defense, we aim to solve these problems and provide a more engagin
 - Dalton Kajander (Skirtle)
 - Amber McCullah
 - Annemarie Blanco (an978607)
-- Kevin Ramos
+- Kevin Ramos (kevinrwh)
 - Shawn Guydeene (NinjaDino13)
