@@ -9,7 +9,7 @@ With 3D Tower Defense, we aim to solve these problems and provide a more engagin
 
 ## Group Members:
 - Dalton Kajander (Skirtle)
-- Amber McCullah
+- Amber McCullah (ambermcc127)
 - Annemarie Blanco (an978607)
 - Kevin Ramos (kevinrwh)
 - Shawn Guydeene (NinjaDino13)
