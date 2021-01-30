@@ -2,6 +2,6 @@
 COP4331C Spring 2021 Project
 
 Group Members:
-	Dalton Kajander
+	Dalton Kajander (Skirtle)
 	Amber McCullah
 	
