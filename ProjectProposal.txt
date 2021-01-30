@@ -1,12 +1,3 @@
-Project proposal
-This vision statement will need to include the following information:
-
-What will the product do?
-Why are you creating this particular product?
-Who will benefit from this product?
-How does the product compare against similar products already on the market?
-You should frame this vision statement in terms of an elevator pitch that follows the general flow:
-
 For ... (the product’s target market)
 Who/That ... (describe what need your product solves)
 The product ... (product name,or product category)
