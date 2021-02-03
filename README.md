@@ -13,3 +13,22 @@ With 3D Tower Defense, we aim to solve these problems and provide a more engagin
 - Annemarie Blanco (an978607)
 - Kevin Ramos (kevinrwh)
 - Shawn Guydeene (NinjaDino13)
+
+# Sprint 1
+- [Product Backlog](https://trello.com/b/jldNMwlQ/agile-sprint-board)
+- [Sprint Backlog](https://trello.com/b/jldNMwlQ/agile-sprint-board)
+- Requirements
+- Burndown Chart
+- Velocity Chart
+
+- System Architecture
+- Source Code
+- Automated Tests
+- Product Demonstration
+
+## Task Allocation
+- Dalton Kajander (Skirtle)
+- Amber McCullah (ambermcc127)
+- Annemarie Blanco (an978607)
+- Kevin Ramos (kevinrwh)
+- Shawn Guydeene (NinjaDino13)
