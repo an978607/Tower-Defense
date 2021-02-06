@@ -18,7 +18,7 @@ With 3D Tower Defense, we aim to solve these problems and provide a more engagin
 - [Product Backlog](https://trello.com/b/jldNMwlQ/agile-sprint-board)
 - [Sprint Backlog](https://trello.com/b/jldNMwlQ/agile-sprint-board)
 - [Requirements](https://trello.com/b/jldNMwlQ/agile-sprint-board)
-- Burndown Chart
+- [Burndown Chart](https://user-images.githubusercontent.com/54637213/107125636-1c4be700-6879-11eb-9734-7b4800b00934.png)
 - Velocity Chart
 
 - System Architecture
