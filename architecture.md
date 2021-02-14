@@ -67,4 +67,4 @@ Unity has its own Error Processor built in, for example it will inform a user if
 We are building off of a free version of the Unity editor, so we avoid having to create the application entirely from scratch. We also have access to many free assets from the internet so we won't have to worry about making any 3D models from scratch as well. 
 
 # Change Strategy
-
+As we finalize the design of each weapon and enemy, we may see them evolve from the early conception. We plan to finish the initial concept first and then implement what we can in the time we have left. While we encourage change we want to focus on having a complete product first.
