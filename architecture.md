@@ -59,7 +59,7 @@ Our program doesn't use a large data base, like for example bank records. But it
 ![LEVEL 1 Setup](https://user-images.githubusercontent.com/78228038/107892168-63794e00-6ef1-11eb-86b5-9464f4add086.png)
 
 # Resource Management 
-We will limit the number of unique enemys we have in the game. Instead of introducing a stronger type each level we will change up the combinations of ennemys to increase difficulty. This lessens the number of assets we need for each enemy.
+We will limit the number of unique enemys we have in the game. Instead of introducing a stronger type each level we will change up the combinations of enemies to increase difficulty. This lessens the number of assets we need for each enemy.
 # Performance
 We want to check that our game runs at the standard 60 fps and make sure our models are behaving in the enviroment, such as no clipping or gitching out.
 
