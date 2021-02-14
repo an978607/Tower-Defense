@@ -40,7 +40,7 @@ With 3D Tower Defense, we aim to solve these problems and provide a more engagin
 - Product Demonstration
 
 ## Task Allocation
-- Dalton Kajander (Skirtle)
+- Dalton Kajander (Skirtle): Demonstration creation and publication
 - Amber McCullah (ambermcc127)  
 - Annemarie Blanco (an978607)
 - Kevin Ramos (kevinrwh): Updated requirements, product backlog, velocity and burndown charts
