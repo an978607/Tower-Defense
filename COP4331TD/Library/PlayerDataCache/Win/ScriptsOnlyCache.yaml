@@ -2,8 +2,6 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - ButtonManager
-    Unity.CollabProxy.Editor.dll:
-    - Unity.Cloud.Collaborate.UserInterface.WindowCache
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     UnityEditor.TestRunner.dll:
@@ -500,4 +498,4 @@ ScriptsOnlyBuild:
   platform: 5
   scenePathNames:
   - Assets/Scenes/Map00a.unity
-  playerPath: C:/Users/Dalton/Desktop/TestBuilds/COP4331TD.exe
+  playerPath: C:/Users/Dalton/Desktop/COP4331Project/MostRecentBuild/COP4331TD.exe

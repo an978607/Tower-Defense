@@ -194,14 +194,14 @@ RectTransform:
   m_GameObject: {fileID: 170939384}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.21, y: 1, z: 1}
+  m_LocalScale: {x: 0.15, y: 0.75, z: 1}
   m_Children: []
   m_Father: {fileID: 1860224240}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 220, y: 118}
+  m_AnchoredPosition: {x: 225, y: 120}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &170939386
@@ -548,7 +548,12 @@ PrefabInstance:
     - target: {fileID: 2286619965724011902, guid: 8cbc9703dd92ac443ae11cf65375a4b6,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 97.99999
+      value: 110
+      objectReference: {fileID: 0}
+    - target: {fileID: 2286619965724011902, guid: 8cbc9703dd92ac443ae11cf65375a4b6,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -160
       objectReference: {fileID: 0}
     - target: {fileID: 2691156490514881152, guid: 8cbc9703dd92ac443ae11cf65375a4b6,
         type: 3}
@@ -655,6 +660,31 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3215645178173074679, guid: 8cbc9703dd92ac443ae11cf65375a4b6,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3215645178173074679, guid: 8cbc9703dd92ac443ae11cf65375a4b6,
+        type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3215645178173074679, guid: 8cbc9703dd92ac443ae11cf65375a4b6,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 3215645178173074679, guid: 8cbc9703dd92ac443ae11cf65375a4b6,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3215645178173074679, guid: 8cbc9703dd92ac443ae11cf65375a4b6,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4032571255136467476, guid: 8cbc9703dd92ac443ae11cf65375a4b6,
         type: 3}
       propertyPath: m_UiScaleMode
@@ -678,7 +708,7 @@ PrefabInstance:
     - target: {fileID: 7141247124156695723, guid: 8cbc9703dd92ac443ae11cf65375a4b6,
         type: 3}
       propertyPath: m_FontData.m_FontSize
-      value: 14
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7141247124156695723, guid: 8cbc9703dd92ac443ae11cf65375a4b6,
         type: 3}
@@ -690,10 +720,25 @@ PrefabInstance:
       propertyPath: m_FontData.m_MaxSize
       value: 100
       objectReference: {fileID: 0}
+    - target: {fileID: 7141247124156695723, guid: 8cbc9703dd92ac443ae11cf65375a4b6,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7141247124156695723, guid: 8cbc9703dd92ac443ae11cf65375a4b6,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.84278667
+      objectReference: {fileID: 0}
+    - target: {fileID: 7141247124156695723, guid: 8cbc9703dd92ac443ae11cf65375a4b6,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8526576302186181648, guid: 8cbc9703dd92ac443ae11cf65375a4b6,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 117.99999
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 8526576302186181648, guid: 8cbc9703dd92ac443ae11cf65375a4b6,
         type: 3}
@@ -709,6 +754,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8526576302186181648, guid: 8cbc9703dd92ac443ae11cf65375a4b6,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -160
       objectReference: {fileID: 0}
     - target: {fileID: 8556204890743638788, guid: 8cbc9703dd92ac443ae11cf65375a4b6,
         type: 3}
