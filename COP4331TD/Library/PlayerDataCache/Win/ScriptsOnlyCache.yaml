@@ -2,6 +2,7 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - ButtonManager
+    - DemonstrationEffect
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     UnityEditor.TestRunner.dll:
@@ -16,6 +17,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
     - UnityEngine.UI.Text
+    - UnityEngine.UI.Toggle
   sceneClasses:
     Assets/Scenes/Map00a.unity:
     - Class: 1
@@ -52,6 +54,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 13458}
     - Class: 114
       Script: {instanceID: 13836}
+    - Class: 114
+      Script: {instanceID: 13854}
+    - Class: 114
+      Script: {instanceID: 15744}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -495,7 +501,13 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: c255596a87d058d45ef8d04b107d57ac
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DemonstrationEffect
   platform: 5
   scenePathNames:
   - Assets/Scenes/Map00a.unity
-  playerPath: C:/Users/Dalton/Desktop/TestBuilds/COP4331TD.exe
+  playerPath: C:/Users/Dalton/Desktop/BuildTesting/COP4331TD.exe
