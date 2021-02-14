@@ -27,7 +27,7 @@ With 3D Tower Defense, we aim to solve these problems and provide a more engagin
 - Dalton Kajander (Skirtle)
 - Amber McCullah (ambermcc127): created Trello board, wrote the user stories for the product backlog, completed subtask-set up development environment  
 - Annemarie Blanco (an978607)
-- Kevin Ramos (kevinrwh): updated the requirements sectionin the Trello board
+- Kevin Ramos (kevinrwh): updated the requirements section in the Trello board
 - Shawn Guydeene (NinjaDino13)
 
 # Sprint 2
@@ -37,7 +37,7 @@ With 3D Tower Defense, we aim to solve these problems and provide a more engagin
 - System Architecture
 - Source Code
 - Automated Tests
-- Product Demonstration
+- [Product Demonstration](https://www.youtube.com/watch?v=De5ID6GUlCk&feature=youtu.be&ab_channel=Skirtle)
 
 ## Task Allocation
 - Dalton Kajander (Skirtle): Demonstration creation and publication
