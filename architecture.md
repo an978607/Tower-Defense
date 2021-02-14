@@ -9,7 +9,7 @@
  
  ![Container_Diagram](https://user-images.githubusercontent.com/54637213/107887888-46378600-6ed7-11eb-929b-297a75875a82.png)
  
-  This breaks down what our program encases. Stored in our program is a library which houses all of our 3D assets and scenes. These are ran in a Unity application, but the user has a interface that limits there control in the enviroment as to the rules of our game. 
+  This breaks down what our program encases. Stored in our program is a library which houses all of our 3D assets and scenes. These are run in a Unity application, but the user has a interface that limits their control in the enviroment as to the rules of our game. 
  
  ## Component Diagram
  
@@ -21,9 +21,9 @@
 | Block       | User Stories |
 | ----------- | ----------- |
 | Start Screen| As a player, I want to be able to begin a tower defense game (010)|
-| Settings    | As a player, I want to be able to make adjustements to my play style (011)|
+| Settings    | As a player, I want to be able to make adjustments to my play style (011)|
 | Pause Contol| As a player, I want to be able to pause and continue where I left off (012)|
-| Preperation | As a player, I want to be able to place my towers on the base (003)|
+| Preparation | As a player, I want to be able to place my towers on the base (003)|
 | Attack      | As a player, I want to be able to fire at the enemy (004)|
 
 # Code Design 
@@ -31,7 +31,7 @@
   ## UML Class
   ![UMI_Class](https://user-images.githubusercontent.com/54637213/107887973-d4ac0780-6ed7-11eb-9092-b274b0707559.png)
   
-  With this diagram we can see how each class in our programs relation with each other and the methods and attributes that are assigned to them. I've left empty slots in this chart for now. such as enemy 1 and weapon 1, because the Enemy and Weapon classes will have many instences of each we just haven't solidified what they will be exactly. 
+  With this diagram we can see how each class in our program works in relation to each other and the methods and attributes that are assigned to them. I've left empty slots in this chart for now. such as enemy 1 and weapon 1, because the Enemy and Weapon classes will have many instances of each we just haven't solidified what they will be exactly. 
   
   | Class       | User Stories |
 | ----------- | ----------- |
@@ -43,7 +43,7 @@
   ## UML Activity
   ![UML_Activity](https://user-images.githubusercontent.com/54637213/107888180-d1654b80-6ed8-11eb-9633-9065397cbb74.png)
    
-   This is a flow chart of the activities that occur in our program. We can see that most or our activities have multiple out comes, and our game is initially a loop that increases difficultly the further the player gets. The user starts the game, they then get to set up their arsenal, but they are limited by how much money they have. They then start the attack phase and depending on the outcome of that they either progress, start again, or exit our game.
+   This is a flow chart of the activities that occur in our program. We can see that most or our activities have multiple outcomes, and our game is initially a loop that increases difficultly the further the player gets. The user starts the game, they then get to set up their arsenal, but they are limited by how much money they have. They then start the attack phase and depending on the outcome of that they either progress, start again, or exit our game.
   
   ## UML Sequence
   ![UMI_Sequence](https://user-images.githubusercontent.com/54637213/107888286-581a2880-6ed9-11eb-82a7-cda5140ab450.png)
