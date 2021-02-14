@@ -60,14 +60,7 @@ Our program doesn't use a large data base, like for example bank records. But it
 # Security 
 
 # Performance
-
-# Scalability
-
-# Interoperability
-
-# Internationalization/Localization
-
-# Input/Output
+We want to check that our game runs at the standard 60 fps and make sure our models are behaving in the enviroment, such as no clipping or gitching out.
 
 # Error Processing
 Unity has its own Error Processor built in, for example it will inform a user if they are missing a file needed to run the program. For the most part we will use this. 
