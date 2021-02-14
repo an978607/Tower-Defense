@@ -26,7 +26,7 @@ With 3D Tower Defense, we aim to solve these problems and provide a more engagin
 ## Task Allocation
 - Dalton Kajander (Skirtle)
 - Amber McCullah (ambermcc127): created Trello board, wrote the user stories for the product backlog, completed subtask-set up development environment  
-- Annemarie Blanco (an978607)
+- Annemarie Blanco (an978607): Breakdown and Velocity charts
 - Kevin Ramos (kevinrwh): updated the requirements section in the Trello board
 - Shawn Guydeene (NinjaDino13)
 
@@ -42,6 +42,6 @@ With 3D Tower Defense, we aim to solve these problems and provide a more engagin
 ## Task Allocation
 - Dalton Kajander (Skirtle): Demonstration creation and publication
 - Amber McCullah (ambermcc127)  
-- Annemarie Blanco (an978607) Made architecture diagrams
+- Annemarie Blanco (an978607): Made architecture diagrams and system design document
 - Kevin Ramos (kevinrwh): Updated requirements, product backlog, velocity and burndown charts
 - Shawn Guydeene (NinjaDino13)
