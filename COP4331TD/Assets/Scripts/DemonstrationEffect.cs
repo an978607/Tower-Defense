@@ -8,15 +8,18 @@ public class DemonstrationEffect : MonoBehaviour {
     public Font font;
     public Canvas canvas;
 
-    [Range(6,40)]
-    public int fontSize;
-    [Range(0f, 100f)]
-    public float radius;
-    [Range(0f, 100f)]
-    public float speed;
-
     [HideInInspector]
     public bool allowCircleMovement = false;
+
+    [HideInInspector]
+    [Range(6,40)]
+    public int fontSize;
+    [HideInInspector]
+    [Range(0f, 100f)]
+    public float radius;
+    [HideInInspector]
+    [Range(0f, 100f)]
+    public float speed;
 
     
     private GameObject textObject;
@@ -44,10 +47,11 @@ public class DemonstrationEffect : MonoBehaviour {
         text.fontSize = fontSize;
         text.alignment = TextAnchor.MiddleCenter;
         text.color = Color.black;
+        text.verticalOverflow = VerticalWrapMode.Overflow;
 
         // Get the text box and set the size of it
         rectTransform = text.GetComponent<RectTransform>();
-        rectTransform.sizeDelta = new Vector2(400, 200);
+        rectTransform.sizeDelta = new Vector2(400, 50);
         changeLocation(0, 0);
     }
 
@@ -56,6 +60,7 @@ public class DemonstrationEffect : MonoBehaviour {
 
         // Make text follow a circular path
         if (allowCircleMovement) {
+            // (cos(angle), sin(angle)) results in (x,y) on circular path of radius 1
             float newX = (Mathf.Cos(speedMultiplier * speed * angle) * Mathf.PI) / 180f;
             float newY = (Mathf.Sin(speedMultiplier * speed * angle) * Mathf.PI) / 180f;
             changeLocation(radiusMultiplier * radius * newX, radiusMultiplier * radius * newY);
@@ -63,9 +68,7 @@ public class DemonstrationEffect : MonoBehaviour {
         }
 
         // Let the font size change during runtime
-        if (text.fontSize != fontSize) {
-            text.fontSize = fontSize;
-        }
+        updateFontSize(fontSize);
     }
 
 
@@ -75,5 +78,21 @@ public class DemonstrationEffect : MonoBehaviour {
 
     public void toggleMovement() {
         allowCircleMovement = !allowCircleMovement;
+    }
+
+    public void changeFontSize(int newSize) {
+        fontSize = newSize;
+    }
+
+    public void changeSpeed(float newSpeed) {
+        speed = newSpeed;
+    }
+
+    public void changeRadius(float newRadius) {
+        radius = newRadius;
+    }
+
+    public void updateFontSize(int newFontSize) {
+        text.fontSize = newFontSize;
     }
 }
