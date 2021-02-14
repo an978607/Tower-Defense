@@ -54,6 +54,9 @@
 Our program doesn't use a large data base, like for example bank records. But it is crucial that we store Towers, Weapons, and Enemy types as they control the flow of the entire game. Each entity interects with the other in a specific way to create the scenario of our application.  
 
 # User Interface Design
+![Start Screen](https://user-images.githubusercontent.com/78228038/107892582-1480e800-6ef4-11eb-98ef-7bd10aac4804.png)
+![World Map](https://user-images.githubusercontent.com/78228038/107892584-16e34200-6ef4-11eb-906a-88e3625d223e.png)
+![LEVEL 1 Setup](https://user-images.githubusercontent.com/78228038/107892168-63794e00-6ef1-11eb-86b5-9464f4add086.png)
 
 # Resource Management 
 We will limit the number of unique enemys we have in the game. Instead of introducing a stronger type each level we will change up the combinations of ennemys to increase difficulty. This lessens the number of assets we need for each enemy.
