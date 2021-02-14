@@ -2,6 +2,8 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - ButtonManager
+    Unity.CollabProxy.Editor.dll:
+    - Unity.Cloud.Collaborate.UserInterface.WindowCache
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     UnityEditor.TestRunner.dll:
@@ -17,7 +19,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Image
     - UnityEngine.UI.Text
   sceneClasses:
-    Assets/Scenes/Map00.unity:
+    Assets/Scenes/Map00a.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -497,5 +499,5 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   platform: 5
   scenePathNames:
-  - Assets/Scenes/Map00.unity
+  - Assets/Scenes/Map00a.unity
   playerPath: C:/Users/Dalton/Desktop/TestBuilds/COP4331TD.exe
