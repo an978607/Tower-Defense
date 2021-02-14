@@ -43,5 +43,5 @@ With 3D Tower Defense, we aim to solve these problems and provide a more engagin
 - Dalton Kajander (Skirtle)
 - Amber McCullah (ambermcc127)  
 - Annemarie Blanco (an978607)
-- Kevin Ramos (kevinrwh)
+- Kevin Ramos (kevinrwh): Updated requirements, product backlog, velocity and burndown charts
 - Shawn Guydeene (NinjaDino13)
