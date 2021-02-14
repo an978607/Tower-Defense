@@ -55,10 +55,6 @@ Our program doesn't use a large data base, like for example bank records. But it
 
 # User Interface Design
 
-# Business Rules
-
-# User Interface
-
 # Resource Management 
 
 # Security 
@@ -74,8 +70,7 @@ Our program doesn't use a large data base, like for example bank records. But it
 # Input/Output
 
 # Error Processing
-
-# Fault Tolerance
+Unity has its own Error Processor built in, for example it will inform a user if they are missing a file needed to run the program. For the most part we will use this. 
 
 # Build-vs-Buy Decisions
 We are building off of a free version of the Unity editor, so we avoid having to create the application entirely from scratch. We also have access to many free assets from the internet so we won't have to worry about making any 3D models from scratch as well. 
