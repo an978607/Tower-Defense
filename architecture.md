@@ -51,4 +51,34 @@
   This shows a sequence of events that happens when using our program. Since our application does not connect to any other networks it is active the entire time the user is interacting with it. Its a back and forth relationship. These connections greatly mirror our UML activity chart since they both walk through a play by play.
 # Data Design
 ![ER (1)](https://user-images.githubusercontent.com/54637213/107888329-8e57a800-6ed9-11eb-984a-d92c3ca4cf51.png)
+Our program doesn't use a large data base, like for example bank records. But it is crucial that we store Towers, Weapons, and Enemy types as they control the flow of the entire game. Each entity interects with the other in a specific way to create the scenario of our application.  
+
+# User Interface Design
+
+# Business Rules
+
+# User Interface
+
+# Resource Management 
+
+# Security 
+
+# Performance
+
+# Scalability
+
+# Interoperability
+
+# Internationalization/Localization
+
+# Input/Output
+
+# Error Processing
+
+# Fault Tolerance
+
+# Build-vs-Buy Decisions
+We are building off of a free version of the Unity editor, so we avoid having to create the application entirely from scratch. We also have access to many free assets from the internet so we won't have to worry about making any 3D models from scratch as well. 
+
+# Change Strategy
 
