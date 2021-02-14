@@ -34,7 +34,7 @@ With 3D Tower Defense, we aim to solve these problems and provide a more engagin
 - [Trello Board (Backlogs and Requirements)](https://trello.com/b/jldNMwlQ/agile-sprint-board)
 - Burndown Chart
 - Velocity Chart
-- System Architecture
+- [System Architecture](https://github.com/an978607/Tower-Defense/blob/main/architecture.md)
 - Source Code
 - Automated Tests
 - [Product Demonstration](https://www.youtube.com/watch?v=De5ID6GUlCk&feature=youtu.be&ab_channel=Skirtle)
@@ -42,6 +42,6 @@ With 3D Tower Defense, we aim to solve these problems and provide a more engagin
 ## Task Allocation
 - Dalton Kajander (Skirtle): Demonstration creation and publication
 - Amber McCullah (ambermcc127)  
-- Annemarie Blanco (an978607)
+- Annemarie Blanco (an978607) Made architecture diagrams
 - Kevin Ramos (kevinrwh): Updated requirements, product backlog, velocity and burndown charts
 - Shawn Guydeene (NinjaDino13)
