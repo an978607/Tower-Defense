@@ -56,9 +56,7 @@ Our program doesn't use a large data base, like for example bank records. But it
 # User Interface Design
 
 # Resource Management 
-
-# Security 
-
+We will limit the number of unique enemys we have in the game. Instead of introducing a stronger type each level we will change up the combinations of ennemys to increase difficulty. This lessens the number of assets we need for each enemy.
 # Performance
 We want to check that our game runs at the standard 60 fps and make sure our models are behaving in the enviroment, such as no clipping or gitching out.
 
