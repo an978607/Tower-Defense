@@ -41,7 +41,7 @@ With 3D Tower Defense, we aim to solve these problems and provide a more engagin
 
 ## Task Allocation
 - Dalton Kajander (Skirtle): Demonstration creation and publication
-- Amber McCullah (ambermcc127)  
+- Amber McCullah (ambermcc127): Made UI mock-up/diagrams, updated Trello board
 - Annemarie Blanco (an978607): Made architecture diagrams and system design document
 - Kevin Ramos (kevinrwh): Updated requirements, product backlog, velocity and burndown charts
 - Shawn Guydeene (NinjaDino13)
