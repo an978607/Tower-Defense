@@ -32,7 +32,7 @@ With 3D Tower Defense, we aim to solve these problems and provide a more engagin
 
 # Sprint 2
 - [Trello Board (Backlogs and Requirements)](https://trello.com/b/jldNMwlQ/agile-sprint-board)
-- [Burndown Chart](https://user-images.githubusercontent.com/50501047/107894055-56ae2780-6efc-11eb-911e-3c5c058a6a66.png)
+- [Burndown Chart](https://user-images.githubusercontent.com/50501047/107894079-7b0a0400-6efc-11eb-9ea2-c82428def2ce.png)
 - [Velocity Chart](https://user-images.githubusercontent.com/50501047/107893616-35e4d280-6efa-11eb-83fe-27b3e219f902.png)
 - [System Architecture](https://github.com/an978607/Tower-Defense/blob/main/architecture.md)
 - Source Code
