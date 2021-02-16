@@ -54,9 +54,6 @@
 Our program doesn't use a large data base, like for example bank records. But it is crucial that we store Towers, Weapons, and Enemy types as they control the flow of the entire game. Each entity interects with the other in a specific way to create the scenario of our application.  
 
 # User Interface Design
-![Start Screen](https://user-images.githubusercontent.com/78228038/107892582-1480e800-6ef4-11eb-98ef-7bd10aac4804.png)
-![World Map](https://user-images.githubusercontent.com/78228038/107892584-16e34200-6ef4-11eb-906a-88e3625d223e.png)
-![LEVEL 1 Setup](https://user-images.githubusercontent.com/78228038/107892168-63794e00-6ef1-11eb-86b5-9464f4add086.png)
 ![Start Screen - Copy](https://user-images.githubusercontent.com/78228038/108027103-9c034f80-6ff7-11eb-8e4d-2b45d0cd9d58.png)
 ![World Map - Copy](https://user-images.githubusercontent.com/78228038/108027114-a1f93080-6ff7-11eb-9337-faf59851cc6f.png)
 ![LEVEL 1 Items - Copy](https://user-images.githubusercontent.com/78228038/108027123-a4f42100-6ff7-11eb-95de-0db57dd1077c.png)
@@ -69,7 +66,7 @@ Our program doesn't use a large data base, like for example bank records. But it
 | Start screen | 001 | As a player, I want to be able to see the world map. | The start button takes the user directly to the world map. |
 | World map (outline) | 001 | As a player, I want to be able to see the world map. | The user is able to see all the levels and recognize current level. |
 | World map (outline) | 010 | As a player, I want to be able to begin a tower defense game. | When an unlocked level is selected, the user will begin the game. |
-| World map (currency) | 008 | As a player, I want to see how much currency I have. | The user is able to see how much avaliable currency they have and be able to purchase more currency. |
+| World map (currency) | 008 | As a player, I want to see how much currency I have. | The user is able to see an accurate reading of their current avaliable currency. |
 | World map (lives) | 010 | As a player, I want to be able to begin a tower defense game. | If the life meter is not empty, the user will be able to begin a game. |
 | Game screen (currency) | 008 | As a player, I want to see how much currency I have. | The user is able to see how much avaliable currency they have while purchasing towers. |
 | Game screen (play button) | 010 | As a player, I want to be able to begin a tower defense game. | When the button is selected, the game will officially begin. |
