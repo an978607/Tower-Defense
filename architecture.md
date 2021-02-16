@@ -54,9 +54,7 @@
 Our program doesn't use a large data base, like for example bank records. But it is crucial that we store Towers, Weapons, and Enemy types as they control the flow of the entire game. Each entity interects with the other in a specific way to create the scenario of our application.  
 
 # User Interface Design
-![Start Screen - Copy](https://user-images.githubusercontent.com/78228038/108027103-9c034f80-6ff7-11eb-8e4d-2b45d0cd9d58.png)
-![World Map - Copy](https://user-images.githubusercontent.com/78228038/108027114-a1f93080-6ff7-11eb-9337-faf59851cc6f.png)
-![LEVEL 1 Items - Copy](https://user-images.githubusercontent.com/78228038/108027123-a4f42100-6ff7-11eb-95de-0db57dd1077c.png)
+![UI Mockup](https://user-images.githubusercontent.com/78228038/108085343-3b016900-7043-11eb-8f74-9d9a832ce7ab.png)
 - The start screen is the opening screen that provides the user with the name of game. When the user presses start, the world map will be viewed. 
 - The world map allows the user to assess their current status in terms of their current level, remaining lives, and available currency. 
 - When the user selects an unlocked level, the game will begin. Before the first wave of enemies enter, the user will be able to view and purchase available towers. Their current currency amount will be easily viewable in the corner of the screen. When a tower is selected, the user will be able to see the range of the tower. The user can use the exit button to view the base in full view. When the user has completed setting up their base, they will press the start button to begin. 
