@@ -45,3 +45,19 @@ With 3D Tower Defense, we aim to solve these problems and provide a more engagin
 - Annemarie Blanco (an978607): Made architecture diagrams and system design document
 - Kevin Ramos (kevinrwh): Updated requirements, product backlog, velocity and burndown charts
 - Shawn Guydeene (NinjaDino13)
+
+# Sprint 3
+- [Trello Board (Backlogs and Requirements)](https://trello.com/b/jldNMwlQ/agile-sprint-board)
+- Burndown Chart
+- Velocity Chart
+- [System Architecture](https://github.com/an978607/Tower-Defense/blob/main/architecture.md)
+- Source Code
+- Automated Tests
+- Product Demonstration
+
+## Task Allocation
+- Dalton Kajander (Skirtle
+- Amber McCullah (ambermcc127)
+- Annemarie Blanco (an978607)
+- Kevin Ramos (kevinrwh)
+- Shawn Guydeene (NinjaDino13)
