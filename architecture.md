@@ -75,14 +75,33 @@ Our program doesn't use a large data base, like for example bank records. But it
 
 # Resource Management 
 We will limit the number of unique enemys we have in the game. Instead of introducing a stronger type each level we will change up the combinations of enemies to increase difficulty. This lessens the number of assets we need for each enemy.
+
 # Performance
 We want to check that our game runs at the standard 60 fps and make sure our models are behaving in the enviroment, such as no clipping or gitching out.
+
+# Scalability
+Once the program has a solid foundation, we should be able to add in a new weapon, enemy, or tower fairly easily. We shoulf be able to add in new levels or difficulty without having to start all over again.
+
+# Internationalization 
+As on now we have no desire to focus on having the code be able to easily be transcribed to any other language. We will have our code be organized visually enough that it may be possible to understand it without knowing English.
+
+# Input/Output
+Since all of our classes do interact with each other, We need to make sure that we are consistently updating their current whereabouts to see if they should still be able to run. Meaning we may want to have multiple ways to see if the tower is still standing or the enemy has been defeated.
 
 # Error Processing
 Unity has its own Error Processor built in, for example it will inform a user if they are missing a file needed to run the program. For the most part we will use this. 
 
+# Fault Tolerance
+Making sure to test each object in their respective class. There is plenty of faults we could run into, but as an example the user could have enough money for an upgraded tower but our price checker says otherwise. We could have alternate code to run in case the first function returns the wrong answer.
+
+# OverEngineering 
+Clearly we want our program to run as smoothly as possible with no errors. Realistically with so much user input we may run into complications. For this we will try to keep are code as simple as possible to avoid restricting the user. We want are program to continue running even if there is an error in another aspect. 
+
 # Build-vs-Buy Decisions
 We are building off of a free version of the Unity editor, so we avoid having to create the application entirely from scratch. We also have access to many free assets from the internet so we won't have to worry about making any 3D models from scratch as well. 
+
+# Reuse
+Our enemies, towers, and weapons will all branch from the same corresponding class, this is seen in the Code Design diagram. They will have a separate mechanic added to differentiate them and add to the play style. 
 
 # Change Strategy
 As we finalize the design of each weapon and enemy, we may see them evolve from the early conception. We plan to finish the initial concept first and then implement what we can in the time we have left. While we encourage change we want to focus on having a complete product first.
