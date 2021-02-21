@@ -1,0 +1,155 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2577
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica-Bold;\f1\fswiss\fcharset0 Helvetica;\f2\fswiss\fcharset0 Helvetica-BoldOblique;
+\f3\fswiss\fcharset0 Helvetica-Oblique;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww14300\viewh19680\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\b\fs24 \cf0 \ul \ulc0 3D Tower Defense
+\f1\b0 \ulnone \
+\
+
+\f0\b \ul Concept
+\f1\b0 \ulnone : A tower defense game with n levels. Consists of player/preparation phase and enemy phases. \
+\
+
+\f0\b \ul Phases\
+
+\f1\b0 \ulnone \
+
+\f0\b Starting Phase
+\f1\b0 \
+- Player phase before level 1\
+- Starting currency: 500 \
+- displays purchase screen\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f2\i\b \cf0 Purchase Screen
+\f3\b0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f1\i0 \cf0 - Displays draggable structures\
+- Displays price underneath the defensive structure\
+- Displays button to begin the next wave\
+\
+
+\f0\b Player Phase:\
+
+\f1\b0 - allows purchase of structures (as long as the player has enough currency)\
+- once a structure is purchased, it can be placed on the field\
+- After player\'92s preparation is finished, the player can begin the next wave\
+\
+
+\f0\b Enemy Phase\
+
+\f1\b0 - a wave of enemies starts moving towards the base given their pre-defined movement speeds\
+- defensive structures have automatic targeting and fire at the enemies, doing damage to them\
+- a player has the ability to enter a structure \
+- a structure under the player\'92s control switches over to manual targeting and firing\
+- The game continues until a win condition or a loss condition\
+\
+
+\f0\b \ul Win Condition\
+
+\f1\b0 \ulnone \
+
+\f0\b Win condition (level)\
+
+\f1\b0 - all enemies are defeated\
+- proceeds to next preparation phase or end screen\
+\
+
+\f0\b Loss condition\
+
+\f1\b0 - player\'92s tower (barn) health drops to 0\
+\
+
+\f0\b \ul Structures
+\f1\b0 \ulnone \
+
+\f0\b Main Tower (Barn)
+\f1\b0 \
+- Health at 10\
+- non-movable structure\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f2\i\b \cf0 Defensive Structures
+\f0\i0  have a damage, firing rate, special effects*\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f1\b0 \cf0 \
+
+\f0\b Ray Turret\
+
+\f1\b0 - Damage: 1\
+- Firing speed: 1 shot/second\
+- Special Effects: None\
+\
+
+\f0\b Ray Gatling Gun
+\f1\b0 \
+- Damage: 1\
+- Firing speed: 2 shots/second\
+\
+
+\f0\b Alien Cow Acid Cannon\
+
+\f1\b0 - Damage: 1\
+- Firing speed: 0.5/second\
+- Special effect: slows down for enemy to half speed for 1 second\
+\
+
+\f0\b \ul Enemies
+\f1\b0 \ulnone \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f2\i\b \cf0 Enemies have health, speed, and reward tiers (score, currency)
+\f1\i0\b0 \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\b \cf0 Enemy 1 (Farmer)
+\f1\b0 \
+- Speed: 1 (how many pixels per hour?)\
+- Health: 5 health points\
+- Reward: 100, 100\
+- Difficulty: 1\
+\
+
+\f0\b Enemy 2 (Farmer with a Tractor)
+\f1\b0 \
+- Speed 2\
+- Health: 10\
+- Reward: 200, 200\
+Difficulty: 2\
+\
+
+\f0\b Enemy 3 (Enraged Farmer)
+\f1\b0 \
+- Speed: 3\
+- Health: 15\
+- Reward: 500, 300\
+- Difficulty: 3\
+\
+
+\f0\b \ul Waves (10)
+\f1\b0 \ulnone \
+Each wave will increase in difficulty\
+- 10% extra health for each enemy\
+- 10% extra speed for each enemy\
+\
+Enemies spawn at the start point and follow the prescribed path \
+\
+How enemies are chosen\
+- Each level has difficulty equal to 10*wave#. Random enemies are chosen, summing their difficulty until we reach the difficulty value.\
+- e.g. Wave 1 has a difficulty of 10 and can be composed of any combination leading to that difficulty. One example is 10 enemies of the 
+\f3\i farmer
+\f1\i0  type. Another example would be 3 
+\f3\i Enraged Farmers
+\f1\i0  and one farmer.\
+\
+}
