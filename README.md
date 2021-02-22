@@ -51,7 +51,7 @@ With 3D Tower Defense, we aim to solve these problems and provide a more engagin
 - Burndown Chart
 - Velocity Chart
 - [System Architecture](https://github.com/an978607/Tower-Defense/blob/main/architecture.md)
-- [Source Code](https://github.com/an978607/Tower-Defense/blob/main/COP4331TD/COP4331TD.sln)
+- [Source Code](https://github.com/an978607/Tower-Defense/blob/main/COP4331TD/Assembly-CSharp.csproj)
 - Automated Tests
 - Product Demonstration
 
