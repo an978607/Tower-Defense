@@ -48,16 +48,16 @@ With 3D Tower Defense, we aim to solve these problems and provide a more engagin
 
 # Sprint 3
 - [Trello Board (Backlogs and Requirements)](https://trello.com/b/jldNMwlQ/agile-sprint-board)
-- Burndown Chart
-- Velocity Chart
+- [Burndown Chart](https://user-images.githubusercontent.com/50501047/108648534-7a87e500-7489-11eb-9be7-b97902cc2864.png)
+- [Velocity Chart](https://user-images.githubusercontent.com/50501047/108648631-c0dd4400-7489-11eb-8d17-17d380c57fba.png)
 - [System Architecture](https://github.com/an978607/Tower-Defense/blob/main/architecture.md)
-- Source Code
+- [Source Code](https://github.com/an978607/Tower-Defense/blob/main/COP4331TD/Assembly-CSharp.csproj)
 - Automated Tests
-- Product Demonstration
+- [Product Demonstration](https://youtu.be/wNzQj1d90I0)
 
 ## Task Allocation
-- Dalton Kajander (Skirtle
-- Amber McCullah (ambermcc127)
+- Dalton Kajander (Skirtle) Music controls and demonstration video
+- Amber McCullah (ambermcc127): Created start screen, started designing level selection map
 - Annemarie Blanco (an978607)
-- Kevin Ramos (kevinrwh)
+- Kevin Ramos (kevinrwh): Created gameplay document, created the first level foundation, updated velocity and burndown charts
 - Shawn Guydeene (NinjaDino13)

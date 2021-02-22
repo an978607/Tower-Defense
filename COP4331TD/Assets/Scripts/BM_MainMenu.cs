@@ -9,10 +9,10 @@ public class BM_MainMenu : MonoBehaviour {
     public Slider volumeSlider;
     public AudioSource music;
 
-
     //private bool settingsOpen = false;
     void Start() {
         music.volume = 0.5f;
+        volumeSlider.gameObject.SetActive(false);
     }
 
     public void playButtonPressed() {
@@ -20,8 +20,7 @@ public class BM_MainMenu : MonoBehaviour {
     }
 
     public void settingsButtonPressed() {
-        // TODO
-        // create new GUI
+        volumeSlider.gameObject.SetActive(!volumeSlider.gameObject.activeSelf);
     }
 
     public void changeMusicVolume() {

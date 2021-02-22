@@ -54,35 +54,57 @@
 Our program doesn't use a large data base, like for example bank records. But it is crucial that we store Towers, Weapons, and Enemy types as they control the flow of the entire game. Each entity interects with the other in a specific way to create the scenario of our application.  
 
 # User Interface Design
-![UI Mockup](https://user-images.githubusercontent.com/78228038/108085343-3b016900-7043-11eb-8f74-9d9a832ce7ab.png)
-- The start screen is the opening screen that provides the user with the name of game. When the user presses start, the world map will be viewed. 
-- The world map allows the user to assess their current status in terms of their current level, remaining lives, and available currency. 
-- When the user selects an unlocked level, the game will begin. Before the first wave of enemies enter, the user will be able to view and purchase available towers. Their current currency amount will be easily viewable in the corner of the screen. When a tower is selected, the user will be able to see the range of the tower. The user can use the exit button to view the base in full view. When the user has completed setting up their base, they will press the start button to begin. 
+![UIOutline](https://user-images.githubusercontent.com/78228038/108651579-1288cd00-7490-11eb-9d83-77796cf2e690.png)
+- The start screen is the opening screen that provides the user with the name of game. There is a play button and a settings button.
+- When the user presses play, the level selection map will be viewed. The level selection map allows the user to assess their current status in terms of their current level, remaining lives, and available currency. 
+- When the user selects an unlocked level, the game will begin. Before the first wave of enemies enter, the user will be able to view and purchase available towers. Their current currency amount will be easily viewable in the corner of the screen. When a tower is selected, the user will be able to see the range of the tower. The user can use the exit button to view the base in full view. When the user has completed setting up their base, they will press the start button to begin. When they start, the wave counter will be shown.
+- When the current game ends, a win or lose screen, with avaliable scores/stats, will be shown and the user will exit to return to the level selection map.
+- In the store, users can purchase additional currency for the game.
+- In the settings, the user can adjust the game music and audio levels to their preference. The exit button allows them to return to the start page.
 
-| Component | ID | User Story | Explanation |
-| ------------- | ------------- | ------------- | ------------- |
-| Start screen | 001 | As a player, I want to be able to see the world map. | The start button takes the user directly to the world map. |
-| World map (outline) | 001 | As a player, I want to be able to see the world map. | The user is able to see all the levels and recognize current level. |
-| World map (outline) | 010 | As a player, I want to be able to begin a tower defense game. | When an unlocked level is selected, the user will begin the game. |
-| World map (currency) | 008 | As a player, I want to see how much currency I have. | The user is able to see an accurate reading of their current avaliable currency. |
-| World map (lives) | 010 | As a player, I want to be able to begin a tower defense game. | If the life meter is not empty, the user will be able to begin a game. |
-| Game screen (currency) | 008 | As a player, I want to see how much currency I have. | The user is able to see how much avaliable currency they have while purchasing towers. |
-| Game screen (play button) | 010 | As a player, I want to be able to begin a tower defense game. | When the button is selected, the game will officially begin. |
-| Game screen (tower) | 003 | As a player, I want to be able to place my towers on the base. | When a tower is selected, the user can move the tower to their desired position. |
-| Game screen (tower) | 008 | As a player, I want to be able to see the reach of my tower. | When a tower is selected, the user can see a red outlining of the tower's range. |
-| Game screen (menu) | 007 | As a player, I want to be able to use different types of towers. | The user is able to view an array of towers avaliable for purchase. |
+| Component | User Story | Explanation |
+| ------------- | ------------- | ------------- |
+| Start screen | As a player, I want to be able to see the world map. (001) | The start button takes the user directly to the world level selection map. |
+| Level map (levels) | As a player, I want to be able to see the world map. (001) | The user is able to see all the levels and recognize thier current level. |
+| Level map (levels) | As a player, I want to be able to begin a tower defense game. (010) | When an unlocked level is selected, the user will begin the game. |
+| Level map (currency) | As a player, I want to see how much currency I have. (008) | The user is able to see an accurate reading of their current avaliable currency. |
+| Level map (lives) | As a player, I want to be able to begin a tower defense game. (010) | If the life meter is not empty, the user will be able to begin a game. |
+| Game screen (currency) | As a player, I want to see how much currency I have. (008) | The user is able to see how much avaliable currency they have while purchasing towers. |
+| Game screen (start button) | As a player, I want to be able to begin a tower defense game. (010) | When the button is selected, the game will officially begin. |
+| Game screen (tower menu) | As a player, I want to be able to place my towers on the base. (003) | When a tower is selected, the user can move the tower to their desired position. |
+| Game screen (tower menu) | As a player, I want to be able to see the reach of my tower. (008) | When a tower is selected, the user can see a red outlining of the tower's range. |
+| Game screen (tower menu) | As a player, I want to be able to use different types of towers. (007) | The user is able to view an array of towers avaliable for purchase. |
 
 
 # Resource Management 
 We will limit the number of unique enemys we have in the game. Instead of introducing a stronger type each level we will change up the combinations of enemies to increase difficulty. This lessens the number of assets we need for each enemy.
+
 # Performance
 We want to check that our game runs at the standard 60 fps and make sure our models are behaving in the enviroment, such as no clipping or gitching out.
+
+# Scalability
+Once the program has a solid foundation, we should be able to add in a new weapon, enemy, or tower fairly easily. We shoulf be able to add in new levels or difficulty without having to start all over again.
+
+# Internationalization 
+As on now we have no desire to focus on having the code be able to easily be transcribed to any other language. We will have our code be organized visually enough that it may be possible to understand it without knowing English.
+
+# Input/Output
+Since all of our classes do interact with each other, We need to make sure that we are consistently updating their current whereabouts to see if they should still be able to run. Meaning we may want to have multiple ways to see if the tower is still standing or the enemy has been defeated.
 
 # Error Processing
 Unity has its own Error Processor built in, for example it will inform a user if they are missing a file needed to run the program. For the most part we will use this. 
 
+# Fault Tolerance
+Making sure to test each object in their respective class. There is plenty of faults we could run into, but as an example the user could have enough money for an upgraded tower but our price checker says otherwise. We could have alternate code to run in case the first function returns the wrong answer.
+
+# OverEngineering 
+Clearly we want our program to run as smoothly as possible with no errors. Realistically with so much user input we may run into complications. For this we will try to keep are code as simple as possible to avoid restricting the user. We want are program to continue running even if there is an error in another aspect. 
+
 # Build-vs-Buy Decisions
 We are building off of a free version of the Unity editor, so we avoid having to create the application entirely from scratch. We also have access to many free assets from the internet so we won't have to worry about making any 3D models from scratch as well. 
+
+# Reuse
+Our enemies, towers, and weapons will all branch from the same corresponding class, this is seen in the Code Design diagram. They will have a separate mechanic added to differentiate them and add to the play style. 
 
 # Change Strategy
 As we finalize the design of each weapon and enemy, we may see them evolve from the early conception. We plan to finish the initial concept first and then implement what we can in the time we have left. While we encourage change we want to focus on having a complete product first.
