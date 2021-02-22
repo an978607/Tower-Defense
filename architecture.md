@@ -54,23 +54,26 @@
 Our program doesn't use a large data base, like for example bank records. But it is crucial that we store Towers, Weapons, and Enemy types as they control the flow of the entire game. Each entity interects with the other in a specific way to create the scenario of our application.  
 
 # User Interface Design
-![UI Mockup](https://user-images.githubusercontent.com/78228038/108085343-3b016900-7043-11eb-8f74-9d9a832ce7ab.png)
-- The start screen is the opening screen that provides the user with the name of game. When the user presses start, the world map will be viewed. 
-- The world map allows the user to assess their current status in terms of their current level, remaining lives, and available currency. 
-- When the user selects an unlocked level, the game will begin. Before the first wave of enemies enter, the user will be able to view and purchase available towers. Their current currency amount will be easily viewable in the corner of the screen. When a tower is selected, the user will be able to see the range of the tower. The user can use the exit button to view the base in full view. When the user has completed setting up their base, they will press the start button to begin. 
+![UIOutline](https://user-images.githubusercontent.com/78228038/108650069-b2dcf280-748c-11eb-9b28-8f3ed881f3e1.png)
+- The start screen is the opening screen that provides the user with the name of game. There is a play button and a settings button.
+- When the user presses play, the level selection map will be viewed. The level selection map allows the user to assess their current status in terms of their current level, remaining lives, and available currency. 
+- When the user selects an unlocked level, the game will begin. Before the first wave of enemies enter, the user will be able to view and purchase available towers. Their current currency amount will be easily viewable in the corner of the screen. When a tower is selected, the user will be able to see the range of the tower. The user can use the exit button to view the base in full view. When the user has completed setting up their base, they will press the start button to begin. When they start, the wave counter will be shown.
+- When the current game ends, a win or lose screen, with avaliable scores/stats, will be shown and the user will exit to return to the level selection map.
+- In the store, users can purchase additional currency for the game.
+- In the settings, the user can adjust the game music and audio levels to their preference. The exit button allows them to return to the start page.
 
-| Component | ID | User Story | Explanation |
-| ------------- | ------------- | ------------- | ------------- |
-| Start screen | 001 | As a player, I want to be able to see the world map. | The start button takes the user directly to the world map. |
-| World map (outline) | 001 | As a player, I want to be able to see the world map. | The user is able to see all the levels and recognize current level. |
-| World map (outline) | 010 | As a player, I want to be able to begin a tower defense game. | When an unlocked level is selected, the user will begin the game. |
-| World map (currency) | 008 | As a player, I want to see how much currency I have. | The user is able to see an accurate reading of their current avaliable currency. |
-| World map (lives) | 010 | As a player, I want to be able to begin a tower defense game. | If the life meter is not empty, the user will be able to begin a game. |
-| Game screen (currency) | 008 | As a player, I want to see how much currency I have. | The user is able to see how much avaliable currency they have while purchasing towers. |
-| Game screen (play button) | 010 | As a player, I want to be able to begin a tower defense game. | When the button is selected, the game will officially begin. |
-| Game screen (tower) | 003 | As a player, I want to be able to place my towers on the base. | When a tower is selected, the user can move the tower to their desired position. |
-| Game screen (tower) | 008 | As a player, I want to be able to see the reach of my tower. | When a tower is selected, the user can see a red outlining of the tower's range. |
-| Game screen (menu) | 007 | As a player, I want to be able to use different types of towers. | The user is able to view an array of towers avaliable for purchase. |
+| Component | User Story | Explanation |
+| ------------- | ------------- | ------------- |
+| Start screen | As a player, I want to be able to see the world map. (001) | The start button takes the user directly to the world level selection map. |
+| Level map (levels) | As a player, I want to be able to see the world map. (001) | The user is able to see all the levels and recognize thier current level. |
+| Level map (levels) | As a player, I want to be able to begin a tower defense game. (010) | When an unlocked level is selected, the user will begin the game. |
+| Level map (currency) | As a player, I want to see how much currency I have. (008) | The user is able to see an accurate reading of their current avaliable currency. |
+| Level map (lives) | As a player, I want to be able to begin a tower defense game. (010) | If the life meter is not empty, the user will be able to begin a game. |
+| Game screen (currency) | As a player, I want to see how much currency I have. (008) | The user is able to see how much avaliable currency they have while purchasing towers. |
+| Game screen (start button) | As a player, I want to be able to begin a tower defense game. (010) | When the button is selected, the game will officially begin. |
+| Game screen (tower menu) | As a player, I want to be able to place my towers on the base. (003) | When a tower is selected, the user can move the tower to their desired position. |
+| Game screen (tower menu) | As a player, I want to be able to see the reach of my tower. (008) | When a tower is selected, the user can see a red outlining of the tower's range. |
+| Game screen (tower menu) | As a player, I want to be able to use different types of towers. (007) | The user is able to view an array of towers avaliable for purchase. |
 
 
 # Resource Management 
