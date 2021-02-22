@@ -61,13 +61,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12502}
     - Class: 114
-      Script: {instanceID: 13488}
+      Script: {instanceID: 13490}
     - Class: 114
-      Script: {instanceID: 13866}
+      Script: {instanceID: 13868}
     - Class: 114
-      Script: {instanceID: 13884}
+      Script: {instanceID: 13886}
     - Class: 114
-      Script: {instanceID: 13902}
+      Script: {instanceID: 13904}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -126,15 +126,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13216}
     - Class: 114
-      Script: {instanceID: 13422}
+      Script: {instanceID: 13424}
     - Class: 114
-      Script: {instanceID: 13488}
+      Script: {instanceID: 13490}
     - Class: 114
-      Script: {instanceID: 13654}
+      Script: {instanceID: 13656}
     - Class: 114
-      Script: {instanceID: 13866}
+      Script: {instanceID: 13868}
     - Class: 114
-      Script: {instanceID: 13902}
+      Script: {instanceID: 13904}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -460,6 +460,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: TimelineAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: NewBehaviourScript
   - hash:
       serializedVersion: 2
       Hash: 760787567e1b60d64a3e421ab83ee14a
