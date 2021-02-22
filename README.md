@@ -57,7 +57,7 @@ With 3D Tower Defense, we aim to solve these problems and provide a more engagin
 
 ## Task Allocation
 - Dalton Kajander (Skirtle) Music controls and demonstration video
-- Amber McCullah (ambermcc127)
+- Amber McCullah (ambermcc127): Created start screen, started designing level selection map
 - Annemarie Blanco (an978607)
 - Kevin Ramos (kevinrwh): Created gameplay document, created the first level foundation, updated velocity and burndown charts
 - Shawn Guydeene (NinjaDino13)
