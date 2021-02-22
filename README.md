@@ -53,10 +53,10 @@ With 3D Tower Defense, we aim to solve these problems and provide a more engagin
 - [System Architecture](https://github.com/an978607/Tower-Defense/blob/main/architecture.md)
 - [Source Code](https://github.com/an978607/Tower-Defense/blob/main/COP4331TD/Assembly-CSharp.csproj)
 - Automated Tests
-- Product Demonstration
+- [Product Demonstration](https://youtu.be/wNzQj1d90I0)
 
 ## Task Allocation
-- Dalton Kajander (Skirtle
+- Dalton Kajander (Skirtle) Music controls and demonstration video
 - Amber McCullah (ambermcc127)
 - Annemarie Blanco (an978607)
 - Kevin Ramos (kevinrwh): Created gameplay document, created the first level foundation, updated velocity and burndown charts
