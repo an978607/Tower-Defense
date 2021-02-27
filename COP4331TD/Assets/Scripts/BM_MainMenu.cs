@@ -16,7 +16,7 @@ public class BM_MainMenu : MonoBehaviour {
     }
 
     public void playButtonPressed() {
-        SceneManager.LoadScene("Map00a");
+        SceneManager.LoadScene("LevelSelection");
     }
 
     public void settingsButtonPressed() {
