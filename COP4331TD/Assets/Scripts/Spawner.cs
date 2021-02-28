@@ -7,17 +7,16 @@ public class Spawner : MonoBehaviour {
     // How many enemys to create and how many are left to create
     public int totalEnemies = 0;
     private int numEnemies = 0;
+    private int spawnedEnemies = 0;
 
     public bool spawn = true; // spawner will spawn enemies
     public bool spawnWave = false;
     public int totalWaves = 1;
     public int enemySpeed = 5;
-    private int numWaves = 0;
+    private int numWaves = -1;
     private float timeSinceLastSpawn = 0.0f;
     [Range(0.0f,2.0f)]
     public float timeToWait;
-
-
 
     void Update() {
         if (spawn)
@@ -29,19 +28,19 @@ public class Spawner : MonoBehaviour {
                 {
                     // spawn an enemy
                     spawnEnemy();
+                    spawnedEnemies++;
                     timeSinceLastSpawn = 0.0f;
                 }
                 if (numEnemies == 0)
                 {
-                    timeSinceLastSpawn = 0.5f;
                     // start spawning wave
                     spawnWave = true;
                     // increase the number of waves
                     numWaves++;
-                    // reset enemies
-                    numEnemies = 0;
+                    spawnedEnemies = 0;
+                    print(numWaves);
                 }
-                if (numEnemies == totalEnemies)
+                if (spawnedEnemies == totalEnemies)
                 {
                     spawnWave = false;
                 }
@@ -49,11 +48,17 @@ public class Spawner : MonoBehaviour {
         }
     }
 
-    void spawnEnemy() {
+    private void spawnEnemy()
+    {
         GameObject enemy = (GameObject) Instantiate(Enemy, gameObject.transform.position, Quaternion.identity);
         enemy.GetComponent<FollowPath>().speed = enemySpeed;
         enemy.GetComponent<FollowPath>().isCopy = true;
         // Increase the number of spawned enemies
         numEnemies++;
+    }
+
+    public void destroyEnemy()
+    {
+        numEnemies--;
     }
 }

@@ -933,6 +933,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lives: {fileID: 988473255}
   level: {fileID: 1916456363}
+  spawner: {fileID: 1633915397}
 --- !u!54 &202296483
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6843,11 +6844,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Enemy: {fileID: 6957391729313993738}
-  totalEnemies: 20
+  totalEnemies: 10
   spawn: 1
   spawnWave: 0
-  totalWaves: 10
-  enemySpeed: 50
+  totalWaves: 13
+  enemySpeed: 20
   timeToWait: 0.12
 --- !u!4 &1633915399
 Transform:
