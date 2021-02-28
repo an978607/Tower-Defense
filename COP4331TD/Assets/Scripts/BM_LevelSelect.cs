@@ -16,4 +16,9 @@ public class BM_LevelSelect : MonoBehaviour
     {
         SceneManager.LoadScene("Map02");
     }
+
+    public void levelThreeButtonPressed()
+    {
+        SceneManager.LoadScene("Map03");
+    }
 }
