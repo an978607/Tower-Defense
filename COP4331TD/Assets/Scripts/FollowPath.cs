@@ -9,6 +9,9 @@ public class FollowPath : MonoBehaviour {
     public float speed;
     float distanceTraveled;
 
+    [HideInInspector]
+    public bool isCopy = false;
+
 
     // Start is called before the first frame update
     void Start() {
@@ -20,5 +23,17 @@ public class FollowPath : MonoBehaviour {
     void Update() {
         distanceTraveled -= speed*Time.deltaTime;
         transform.position = pathCreator.path.GetPointAtDistance(distanceTraveled);
+    }
+
+    /*void OnCollisionEnter(Collision collision) {
+        if (collision.collider.gameObject.tag == "End") {
+            print("wahoo");
+        }
+    }*/
+
+    void OnTriggerEnter(Collider other) {
+        if (other.name == "End") {
+            print("wahoo");
+        }
     }
 }
