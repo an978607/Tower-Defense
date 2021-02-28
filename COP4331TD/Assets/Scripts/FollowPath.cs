@@ -12,7 +12,8 @@ public class FollowPath : MonoBehaviour {
 
     // Start is called before the first frame update
     void Start() {
-
+        distanceTraveled -= 0.0001f;
+        transform.position = pathCreator.path.GetPointAtDistance(distanceTraveled);
     }
 
     // Update is called once per frame
