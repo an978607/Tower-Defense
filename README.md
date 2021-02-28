@@ -61,3 +61,19 @@ With 3D Tower Defense, we aim to solve these problems and provide a more engagin
 - Annemarie Blanco (an978607)
 - Kevin Ramos (kevinrwh): Created gameplay document, created the first level foundation, updated velocity and burndown charts
 - Shawn Guydeene (NinjaDino13)
+
+# Sprint 4
+- [Trello Board (Backlogs and Requirements)](https://trello.com/b/jldNMwlQ/agile-sprint-board)
+- Burndown Chart
+- Velocity Chart
+- [System Architecture](https://github.com/an978607/Tower-Defense/blob/main/architecture.md)
+- [Source Code](https://github.com/an978607/Tower-Defense/blob/main/COP4331TD/Assembly-CSharp.csproj)
+- Automated Tests
+- Product Demonstration
+
+## Task Allocation
+- Dalton Kajander (Skirtle)
+- Amber McCullah (ambermcc127): Created level selection map; connected scenes
+- Annemarie Blanco (an978607)
+- Kevin Ramos (kevinrwh)
+- Shawn Guydeene (NinjaDino13)
