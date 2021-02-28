@@ -60,6 +60,9 @@
      <Compile Include="Assets\Scripts\BM_MainMenu.cs" />
      <Compile Include="Assets\NewBehaviourScript.cs" />
      <Compile Include="Assets\Scripts\BM_LevelSelect.cs" />
+     <Compile Include="Assets\Scripts\BM_Prep.cs" />
+     <Compile Include="Assets\Scripts\ItemDrag.cs" />
+     <Compile Include="Assets\Scripts\ItemDrop.cs" />
      <None Include="Assets\Resources\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\Resources\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\Resources\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
@@ -82,31 +85,31 @@
      <None Include="Assets\Resources\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
      <None Include="Assets\Resources\TextMesh Pro\Shaders\TMP_Sprite.shader" />
  <Reference Include="Unity.Timeline.Editor">
- <HintPath>C:/Users/amber/OneDrive/Documents/GitHub/Tower-Defense/COP4331TD/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ <HintPath>C:/Users/fuzzy/Desktop/Tower-Defense/COP4331TD/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VSCode.Editor">
- <HintPath>C:/Users/amber/OneDrive/Documents/GitHub/Tower-Defense/COP4331TD/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ <HintPath>C:/Users/fuzzy/Desktop/Tower-Defense/COP4331TD/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>C:/Users/amber/OneDrive/Documents/GitHub/Tower-Defense/COP4331TD/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>C:/Users/fuzzy/Desktop/Tower-Defense/COP4331TD/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>C:/Users/amber/OneDrive/Documents/GitHub/Tower-Defense/COP4331TD/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>C:/Users/fuzzy/Desktop/Tower-Defense/COP4331TD/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
- <HintPath>C:/Users/amber/OneDrive/Documents/GitHub/Tower-Defense/COP4331TD/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ <HintPath>C:/Users/fuzzy/Desktop/Tower-Defense/COP4331TD/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
- <HintPath>C:/Users/amber/OneDrive/Documents/GitHub/Tower-Defense/COP4331TD/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ <HintPath>C:/Users/fuzzy/Desktop/Tower-Defense/COP4331TD/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VisualStudio.Editor">
- <HintPath>C:/Users/amber/OneDrive/Documents/GitHub/Tower-Defense/COP4331TD/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
+ <HintPath>C:/Users/fuzzy/Desktop/Tower-Defense/COP4331TD/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>C:/Users/amber/OneDrive/Documents/GitHub/Tower-Defense/COP4331TD/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>C:/Users/fuzzy/Desktop/Tower-Defense/COP4331TD/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>C:/Users/amber/OneDrive/Documents/GitHub/Tower-Defense/COP4331TD/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>C:/Users/fuzzy/Desktop/Tower-Defense/COP4331TD/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.6f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
