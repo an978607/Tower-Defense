@@ -72,8 +72,8 @@ With 3D Tower Defense, we aim to solve these problems and provide a more engagin
 - Product Demonstration
 
 ## Task Allocation
-- Dalton Kajander (Skirtle)
+- Dalton Kajander (Skirtle) Path following and life losing
 - Amber McCullah (ambermcc127): Created level selection map; connected scenes
 - Annemarie Blanco (an978607): Created Prepration/Shop UI with draggable image to map. 
 - Kevin Ramos (kevinrwh)
-- Shawn Guydeene (NinjaDino13)
+- Shawn Guydeene (NinjaDino13) Enemy spawning system
