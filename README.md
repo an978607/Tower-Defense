@@ -67,13 +67,13 @@ With 3D Tower Defense, we aim to solve these problems and provide a more engagin
 - Burndown Chart
 - Velocity Chart
 - [System Architecture](https://github.com/an978607/Tower-Defense/blob/main/architecture.md)
-- [Source Code](https://github.com/an978607/Tower-Defense/blob/main/COP4331TD/Assembly-CSharp.csproj)
+- [Source Code](https://github.com/an978607/Tower-Defense/tree/main/COP4331TD/Assets/Scripts)
 - Automated Tests
-- Product Demonstration
+- [Product Demonstration](https://youtu.be/uOEkAs3BPU8)
 
 ## Task Allocation
 - Dalton Kajander (Skirtle) Path following and life losing
 - Amber McCullah (ambermcc127): Created level selection map; connected scenes
-- Annemarie Blanco (an978607): Created Prepration/Shop UI with draggable image to map. 
+- Annemarie Blanco (an978607): Created Prepration/Shop UI with draggable image to map, Updated Components diagram, and  Uploaded Demonstration.
 - Kevin Ramos (kevinrwh)
 - Shawn Guydeene (NinjaDino13) Enemy spawning system
