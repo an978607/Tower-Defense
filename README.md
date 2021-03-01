@@ -75,5 +75,5 @@ With 3D Tower Defense, we aim to solve these problems and provide a more engagin
 - Dalton Kajander (Skirtle) Path following and life losing
 - Amber McCullah (ambermcc127): Created level selection map; connected scenes
 - Annemarie Blanco (an978607): Created Prepration/Shop UI with draggable image to map, Updated Components diagram, and  Uploaded Demonstration.
-- Kevin Ramos (kevinrwh)
+- Kevin Ramos (kevinrwh): Designed 5 levels, implemented prototypes of 3 of them. Worked on various other tasks, updated trello/requirements. Completed burndown and velocity chart.
 - Shawn Guydeene (NinjaDino13) Enemy spawning system
