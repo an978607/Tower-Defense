@@ -13,7 +13,7 @@
  
  ## Component Diagram
  
- ![Components](https://user-images.githubusercontent.com/54637213/107887900-5f403700-6ed7-11eb-9d6b-6f6d1d2b28b1.png)
+ ![Components (1)](https://user-images.githubusercontent.com/54637213/109446094-0b713a00-7a0f-11eb-9660-547c8acd9103.png)
  
  Inside our Unity Application we have a look at the different items we want it to have for our player. These are catered more towards our user stories, having the ability to make adjustments to settings as well as getting to interact with the enviroment to win the game.
  
