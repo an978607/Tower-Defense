@@ -16,6 +16,7 @@ MonoBehaviour:
     serializedVersion: 2
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 42
     y: 53
     width: 1398
@@ -30,6 +31,13 @@ MonoBehaviour:
     width: 1600
     height: 817
   m_ShowMode: 4
+=======
+    x: 0
+    y: 43
+    width: 1600
+    height: 817
+  m_ShowMode: 4
+>>>>>>> parent of 6785a50... Initial Currency and Lives
 =======
     x: 0
     y: 43
@@ -62,12 +70,15 @@ MonoBehaviour:
     y: 30
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 1398
     height: 797
   m_MinSize: {x: 200, y: 223}
   m_MaxSize: {x: 4000, y: 4023}
   m_ActualView: {fileID: 6}
 =======
+=======
+>>>>>>> parent of 6785a50... Initial Currency and Lives
 =======
 >>>>>>> parent of 6785a50... Initial Currency and Lives
     width: 1600
@@ -181,8 +192,13 @@ MonoBehaviour:
     y: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 1398
     height: 847
+=======
+    width: 1600
+    height: 817
+>>>>>>> parent of 6785a50... Initial Currency and Lives
 =======
     width: 1600
     height: 817
@@ -216,7 +232,11 @@ MonoBehaviour:
     y: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 1398
+=======
+    width: 1600
+>>>>>>> parent of 6785a50... Initial Currency and Lives
 =======
     width: 1600
 >>>>>>> parent of 6785a50... Initial Currency and Lives
@@ -248,6 +268,7 @@ MonoBehaviour:
     x: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 827
     width: 1398
     height: 20
@@ -255,6 +276,8 @@ MonoBehaviour:
   m_MaxSize: {x: 0, y: 0}
 --- !u!114 &6
 =======
+=======
+>>>>>>> parent of 6785a50... Initial Currency and Lives
 =======
 >>>>>>> parent of 6785a50... Initial Currency and Lives
     y: 797
@@ -738,6 +761,7 @@ MonoBehaviour:
     serializedVersion: 2
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 42
     y: 83
     width: 1398
@@ -745,11 +769,16 @@ MonoBehaviour:
 =======
 =======
 >>>>>>> parent of 6785a50... Initial Currency and Lives
+=======
+>>>>>>> parent of 6785a50... Initial Currency and Lives
     x: 336
     y: 73
     width: 801
     height: 456
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 6785a50... Initial Currency and Lives
+=======
 >>>>>>> parent of 6785a50... Initial Currency and Lives
 =======
 >>>>>>> parent of 6785a50... Initial Currency and Lives
@@ -762,7 +791,11 @@ MonoBehaviour:
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_TargetSize: {x: 2796, y: 1514}
+=======
+  m_TargetSize: {x: 773, y: 435}
+>>>>>>> parent of 6785a50... Initial Currency and Lives
 =======
   m_TargetSize: {x: 773, y: 435}
 >>>>>>> parent of 6785a50... Initial Currency and Lives
@@ -785,6 +818,7 @@ MonoBehaviour:
     vZoomLockedByDefault: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_HBaseRangeMin: -699
     m_HBaseRangeMax: 699
     m_VBaseRangeMin: -378.5
@@ -792,11 +826,16 @@ MonoBehaviour:
 =======
 =======
 >>>>>>> parent of 6785a50... Initial Currency and Lives
+=======
+>>>>>>> parent of 6785a50... Initial Currency and Lives
     m_HBaseRangeMin: -386.5
     m_HBaseRangeMax: 386.5
     m_VBaseRangeMin: -217.5
     m_VBaseRangeMax: 217.5
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 6785a50... Initial Currency and Lives
+=======
 >>>>>>> parent of 6785a50... Initial Currency and Lives
 =======
 >>>>>>> parent of 6785a50... Initial Currency and Lives
@@ -819,6 +858,7 @@ MonoBehaviour:
       y: 21
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       width: 1398
       height: 757
     m_Scale: {x: 1, y: 1}
@@ -826,11 +866,16 @@ MonoBehaviour:
 =======
 =======
 >>>>>>> parent of 6785a50... Initial Currency and Lives
+=======
+>>>>>>> parent of 6785a50... Initial Currency and Lives
       width: 801
       height: 435
     m_Scale: {x: 1, y: 1}
     m_Translation: {x: 400.5, y: 217.5}
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 6785a50... Initial Currency and Lives
+=======
 >>>>>>> parent of 6785a50... Initial Currency and Lives
 =======
 >>>>>>> parent of 6785a50... Initial Currency and Lives
@@ -840,6 +885,7 @@ MonoBehaviour:
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       x: -699
@@ -852,6 +898,8 @@ MonoBehaviour:
 =======
 =======
 >>>>>>> parent of 6785a50... Initial Currency and Lives
+=======
+>>>>>>> parent of 6785a50... Initial Currency and Lives
       x: -400.5
       y: -217.5
       width: 801
@@ -860,6 +908,9 @@ MonoBehaviour:
   m_defaultScale: 1
   m_LastWindowPixelSize: {x: 801, y: 456}
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 6785a50... Initial Currency and Lives
+=======
 >>>>>>> parent of 6785a50... Initial Currency and Lives
 =======
 >>>>>>> parent of 6785a50... Initial Currency and Lives
