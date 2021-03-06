@@ -1,21 +1,5 @@
 sceneSetups:
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-- path: Assets/Scenes/LevelSelection.unity
-=======
 - path: Assets/Prefabs/Map01A.unity
->>>>>>> parent of 6785a50... Initial Currency and Lives
-=======
-- path: Assets/Prefabs/Map01A.unity
->>>>>>> parent of 6785a50... Initial Currency and Lives
-=======
-- path: Assets/Prefabs/Map01A.unity
->>>>>>> parent of 6785a50... Initial Currency and Lives
-=======
-- path: Assets/Prefabs/Map01A.unity
->>>>>>> parent of 6785a50... Initial Currency and Lives
   isLoaded: 1
   isActive: 1
   isSubScene: 0
