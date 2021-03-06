@@ -15,6 +15,7 @@ MonoBehaviour:
   m_PixelRect:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 42
     y: 53
     width: 1398
@@ -29,6 +30,13 @@ MonoBehaviour:
     width: 1600
     height: 817
   m_ShowMode: 4
+=======
+    x: 0
+    y: 43
+    width: 1600
+    height: 817
+  m_ShowMode: 4
+>>>>>>> parent of 6785a50... Initial Currency and Lives
   m_Title: Inspector
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
@@ -53,12 +61,15 @@ MonoBehaviour:
     x: 0
     y: 30
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 1398
     height: 797
   m_MinSize: {x: 200, y: 223}
   m_MaxSize: {x: 4000, y: 4023}
   m_ActualView: {fileID: 6}
 =======
+=======
+>>>>>>> parent of 6785a50... Initial Currency and Lives
     width: 1600
     height: 767
   m_MinSize: {x: 679, y: 492}
@@ -169,8 +180,13 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 1398
     height: 847
+=======
+    width: 1600
+    height: 817
+>>>>>>> parent of 6785a50... Initial Currency and Lives
 =======
     width: 1600
     height: 817
@@ -199,7 +215,11 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 1398
+=======
+    width: 1600
+>>>>>>> parent of 6785a50... Initial Currency and Lives
 =======
     width: 1600
 >>>>>>> parent of 6785a50... Initial Currency and Lives
@@ -227,6 +247,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 827
     width: 1398
     height: 20
@@ -234,6 +255,8 @@ MonoBehaviour:
   m_MaxSize: {x: 0, y: 0}
 --- !u!114 &6
 =======
+=======
+>>>>>>> parent of 6785a50... Initial Currency and Lives
     y: 797
     width: 1600
     height: 20
@@ -714,15 +737,21 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 42
     y: 83
     width: 1398
     height: 778
 =======
+=======
+>>>>>>> parent of 6785a50... Initial Currency and Lives
     x: 336
     y: 73
     width: 801
     height: 456
+<<<<<<< HEAD
+>>>>>>> parent of 6785a50... Initial Currency and Lives
+=======
 >>>>>>> parent of 6785a50... Initial Currency and Lives
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
@@ -732,7 +761,11 @@ MonoBehaviour:
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_TargetSize: {x: 2796, y: 1514}
+=======
+  m_TargetSize: {x: 773, y: 435}
+>>>>>>> parent of 6785a50... Initial Currency and Lives
 =======
   m_TargetSize: {x: 773, y: 435}
 >>>>>>> parent of 6785a50... Initial Currency and Lives
@@ -751,15 +784,21 @@ MonoBehaviour:
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_HBaseRangeMin: -699
     m_HBaseRangeMax: 699
     m_VBaseRangeMin: -378.5
     m_VBaseRangeMax: 378.5
 =======
+=======
+>>>>>>> parent of 6785a50... Initial Currency and Lives
     m_HBaseRangeMin: -386.5
     m_HBaseRangeMax: 386.5
     m_VBaseRangeMin: -217.5
     m_VBaseRangeMax: 217.5
+<<<<<<< HEAD
+>>>>>>> parent of 6785a50... Initial Currency and Lives
+=======
 >>>>>>> parent of 6785a50... Initial Currency and Lives
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
@@ -779,15 +818,21 @@ MonoBehaviour:
       x: 0
       y: 21
 <<<<<<< HEAD
+<<<<<<< HEAD
       width: 1398
       height: 757
     m_Scale: {x: 1, y: 1}
     m_Translation: {x: 699, y: 378.5}
 =======
+=======
+>>>>>>> parent of 6785a50... Initial Currency and Lives
       width: 801
       height: 435
     m_Scale: {x: 1, y: 1}
     m_Translation: {x: 400.5, y: 217.5}
+<<<<<<< HEAD
+>>>>>>> parent of 6785a50... Initial Currency and Lives
+=======
 >>>>>>> parent of 6785a50... Initial Currency and Lives
     m_MarginLeft: 0
     m_MarginRight: 0
@@ -795,6 +840,7 @@ MonoBehaviour:
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
       x: -699
       y: -378.5
@@ -804,6 +850,8 @@ MonoBehaviour:
   m_defaultScale: 1
   m_LastWindowPixelSize: {x: 2796, y: 1556}
 =======
+=======
+>>>>>>> parent of 6785a50... Initial Currency and Lives
       x: -400.5
       y: -217.5
       width: 801
@@ -811,6 +859,9 @@ MonoBehaviour:
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_LastWindowPixelSize: {x: 801, y: 456}
+<<<<<<< HEAD
+>>>>>>> parent of 6785a50... Initial Currency and Lives
+=======
 >>>>>>> parent of 6785a50... Initial Currency and Lives
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
