@@ -8832,11 +8832,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Enemy: {fileID: 6957391729313993738}
-  totalEnemies: 30
-  spawn: 1
+  totalEnemies: 10
+  spawn: 0
   spawnWave: 0
   totalWaves: 13
-  enemySpeed: 300
+  enemySpeed: 20
   timeToWait: 0.12
 --- !u!4 &1957184712
 Transform:
