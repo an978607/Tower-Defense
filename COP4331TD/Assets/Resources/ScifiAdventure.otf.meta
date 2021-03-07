@@ -10,7 +10,8 @@ TrueTypeFontImporter:
   includeFontData: 1
   fontNames:
   - Scifi Adventure
-  fallbackFontReferences: []
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: f44bf29926392a446966065aa9447403, type: 3}
   customCharacters: 
   fontRenderingMode: 0
   ascentCalculationMode: 1

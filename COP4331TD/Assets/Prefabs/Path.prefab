@@ -1,0 +1,130 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4892597238311005078
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4892597238311005076}
+  - component: {fileID: 4892597238311005079}
+  m_Layer: 0
+  m_Name: Path
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4892597238311005076
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4892597238311005078}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 38.75, y: 2, z: 10.75}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4892597238311005079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4892597238311005078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e5ac92bc18f545cc84cd886ece82b4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  editorData:
+    _bezierPath:
+      points:
+      - {x: 1.3339806, y: 0, z: -30.847559}
+      - {x: 1.3339806, y: 0, z: -30.847559}
+      - {x: -22.129248, y: 0, z: -29.934326}
+      - {x: -22.04164, y: 0, z: -29.938864}
+      - {x: -20.4658, y: 0, z: -30.02047}
+      - {x: -33.133587, y: 0, z: -29.629671}
+      - {x: -33.13229, y: 0, z: -29.4177}
+      - {x: -33.120453, y: 0, z: -27.486044}
+      - {x: -33.838512, y: 0, z: -20.563261}
+      - {x: -33.97088, y: 0, z: -20.566822}
+      - {x: -35.285595, y: 0, z: -20.602192}
+      - {x: -24.28297, y: 0, z: -20.786953}
+      - {x: -24.28116, y: 0, z: -20.691666}
+      - {x: -24.243116, y: 0, z: -18.688839}
+      - {x: -23.808474, y: 0, z: -10.104344}
+      - {x: -23.803835, y: 0, z: -10.105349}
+      - {x: -23.495111, y: 0, z: -10.172188}
+      - {x: -32.492832, y: 0, z: -10.420688}
+      - {x: -32.50037, y: 0, z: -10.615282}
+      - {x: -32.56442, y: 0, z: -12.268302}
+      - {x: -33.14039, y: 0, z: 3.3542137}
+      - {x: -33.087883, y: 0, z: 3.353942}
+      - {x: -32.47769, y: 0, z: 3.3507833}
+      - {x: -26.016087, y: 0, z: 3.4674273}
+      - {x: -23.835564, y: 0, z: 3.4674273}
+      - {x: -23.818256, y: 0, z: 3.4674273}
+      - {x: -14.371344, y: 0, z: 4.1684318}
+      - {x: -14.265209, y: 0, z: 4.096298}
+      - {x: -13.046164, y: 0, z: 3.2677774}
+      - {x: -13.605215, y: 0, z: -7.1470766}
+      - {x: -13.505632, y: 0, z: -5.5682645}
+      - {x: -13.310951, y: 0, z: -2.4817615}
+      - {x: 0.1291771, y: 0, z: -7.078871}
+      - {x: 0.12908173, y: 0, z: -5.3029823}
+      - {x: 0.12881821, y: 0, z: -0.39616966}
+      - {x: 0.050208896, y: 0, z: 1.8922176}
+      - {x: 0.04196167, y: 0, z: 4.250759}
+      isClosed: 0
+      space: 2
+      controlMode: 0
+      autoControlLength: 0.3
+      boundsUpToDate: 0
+      bounds:
+        m_Center: {x: -16.372995, y: 0.7504182, z: -13.2984}
+        m_Extent: {x: 17.706976, y: 0.9601569, z: 17.54916}
+      perAnchorNormalsAngle:
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      globalNormalsAngle: 0
+      flipNormals: 0
+    vertexPathUpToDate: 0
+    vertexPathMaxAngleError: 45
+    vertexPathMinVertexSpacing: 0
+    showTransformTool: 1
+    showPathBounds: 0
+    showPerSegmentBounds: 0
+    displayAnchorPoints: 1
+    displayControlPoints: 1
+    bezierHandleScale: 1
+    globalDisplaySettingsFoldout: 0
+    keepConstantHandleSize: 0
+    showNormalsInVertexMode: 0
+    showBezierPathInVertexMode: 0
+    showDisplayOptions: 0
+    showPathOptions: 1
+    showVertexPathDisplayOptions: 0
+    showVertexPathOptions: 1
+    showNormals: 0
+    showNormalsHelpInfo: 0
+    tabIndex: 0
+  initialized: 1
