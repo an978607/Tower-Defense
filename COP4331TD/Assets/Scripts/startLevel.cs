@@ -5,14 +5,13 @@ using UnityEngine.UI;
 
 public class startLevel : MonoBehaviour {
     public Text lives, balance;
-    public int startingLives, startingBalance;
+    public int startingLives;
 
     [HideInInspector]
-    public int currentLives, currentBalance;
+    public int currentLives;
     // Start is called before the first frame update
     void Start() {
         currentLives = startingLives;
-        currentBalance = startingBalance;
     }
 
     // Update is called once per frame
@@ -22,7 +21,7 @@ public class startLevel : MonoBehaviour {
 
     void updateStats() {
         lives.text = "♥" + currentLives;
-        balance.text = "$" + currentBalance;
+        balance.text = "$" + CurrencyManager.currentBalance;
     }
 
     public void loseLives(int livesLost) {
