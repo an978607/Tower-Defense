@@ -66,6 +66,7 @@
     <Compile Include="Assets\Scripts\Spawner.cs" />
     <Compile Include="Assets\Packages\PathCreator\Examples\Scripts\GeneratePathExample.cs" />
     <Compile Include="Assets\Packages\PathCreator\Examples\Scripts\RoadMeshCreator.cs" />
+    <Compile Include="Assets\Scripts\SettingsMenu.cs" />
     <Compile Include="Assets\Packages\PathCreator\Examples\Scripts\PathSceneTool.cs" />
     <Compile Include="Assets\Scripts\startLevel.cs" />
     <Compile Include="Assets\Packages\PathCreator\Examples\Scripts\PathFollower.cs" />
@@ -76,7 +77,6 @@
     <Compile Include="Assets\Scripts\BM_LevelSelect.cs" />
     <Compile Include="Assets\Scripts\detectAndFire.cs" />
     <Compile Include="Assets\Scripts\detectCollision.cs" />
-    <Compile Include="Assets\Scripts\SettingsMenu.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Resources\TextMesh Pro\Shaders\TMPro.cginc" />
