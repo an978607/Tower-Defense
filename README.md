@@ -77,3 +77,19 @@ With 3D Tower Defense, we aim to solve these problems and provide a more engagin
 - Annemarie Blanco (an978607): Created Prepration/Shop UI with draggable image to map, Updated Components diagram, and  Uploaded Demonstration.
 - Kevin Ramos (kevinrwh): Designed 5 levels, implemented prototypes of 3 of them. Worked on various other tasks, updated trello/requirements. Completed burndown and velocity chart.
 - Shawn Guydeene (NinjaDino13) Enemy spawning system
+
+# Sprint 5
+- [Trello Board (Backlogs and Requirements)](https://trello.com/b/jldNMwlQ/agile-sprint-board)
+- Burndown Chart
+- Velocity Chart
+- [System Architecture](https://github.com/an978607/Tower-Defense/blob/main/architecture.md)
+- [Source Code](https://github.com/an978607/Tower-Defense/tree/main/COP4331TD/Assets/Scripts)
+- [Automated Tests](https://github.com/an978607/Tower-Defense/tree/main/COP4331TD/Assets/Editor)
+- Product Demonstration
+
+## Task Allocation
+- Dalton Kajander (Skirtle)
+- Amber McCullah (ambermcc127): Created and tested currency class and made user's balance visible in all relevant scenes
+- Annemarie Blanco (an978607)
+- Kevin Ramos (kevinrwh)
+- Shawn Guydeene (NinjaDino13)
