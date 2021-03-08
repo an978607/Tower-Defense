@@ -5,13 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class BM_Prep : MonoBehaviour
 {
- public void BackButtonPressed()
+    public GameObject Spawner;
+
+    public void BackButtonPressed()
     {
         SceneManager.LoadScene("LevelSelection");
     }
 
     public void StartButtonPressed()
     {
-        
+        Spawner.GetComponent<Spawn>().spawnWave = true;
     }
 }

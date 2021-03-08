@@ -13,7 +13,7 @@ public class detectCollision : MonoBehaviour {
         if (collision.collider.tag == "Enemy") {
             level.GetComponent<startLevel>().loseLives(1);
             Destroy(collision.gameObject);
-            spawner.GetComponent<Spawner>().destroyEnemy();
+            spawner.GetComponent<Spawn>().destroyEnemy();
         }
     }
 }
