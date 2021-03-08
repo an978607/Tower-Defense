@@ -6,51 +6,52 @@ using UnityEngine.UI;
 public class CurrencyManager : MonoBehaviour
 {
     public Text currencyDisplay;
-    public static int currentBalance;
+    public static int currentMoney;
     public static bool quit = false;
-    public int currentBalanceRef = currentBalance;
 
     // Start is called before the first frame update
     void Start()
     {
-        if (PlayerPrefs.HasKey("CurrentBalance"))
+        if (PlayerPrefs.HasKey("CurrentMoney"))
         {
-            currentBalance = PlayerPrefs.GetInt("CurrentBalance");
+            currentMoney = PlayerPrefs.GetInt("CurrentMoney");
         }
         else
         {
-            currentBalance = 500;
-            PlayerPrefs.SetInt("CurrentBalance", currentBalance);
+            currentMoney = 500;
+            PlayerPrefs.SetInt("CurrentMoney", currentMoney);
         }
 
-        currencyDisplay.text = currentBalance.ToString();
-    }
+         currencyDisplay.text = currentMoney.ToString();
+     }
 
-    // Update is called once per frame
+// Update is called once per frame
     void Update()
     {
     }
 
     public void AddCurrency(int amount)
     {
-        currentBalance += amount;
-        PlayerPrefs.SetInt("CurrentBalance", currentBalance);
+        currentMoney += amount;
+        PlayerPrefs.SetInt("CurrentMoney", currentMoney);
+        // currencyDisplay.text = currentMoney.ToString();
     }
 
     public void quitLevel()
     {
         quit = true;
-        updateBalance();
+        updateCurrency();
     }
 
-    private void updateBalance()
+    private void updateCurrency()
     {
         if (quit != true)
             return;
-        currentBalance -= 100;
-        if (currentBalance <= 0)
+        currentMoney -= 100;
+        if (currentMoney <= 0)
             AddCurrency(500);
-        PlayerPrefs.SetInt("CurrentBalance", currentBalance);
+        PlayerPrefs.SetInt("CurrentMoney", currentMoney);
         quit = false;
     }
 }
+

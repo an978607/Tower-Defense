@@ -2354,7 +2354,9 @@ MonoBehaviour:
   lives: {fileID: 994605568}
   balance: {fileID: 899907657}
   startingLives: 200
+  startingBalance: 650
   currentLives: 0
+  currentBalance: 0
 --- !u!4 &517841014
 Transform:
   m_ObjectHideFlags: 0
@@ -7770,26 +7772,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 9089749342687929555, guid: 8cbc9703dd92ac443ae11cf65375a4b6,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 9089749342687929555, guid: 8cbc9703dd92ac443ae11cf65375a4b6,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 124
-      objectReference: {fileID: 0}
-    - target: {fileID: 9089749342976169492, guid: 8cbc9703dd92ac443ae11cf65375a4b6,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 115
-      objectReference: {fileID: 0}
-    - target: {fileID: 9089749342976169492, guid: 8cbc9703dd92ac443ae11cf65375a4b6,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 15
-      objectReference: {fileID: 0}
     - target: {fileID: 9089749343872004015, guid: 8cbc9703dd92ac443ae11cf65375a4b6,
         type: 3}
       propertyPath: m_Name
@@ -9791,21 +9773,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5418013701388257964, guid: 5d038a6c6acdadf4eaa1da5b91ef7a30,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -314
-      objectReference: {fileID: 0}
-    - target: {fileID: 5418013701388257964, guid: 5d038a6c6acdadf4eaa1da5b91ef7a30,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 170
-      objectReference: {fileID: 0}
-    - target: {fileID: 5418013701388257964, guid: 5d038a6c6acdadf4eaa1da5b91ef7a30,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 30
-      objectReference: {fileID: 0}
     - target: {fileID: 5418013701388257965, guid: 5d038a6c6acdadf4eaa1da5b91ef7a30,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -10025,7 +9992,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currencyDisplay: {fileID: 899907657}
-  currentBalanceRef: 0
 --- !u!1001 &6957391729313993737
 PrefabInstance:
   m_ObjectHideFlags: 0
