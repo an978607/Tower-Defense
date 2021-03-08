@@ -8110,11 +8110,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc4463dde2dec5a4688cd29750e80146, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radius: 1
+  radius: 1.55
   fireRate: 1
   damagePerShot: 0
   showRange: 1
   rangeMaterial: {fileID: 2100000, guid: b572d3cdc5c3efe4884b1f3fe5da1f37, type: 2}
+--- !u!114 &1748621929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1748621926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb9554856f770f34084887417ad17c87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1796085608
 GameObject:
   m_ObjectHideFlags: 0
@@ -8948,7 +8960,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 1515812314}
   totalEnemies: 10
-  spawn: 0
+  spawn: 1
   spawnWave: 0
   totalWaves: 13
   enemySpeed: 20
