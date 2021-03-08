@@ -23,7 +23,7 @@ public class ShootAtEnemy : MonoBehaviour {
             turret.transform.rotation = Quaternion.LookRotation(newDirection);
         }*/
 
-        if (enemies.Count != 0) {
+        if ((int)enemies.Count != 0) {
             GameObject firstEnemy = (GameObject) enemies.Peek();
             Vector3 targetDirection = firstEnemy.transform.position - turret.transform.position;
             float singleStep = 1000 * Time.deltaTime;
