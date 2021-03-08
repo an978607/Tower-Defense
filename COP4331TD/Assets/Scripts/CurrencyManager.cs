@@ -12,7 +12,7 @@ public class CurrencyManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (PlayerPrefs.HasKey("CurrentBalance "))
+        if (PlayerPrefs.HasKey("CurrentBalance"))
         {
             currentBalance = PlayerPrefs.GetInt("CurrentBalance");
         }
