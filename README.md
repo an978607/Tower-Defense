@@ -24,7 +24,7 @@ With 3D Tower Defense, we aim to solve these problems and provide a more engagin
 - Product Demonstration
 
 ## Task Allocation
-- Dalton Kajander (Skirtle)
+- Dalton Kajander (Skirtle) Turret rotation and enemy detection
 - Amber McCullah (ambermcc127): created Trello board, wrote the user stories for the product backlog  
 - Annemarie Blanco (an978607): Breakdown and Velocity charts
 - Kevin Ramos (kevinrwh): updated the requirements section in the Trello board
