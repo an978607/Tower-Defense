@@ -84,12 +84,12 @@ With 3D Tower Defense, we aim to solve these problems and provide a more engagin
 - Velocity Chart
 - [System Architecture](https://github.com/an978607/Tower-Defense/blob/main/architecture.md)
 - [Source Code](https://github.com/an978607/Tower-Defense/tree/main/COP4331TD/Assets/Scripts)
-- [Automated Tests](https://github.com/an978607/Tower-Defense/tree/main/COP4331TD/Assets/Editor)
+- [Automated Tests](https://github.com/an978607/Tower-Defense/tree/main/COP4331TD/Assets/Scripts/Tests)
 - Product Demonstration
 
 ## Task Allocation
 - Dalton Kajander (Skirtle)
 - Amber McCullah (ambermcc127): Created and tested currency class and made user's balance visible in all relevant scenes
-- Annemarie Blanco (an978607)
+- Annemarie Blanco (an978607): Setting screen added and test for each feature 
 - Kevin Ramos (kevinrwh)
 - Shawn Guydeene (NinjaDino13)
