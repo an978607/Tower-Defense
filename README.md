@@ -91,5 +91,5 @@ With 3D Tower Defense, we aim to solve these problems and provide a more engagin
 - Dalton Kajander (Skirtle)
 - Amber McCullah (ambermcc127): Created and tested currency class and made user's balance visible in all relevant scenes
 - Annemarie Blanco (an978607): Setting screen added and test for each feature 
-- Kevin Ramos (kevinrwh)
+- Kevin Ramos (kevinrwh): Found assets for defensive structures/enemies and assigned the scripts for them for the first 3 levels. Created paths for the objects to travel and implemented various other gameplay mechanics. Map design progress for maps 1-3. Updated velocity and burndown charts.
 - Shawn Guydeene (NinjaDino13)
