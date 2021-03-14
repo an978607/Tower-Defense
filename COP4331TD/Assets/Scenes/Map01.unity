@@ -604,6 +604,31 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1743715687}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &147664682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 147664679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9b46f01d6a2144d18f44b0abcc236e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyPrefab: {fileID: 1515812314}
+  spawnPoint: {fileID: 3419713826005054873}
+  level: 0
+  numWaves: 0
+  spawnWave: 1
+  timeBetweenWaves: 5
+  waveNumber: 0
+  totalEnemies: 0
+  enemiesAlive: 0
+  enemiesLeftToSpawn: 0
+  speed: 10
+  numEnemiesForMap: 05000000080000000c0000001300000079000000
+  numWavesForMap: 0100000002000000030000000300000005000000
 --- !u!1001 &155391699
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8104,6 +8129,11 @@ PrefabInstance:
       propertyPath: spawn
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2514786166073036887, guid: df3b422cf46af41d78e73c5b32b7e716,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df3b422cf46af41d78e73c5b32b7e716, type: 3}
 --- !u!1 &1747180822
@@ -8231,7 +8261,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1748621926}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cb9554856f770f34084887417ad17c87, type: 3}
   m_Name: 

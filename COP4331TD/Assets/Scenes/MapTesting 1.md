@@ -36,12 +36,13 @@ Map 4:
 Map 5:
     Description: Lots of loops but lots of enemies too.
     Enemies: 5 Waves split by 5 seconds, some waves have subwaves
-        Wave 1: 15 farmers (sets of 5 split by 1 second)
-        Wave 2: 3 subwaves consisting of 2 smaller subwaves of (1 T, 1 EF, 1 F) split by 1 second.
-        Wave 3: 5 subwaves, each with 1 tractor and 2 EF
+        Wave 1: 15 farmers (sets of 5 split by 1 second) (total: 15)
+        Wave 2: 3 subwaves consisting of 2 smaller subwaves of (1 T, 1 EF, 1 F) split by 1 second.(total: 3*(2*3) = 18)
+        Wave 3: 5 subwaves, each with 1 tractor and 2 EF (total: 5*3 = 15)
             Ex: 1 tractor comes out followed quickly by 2 enraged farmers, wait 1 second, and the next subwave comes.
-        Wave 4: Repeat wave 2, wait 5 seconds, and then launch 10 enraged farmers
-        Wave 5: 5 subwaves, each consisting of 2 FT, 5 F, 2 EF. Each subwave is split by 3 seconds.
+        Wave 4: Repeat wave 2, wait 5 seconds, and then launch 10 enraged farmers (total: 18 + 10 = 28)
+        Wave 5: 5 subwaves, each consisting of 2 FT, 5 F, 2 EF. Each subwave is split by 3 seconds. (total: 5*9 = 45)
+        
         
     
 

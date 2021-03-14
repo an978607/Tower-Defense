@@ -10,10 +10,10 @@ public class detectCollision : MonoBehaviour {
     public GameObject spawner;
 
     void OnCollisionEnter(Collision collision) {
-        if (collision.collider.tag == "Enemy") {
+        if (collision.collider.tag == "Enemy" || collision.collider.tag == "Enemy2" || collision.collider.tag == "Enemy3") {
             level.GetComponent<startLevel>().loseLives(1);
             Destroy(collision.gameObject);
-            spawner.GetComponent<Spawn>().destroyEnemy();
+            spawner.GetComponent<Spawn2>().destroyEnemy();
         }
     }
 }

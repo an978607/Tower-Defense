@@ -71,6 +71,8 @@
      <Compile Include="Assets\Scripts\BM_LevelSelect.cs" />
      <Compile Include="Assets\Scripts\detectAndFire.cs" />
      <Compile Include="Assets\Scripts\detectCollision.cs" />
+     <Compile Include="Assets\Scripts\Spawn2.cs" />
+     <Compile Include="Assets\Scripts\Enemy.cs" />
      <None Include="Assets\Scripts\GameAssembly.asmdef" />
  <Reference Include="Unity.TextMeshPro">
  <HintPath>/Users/kevin/Documents/GitHub/Tower-Defense/COP4331TD/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
