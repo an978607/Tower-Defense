@@ -14,6 +14,6 @@ public class BM_Prep : MonoBehaviour
 
     public void StartButtonPressed()
     {
-        Spawner.GetComponent<Spawn2>().spawnWave = true;
+        Spawner.GetComponent<Spawn>().spawnWave = true;
     }
 }
