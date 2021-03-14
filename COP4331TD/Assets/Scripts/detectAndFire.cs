@@ -6,7 +6,6 @@ using UnityEngine;
 public class detectAndFire : MonoBehaviour {
 
     // will change per tower type
-    public float radius = 1.0f, fireRate, damagePerShot;
     public bool showRange = false;
     public Material rangeMaterial;
 
@@ -18,7 +17,17 @@ public class detectAndFire : MonoBehaviour {
     private Rigidbody rigidBody;
     private ShootAtEnemy detector;
     private float scale = 12.5f;
+
+    // gets this information from TowerStats class for the tower
+    private float radius, fireRate, damagePerShot;
     void Start() {
+        // get stats from TowerStats class
+        TowerStats stats = this.GetComponent<TowerStats>();
+        radius = stats.towerRange;
+        fireRate = stats.fireRate;
+        damagePerShot = stats.damagePerShot;
+
+
         // create and add the sphere to the tower
         sphere = GameObject.CreatePrimitive(PrimitiveType.Sphere);
         sphere.transform.SetParent(transform);
