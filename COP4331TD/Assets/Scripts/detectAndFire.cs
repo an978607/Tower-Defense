@@ -5,18 +5,21 @@ using UnityEngine;
 
 public class detectAndFire : MonoBehaviour {
 
+    // will change per tower type
     public float radius = 1.0f, fireRate, damagePerShot;
     public bool showRange = false;
     public Material rangeMaterial;
 
-    private GameObject sphere;
-    private float scaledRadius;
+
+    private GameObject sphere; // radius/range of tower
+    private float scaledRadius; // how much to scale the radius
     private Renderer sphereRenderer;
     private MeshRenderer meshRenderer;
     private Rigidbody rigidBody;
     private ShootAtEnemy detector;
     private float scale = 12.5f;
     void Start() {
+        // create and add the sphere to the tower
         sphere = GameObject.CreatePrimitive(PrimitiveType.Sphere);
         sphere.transform.SetParent(transform);
         sphere.transform.localPosition = new Vector3(0, 0, 0);
@@ -25,19 +28,25 @@ public class detectAndFire : MonoBehaviour {
         meshRenderer = sphere.GetComponent<MeshRenderer>();
         rigidBody = sphere.AddComponent<Rigidbody>();
 
+        // locks the sphere to where the tower is
         rigidBody.constraints = RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezeRotationZ |
             RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezeRotationX |
             RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezeRotationY;
         sphere.AddComponent<ShootAtEnemy>();
 
+        // sets the material of the range
+        // usually, a semi-transparent material to see through but also see the
+        // range itself
         meshRenderer.material = rangeMaterial;
     }
 
     // Update is called once per frame
     void Update() {
+        // radius scaling
         scaledRadius = radius * scale;
         sphere.transform.localScale = new Vector3(scaledRadius, scaledRadius, scaledRadius);
 
+        // toggleable range showing
         if (showRange) {
             sphereRenderer.enabled = true;
         }
