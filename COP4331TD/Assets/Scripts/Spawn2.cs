@@ -72,6 +72,7 @@ public class Spawn2 : MonoBehaviour
     {
         if(enemiesLeftToSpawn <= 0 && enemiesAlive <= 0){
             Debug.Log("You won this level!");
+            SceneManager.LoadScene("LevelSelection");
             Application.Quit(); // temporary for now
         }
         if(enemiesLeftToSpawn > 0 && countdown <= 0f)
