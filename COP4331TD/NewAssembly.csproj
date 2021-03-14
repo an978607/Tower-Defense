@@ -51,6 +51,7 @@
      <Compile Include="Assets\Scripts\CurrencyManager.cs" />
      <Compile Include="Assets\Scripts\ItemDrop.cs" />
      <Compile Include="Assets\Scripts\Node.cs" />
+     <Compile Include="Assets\Scripts\TowerStats.cs" />
      <Compile Include="Assets\Scripts\ItemDrag.cs" />
      <Compile Include="Assets\Scripts\BM_LevelSelect.cs" />
      <Compile Include="Assets\Scripts\detectAndFire.cs" />
