@@ -13,8 +13,8 @@ namespace Tests
         public void CurrencyShouldNotFallBelowZero()
         {
             GameObject go = new GameObject();
-            //var playerBalance = go.AddComponent<CurrencyManager>().currentBalanceRef;
-            //Assert.GreaterOrEqual(playerBalance, 0);
+            var playerBalance = go.AddComponent<CurrencyManager>().currentBalanceRef;
+            Assert.GreaterOrEqual(playerBalance, 0);
         }
     }
 }

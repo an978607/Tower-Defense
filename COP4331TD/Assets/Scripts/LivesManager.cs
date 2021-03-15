@@ -8,6 +8,7 @@ public class LivesManager : MonoBehaviour
     public Text livesDisplay;
     static public int currentLives;
     static public bool quit = false;
+    public int currentLivesRef = currentLives;
 
     // Start is called before the first frame update
     void Start()
