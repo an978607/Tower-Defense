@@ -8,7 +8,7 @@ public class Spawn : MonoBehaviour {
     public GameObject Enemy;
     public GameObject Enemy2; // Tractor
     public GameObject Enemy3; // Enraged farmer
-    
+
     // How many enemys to create and how many are left to create
     public int totalEnemies = 0;
     private int numEnemies = 0;
@@ -24,7 +24,7 @@ public class Spawn : MonoBehaviour {
     private float timeSinceLastSpawn = 0.0f;
     [Range(0.0f,2.0f)]
     public float timeToWait;
-    
+
     // called every frame
     void Update() {
         if (spawn)
@@ -35,7 +35,7 @@ public class Spawn : MonoBehaviour {
             {
                 Debug.Log("map is 01");
                 this.level = 1;
-                
+
             } else if(name.Equals("Map02")){
                 Debug.Log("map is 02");
                 this.level = 2;
@@ -48,7 +48,7 @@ public class Spawn : MonoBehaviour {
             } else{
                 Debug.Log("Map is not 1-5");
             }
-            
+
             spawnForLevel(level);
         }
     }
@@ -56,12 +56,12 @@ public class Spawn : MonoBehaviour {
     private void spawnEnemy()
     {
         GameObject enemy = (GameObject) Instantiate(Enemy, gameObject.transform.position, Quaternion.identity);
-        enemy.GetComponent<FollowPath>().speed = enemySpeed;
+        enemy.GetComponent<FollowPath>().speed = enemy.GetComponent<EnemyStats>().speed;
         enemy.GetComponent<FollowPath>().isCopy = true;
         // Increase the number of spawned enemies
         numEnemies++;
     }
-    
+
 //    IEnumerator spawnEnemyCoroutine(GameObject EnemyType){
 //        GameObject enemy = (GameObject) Instantiate(EnemyType, gameObject.transform.position, Quaternion.identity);
 //        enemy.GetComponent<FollowPath>().speed = enemySpeed;
@@ -70,7 +70,7 @@ public class Spawn : MonoBehaviour {
 //        numEnemies++;
 //        yield return new WaitForSeconds(1.0f);
 //    }
-    
+
     public void destroyEnemy()
     {
         numEnemies--;
@@ -112,7 +112,7 @@ public class Spawn : MonoBehaviour {
                     timeSinceLastSpawn += Time.deltaTime;
                 }
                 break;
-            case (2): 
+            case (2):
                 totalEnemies = 8;
                 timeToWait = 1.0f;
                 // spawn a wave after time period has passed
