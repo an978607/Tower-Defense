@@ -101,11 +101,11 @@ With 3D Tower Defense, we aim to solve these problems and provide a more engagin
 - [System Architecture](https://github.com/an978607/Tower-Defense/blob/main/architecture.md)
 - [Source Code](https://github.com/an978607/Tower-Defense/tree/main/COP4331TD/Assets/Scripts)
 - [Automated Tests](https://github.com/an978607/Tower-Defense/tree/main/COP4331TD/Assets/Scripts/Tests)
-- Product Demonstration
+- Product Demonstration(https://youtu.be/wzC1BfFYNPs)
 
 ## Task Allocation
 - Dalton Kajander (Skirtle)
 - Amber McCullah (ambermcc127) 
-- Annemarie Blanco (an978607)
+- Annemarie Blanco (an978607)Shop can Spawn enemies where user selects, added a pause UI. 
 - Kevin Ramos (kevinrwh: Added final levels, updated the spawning script to be able to send out different enemies.
 - Shawn Guydeene (NinjaDino13)
