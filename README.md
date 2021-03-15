@@ -93,3 +93,19 @@ With 3D Tower Defense, we aim to solve these problems and provide a more engagin
 - Annemarie Blanco (an978607): Setting screen added and test for each feature 
 - Kevin Ramos (kevinrwh): Found assets for defensive structures/enemies and assigned the scripts for them for the first 3 levels. Created paths for the objects to travel and implemented various other gameplay mechanics. Map design progress for maps 1-3. Updated velocity and burndown charts. Recorded demonstration video.
 - Shawn Guydeene (NinjaDino13)
+
+# Sprint 6
+- [Trello Board (Backlogs and Requirements)](https://trello.com/b/jldNMwlQ/agile-sprint-board)
+- [Burndown Chart](https://user-images.githubusercontent.com/78228038/111098609-3c2a9680-851a-11eb-9c90-c4897b188641.png)
+- [Velocity Chart](https://user-images.githubusercontent.com/78228038/111098604-3af96980-851a-11eb-8acb-e68ad178e143.png)
+- [System Architecture](https://github.com/an978607/Tower-Defense/blob/main/architecture.md)
+- [Source Code](https://github.com/an978607/Tower-Defense/tree/main/COP4331TD/Assets/Scripts)
+- [Automated Tests](https://github.com/an978607/Tower-Defense/tree/main/COP4331TD/Assets/Scripts/Tests)
+- Product Demonstration
+
+## Task Allocation
+- Dalton Kajander (Skirtle)
+- Amber McCullah (ambermcc127) 
+- Annemarie Blanco (an978607)
+- Kevin Ramos (kevinrwh: Added final levels, updated the spawning script to be able to send out different enemies.
+- Shawn Guydeene (NinjaDino13)
