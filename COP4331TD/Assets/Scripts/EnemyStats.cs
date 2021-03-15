@@ -22,7 +22,11 @@ public class EnemyStats : MonoBehaviour {
     }
 
     // call from another script to deal damage
-    void takeDamage(float dmg) {
+    public bool takeDamage(float dmg) {
         currentHealth -= dmg;
+        if (currentHealth <= 0) {
+            return true;
+        }
+        else return false;
     }
 }

@@ -5,17 +5,44 @@ using UnityEngine;
 public class ShootAtEnemy : MonoBehaviour {
 
     private GameObject turret;
+    private TowerStats towerStats;
+    private float deltaTime;
+    private float DPS, rateOfFire;
     // using a queue because the first enemy in is the first enemy that should
     // be fired at, and then the next enemy, and so on
     // firing at enemies should be in order of which was in the range first
     Queue enemies;
 
     void Start() {
-        turret = transform.parent.gameObject;
+        //turret = transform.parent.gameObject;
+        turret = this.transform.gameObject;
         enemies = new Queue();
+        towerStats = GetComponent<TowerStats>();
+        deltaTime = 0.0f;
+
+        //rateOfFire = towerStats.fireRate;
+        //DPS = towerStats.damagePerShot;
+
+        rateOfFire = 1.0f;
+        DPS = 25.0f;
+
+        print(rateOfFire + " " + DPS);
+
     }
 
     void Update() {
+        deltaTime += Time.deltaTime;
+
+        print(deltaTime + " " + rateOfFire + " " + Time.deltaTime);
+
+        if (deltaTime >= rateOfFire) {
+            fire();
+            deltaTime = 0.0f;
+        }
+
+        if (enemies == null) {
+            return;
+        }
 
         if ((int)enemies.Count != 0) {
             // turn towards the first enemy in the queue
@@ -34,7 +61,6 @@ public class ShootAtEnemy : MonoBehaviour {
         // shoot at that enemy
         if (collision.collider.tag == "Enemy") {
             enemies.Enqueue(collision.gameObject);
-            print("enqueye");
         }
     }
 
@@ -45,5 +71,20 @@ public class ShootAtEnemy : MonoBehaviour {
         if (collision.collider.tag == "Enemy") {
             enemies.Dequeue();
         }
+     }
+
+     void fire() {
+         //print("Fire activated");
+         if (enemies == null) {
+             return;
+         }
+         else if ((int) enemies.Count <= 0) {
+             return;
+         }
+         GameObject enemy = (GameObject) enemies.Peek();
+         bool enemyIsDead = enemy.GetComponent<EnemyStats>().takeDamage(DPS);
+         if (enemyIsDead) {
+             enemies.Dequeue();
+         }
      }
 }

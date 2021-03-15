@@ -18,14 +18,15 @@ public class detectAndFire : MonoBehaviour {
     private ShootAtEnemy detector;
     private float scale = 12.5f;
 
+    public TowerStats towerStats;
+
     // gets this information from TowerStats class for the tower
     private float radius, fireRate, damagePerShot;
     void Start() {
         // get stats from TowerStats class
-        TowerStats stats = this.GetComponent<TowerStats>();
-        radius = stats.towerRange;
-        fireRate = stats.fireRate;
-        damagePerShot = stats.damagePerShot;
+        radius = towerStats.towerRange;
+        fireRate = towerStats.fireRate;
+        damagePerShot = towerStats.damagePerShot;
 
 
         // create and add the sphere to the tower
@@ -52,7 +53,7 @@ public class detectAndFire : MonoBehaviour {
     // Update is called once per frame
     void Update() {
         // radius scaling
-        scaledRadius = radius * scale;
+        scaledRadius = towerStats.towerRange * scale;
         sphere.transform.localScale = new Vector3(scaledRadius, scaledRadius, scaledRadius);
 
         // toggleable range showing
