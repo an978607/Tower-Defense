@@ -55,9 +55,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Tests\LivesTest.cs" />
      <Compile Include="Assets\Scripts\Tests\CurrencyTest.cs" />
      <Compile Include="Assets\Scripts\Tests\settingsTester.cs" />
-     <Compile Include="Assets\Scripts\Tests\LivesTest.cs" />
      <None Include="Assets\Scripts\Tests\Tests.asmdef" />
  <Reference Include="UnityEngine.TestRunner">
  <HintPath>C:/Users/amber/OneDrive/Documents/GitHub/Tower-Defense/COP4331TD/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>

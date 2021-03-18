@@ -506,6 +506,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currencyDisplay: {fileID: 2105345650}
+  currentBalanceRef: 0
 --- !u!114 &735346031
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -519,6 +520,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   livesDisplay: {fileID: 1354739735}
+  currentLivesRef: 0
 --- !u!1 &828006199
 GameObject:
   m_ObjectHideFlags: 0
@@ -1139,6 +1141,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0b899bdbd73460499b36895fe8efce0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lockedLevels:
+  - {fileID: 1012055034}
+  - {fileID: 297343026}
+  - {fileID: 69069506}
+  - {fileID: 1078982507}
+  - {fileID: 1770506374}
 --- !u!4 &1668838939
 Transform:
   m_ObjectHideFlags: 0

@@ -9,6 +9,7 @@ public class LivesManager : MonoBehaviour
     static public int currentLives;
     static public bool quit = false;
     public int currentLivesRef = currentLives;
+    float timeLeft = 30f;
 
     // Start is called before the first frame update
     void Start()
@@ -29,7 +30,17 @@ public class LivesManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (currentLives < 5)
+        {
+            timeLeft -= Time.deltaTime;
+            if (timeLeft < 0)
+            {
+                currentLives += 1;
+                PlayerPrefs.SetInt("CurrentLives", currentLives);
+                livesDisplay.text = currentLives.ToString();
+            }
+        }
+
     }
 
     public void quitLevel()

@@ -6,7 +6,26 @@ using UnityEngine.SceneManagement;
 
 public class BM_LevelSelect : MonoBehaviour
 {
- 
+    public Button[] lockedLevels = new Button[5];
+    int levelPassed;
+
+    void Start()
+    {
+        if (PlayerPrefs.HasKey("LevelPassed"))
+        {
+            levelPassed = PlayerPrefs.GetInt("LevelPassed");
+        }
+        else
+        {
+            levelPassed = 0;
+            PlayerPrefs.SetInt("LevelPassed", levelPassed);
+        }
+
+        for (int i = levelPassed + 1; i < lockedLevels.Length; i++)
+            lockedLevels[i].interactable = false;
+    }
+
+
     public void levelOneButtonPressed()
     {
         SceneManager.LoadScene("Map01");
