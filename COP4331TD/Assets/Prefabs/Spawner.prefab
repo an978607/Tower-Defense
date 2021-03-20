@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2514786166073036886}
   - component: {fileID: 2514786166073036887}
+  - component: {fileID: 156103136}
   m_Layer: 0
   m_Name: Spawner
   m_TagString: Untagged
@@ -38,15 +39,46 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2514786166073036884}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 131f02373eda8ad4381c1b2fc0c82c61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Enemy: {fileID: 0}
-  totalEnemies: 10
+  Enemy2: {fileID: 0}
+  Enemy3: {fileID: 0}
+  totalEnemies: 20
   spawn: 0
   spawnWave: 0
   totalWaves: 13
-  enemySpeed: 20
+  enemySpeed: 50
+  level: 0
   timeToWait: 0.12
+--- !u!114 &156103136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2514786166073036884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9b46f01d6a2144d18f44b0abcc236e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Enemy: {fileID: 0}
+  Enemy2: {fileID: 0}
+  Enemy3: {fileID: 0}
+  spawnPoint: {fileID: 0}
+  level: 0
+  numWaves: 0
+  spawnWave: 0
+  timeBetweenWaves: 5
+  waveNumber: -1
+  totalEnemies: 0
+  enemiesAlive: 0
+  enemiesLeftToSpawn: 0
+  speed: 10
+  numEnemiesForMap: 05000000080000000c0000001300000079000000
+  numWavesForMap: 0100000002000000030000000300000005000000
+  enemyArray: 

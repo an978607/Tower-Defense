@@ -858,18 +858,18 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 147664679}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f9b46f01d6a2144d18f44b0abcc236e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Enemy: {fileID: 0}
-  Enemy2: {fileID: 0}
-  Enemy3: {fileID: 0}
+  Enemy: {fileID: 1088211555}
+  Enemy2: {fileID: 418486363}
+  Enemy3: {fileID: 658790598}
   spawnPoint: {fileID: 3419713826005054873}
   level: 0
   numWaves: 0
-  spawnWave: 1
+  spawnWave: 0
   timeBetweenWaves: 5
   waveNumber: 0
   totalEnemies: 0
@@ -2257,6 +2257,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1968275852670227351, guid: a5c341cd22e75454d9bf5053ec3fe566,
     type: 3}
   m_PrefabInstance: {fileID: 418403495}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &418486363 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6270450741221684605, guid: 7c636a934e053114d97cf32c9d00dd58,
+    type: 3}
+  m_PrefabInstance: {fileID: 2157085997416922484}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &431076432
 GameObject:
@@ -4220,6 +4226,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1968275852670227351, guid: a5c341cd22e75454d9bf5053ec3fe566,
     type: 3}
   m_PrefabInstance: {fileID: 645713544}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &658790598 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5601369181920419317, guid: 75b401458560dab459c8cbd6c0588149,
+    type: 3}
+  m_PrefabInstance: {fileID: 1862735505239250391}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &684309500
 PrefabInstance:
@@ -9557,7 +9569,7 @@ PrefabInstance:
     - target: {fileID: 2514786166073036887, guid: df3b422cf46af41d78e73c5b32b7e716,
         type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2514786166073036887, guid: df3b422cf46af41d78e73c5b32b7e716,
         type: 3}

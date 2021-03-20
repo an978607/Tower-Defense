@@ -33,11 +33,11 @@ public class Spawn : MonoBehaviour {
             string name = current.name;
             if(name.Equals("Map01"))
             {
-                //Debug.Log("map is 01");
+                Debug.Log("map is 01");
                 this.level = 1;
 
             } else if(name.Equals("Map02")){
-                //Debug.Log("map is 02");
+                Debug.Log("map is 02");
                 this.level = 2;
             } else if(name.Equals("Map03")){
                 this.level = 3;

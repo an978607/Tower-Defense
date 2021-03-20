@@ -5,19 +5,20 @@ using UnityEngine.SceneManagement;
 
 public class Spawn2 : MonoBehaviour
 {
-    public GameObject Enemy;
-    public GameObject Enemy2;
-    public GameObject Enemy3;
+    public GameObject Enemy; // basic
+    public GameObject Enemy2; // tractor
+    public GameObject Enemy3; // enraged
 
     public Transform spawnPoint;
 
     public int level = 0;
 
     public int numWaves = 0;
-    public bool spawnWave = true;
+    public bool spawnWave = false;
     public float timeBetweenWaves = 5f;
-    public int waveNumber = 0;
+    public int waveNumber = -1;
     private float countdown = 2f;
+
 
     public int totalEnemies = 0;
     public int enemiesAlive = 0;
@@ -28,8 +29,8 @@ public class Spawn2 : MonoBehaviour
     public int[] numEnemiesForMap = new int[]{5, 8, 12, 19, 121}; 
     public int[] numWavesForMap = new int[]{1, 2, 3, 3, 5};
 
-    // helps choose the next enemy to span
-    //public int[][] waveEnemies = new[5][]{{1, 1, 1, 1, 1}, {}}
+    public int[] enemyArray;
+    public int[] enemySubWave;
 
     void Start()
     {
@@ -70,10 +71,11 @@ public class Spawn2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(spawnWave){
         if(enemiesLeftToSpawn <= 0 && enemiesAlive <= 0){
             Debug.Log("You won this level!");
             SceneManager.LoadScene("LevelSelection");
-            Application.Quit(); // temporary for now
+            //Application.Quit(); // temporary for now
         }
         if(enemiesLeftToSpawn > 0 && countdown <= 0f)
         {
@@ -82,6 +84,7 @@ public class Spawn2 : MonoBehaviour
         }
 
         countdown -= Time.deltaTime;
+        }
     }
 
     // A coroutine that spawns the wave for the level
@@ -99,6 +102,7 @@ public class Spawn2 : MonoBehaviour
 //        }
         switch(level)
         {
+            // 5 farmers
             case(1):
                 for(int i = 0; i < totalEnemies; i++){
                     SpawnEnemy(1);
@@ -108,15 +112,76 @@ public class Spawn2 : MonoBehaviour
                     yield return new WaitForSeconds(1.0f);
                 }
                 break;
-            // must update so that i can spawn only the number of enemies per wave
+            
+            // 2 subwaves of two tractors and 2 farmers
             case(2):
                 for(int i = 0; i < 4; i++){
-                    SpawnEnemy(2); // hard coded enemy 2
+                
+                    if(i == 0 || i == 1){
+                    SpawnEnemy(1); // two farmers
+                    } else if(i == 2){
+                        SpawnEnemy(3); // 1 enraged farmer
+                    } else{
+                        SpawnEnemy(2); // 1 tractor
+                    }
+
                     enemiesLeftToSpawn--;
                     enemiesAlive++;
+                    
                     Debug.Log("enemies left to spawn: " + enemiesLeftToSpawn + " enemies alive: " + enemiesAlive);
                     yield return new WaitForSeconds(1.0f);
+                    
                 }
+                break;
+                
+            // 3 waves (2FT, 1 EF), (1 FT, 2 EF), (5F, 1 EF)
+            case(3):
+                
+                // establish waves in 2D array of enemies
+                enemyArray = new int[]{2, 2, 3, 2, 3, 3, 1, 1, 1, 1, 1, 3};
+                if(waveNumber == 0){
+                Debug.Log("wave" + waveNumber);
+                    for(int i = 0; i < 3; i++){
+                        SpawnEnemy(enemyArray[i]);
+                        enemiesLeftToSpawn--;
+                        enemiesAlive++;
+                    
+                        Debug.Log("enemies left to spawn: " + enemiesLeftToSpawn + " enemies alive: " + enemiesAlive);
+                        yield return new WaitForSeconds(1.0f);
+                    }
+                }  else if(waveNumber == 1)
+                {
+                Debug.Log("wave" + waveNumber);
+                    for(int i = 3; i < 6; i++){
+                        SpawnEnemy(enemyArray[i]);
+                        enemiesLeftToSpawn--;
+                        enemiesAlive++;
+                    
+                        Debug.Log("enemies left to spawn: " + enemiesLeftToSpawn + " enemies alive: " + enemiesAlive);
+                        yield return new WaitForSeconds(1.0f);
+                    }
+                } else if(waveNumber == 2){
+                   Debug.Log("wave" + waveNumber);
+                    for(int i = 6; i < 12; i++){
+                        SpawnEnemy(enemyArray[i]);
+                        enemiesLeftToSpawn--;
+                        enemiesAlive++;
+                    
+                        Debug.Log("enemies left to spawn: " + enemiesLeftToSpawn + " enemies alive: " + enemiesAlive);
+                        yield return new WaitForSeconds(1.0f);
+                    }
+                } else{
+                    Debug.Log("Shouldn't spawn anything for this wave.");
+                }
+                
+                yield return new WaitForSeconds(2.0f);
+                break;
+                
+            case(4):
+                // TO DO
+                break;
+            case(5):
+                // TO DO
                 break;
         }
     }
