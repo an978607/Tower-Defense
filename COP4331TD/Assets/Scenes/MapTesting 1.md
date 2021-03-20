@@ -28,10 +28,10 @@ Map 3:
 Map 4:
     Description: Less looping, more fast-paced
     Enemies: 3 waves split by 2 seconds
-        Wave 1: 2 FT, 1 EF
-        Wave 2: 3 EF, 1 FT, 3 F
+        Wave 1: 2 FT, 1 EF (3)
+        Wave 2: 3 EF, 1 FT, 3 F (7)
         Wave 3: 3 subwaves split by 1 seconds
-            Each subwave consists of 1 FT, 1 F, 1 EF
+            Each subwave consists of 1 FT, 1 F, 1 EF (9)
         
 Map 5:
     Description: Lots of loops but lots of enemies too.
