@@ -861,6 +861,14 @@ PrefabInstance:
       propertyPath: Enemy3
       value: 
       objectReference: {fileID: 1758509093}
+    - target: {fileID: 156103136, guid: df3b422cf46af41d78e73c5b32b7e716, type: 3}
+      propertyPath: manager
+      value: 
+      objectReference: {fileID: 272160852}
+    - target: {fileID: 156103136, guid: df3b422cf46af41d78e73c5b32b7e716, type: 3}
+      propertyPath: spawnPoint
+      value: 
+      objectReference: {fileID: 156103138}
     - target: {fileID: 2514786166073036884, guid: df3b422cf46af41d78e73c5b32b7e716,
         type: 3}
       propertyPath: m_Name
@@ -931,6 +939,12 @@ PrefabInstance:
 --- !u!1 &156103135 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2514786166073036884, guid: df3b422cf46af41d78e73c5b32b7e716,
+    type: 3}
+  m_PrefabInstance: {fileID: 156103134}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &156103138 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2514786166073036886, guid: df3b422cf46af41d78e73c5b32b7e716,
     type: 3}
   m_PrefabInstance: {fileID: 156103134}
   m_PrefabAsset: {fileID: 0}
@@ -1852,6 +1866,7 @@ MonoBehaviour:
     type: 3}
   weapon3Prefab: {fileID: -927199367670048503, guid: 21237f0ad0d291942b925e631d7f8f6b,
     type: 3}
+  FundsDialoge: {fileID: 0}
 --- !u!1001 &397756664
 PrefabInstance:
   m_ObjectHideFlags: 0

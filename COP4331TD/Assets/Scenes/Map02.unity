@@ -1468,6 +1468,11 @@ PrefabInstance:
       propertyPath: pathCreator
       value: 
       objectReference: {fileID: 1907374930}
+    - target: {fileID: 4911833543958780597, guid: 6cc8d792d2b364b829a5c92f7832f8db,
+        type: 3}
+      propertyPath: pathCreator
+      value: 
+      objectReference: {fileID: 1907374930}
     - target: {fileID: 4911833545476081321, guid: 6cc8d792d2b364b829a5c92f7832f8db,
         type: 3}
       propertyPath: m_Name
@@ -1527,6 +1532,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4911833545830415794, guid: 6cc8d792d2b364b829a5c92f7832f8db,
+        type: 3}
+      propertyPath: pathCreator
+      value: 
+      objectReference: {fileID: 1907374930}
+    - target: {fileID: 7389551072742213377, guid: 6cc8d792d2b364b829a5c92f7832f8db,
+        type: 3}
+      propertyPath: m_Height
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7389551072742213377, guid: 6cc8d792d2b364b829a5c92f7832f8db,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6cc8d792d2b364b829a5c92f7832f8db, type: 3}
@@ -2069,6 +2089,7 @@ MonoBehaviour:
   weapon2Prefab: {fileID: 919132149155446097, guid: 82595ee8729ba4f18b1d0ab7754c468a,
     type: 3}
   weapon3Prefab: {fileID: 0}
+  FundsDialoge: {fileID: 0}
 --- !u!1001 &395210718
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5652,6 +5673,18 @@ PrefabInstance:
       propertyPath: Enemy3
       value: 
       objectReference: {fileID: 284621794}
+    - target: {fileID: 156103136, guid: df3b422cf46af41d78e73c5b32b7e716, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 156103136, guid: df3b422cf46af41d78e73c5b32b7e716, type: 3}
+      propertyPath: manager
+      value: 
+      objectReference: {fileID: 673312397}
+    - target: {fileID: 156103136, guid: df3b422cf46af41d78e73c5b32b7e716, type: 3}
+      propertyPath: spawnPoint
+      value: 
+      objectReference: {fileID: 1146802968}
     - target: {fileID: 2514786166073036884, guid: df3b422cf46af41d78e73c5b32b7e716,
         type: 3}
       propertyPath: m_Name
@@ -5747,15 +5780,16 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1146802964}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f9b46f01d6a2144d18f44b0abcc236e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Enemy: {fileID: 0}
-  Enemy2: {fileID: 0}
-  Enemy3: {fileID: 0}
-  spawnPoint: {fileID: 0}
+  Enemy: {fileID: 284621796}
+  Enemy2: {fileID: 284621795}
+  Enemy3: {fileID: 284621794}
+  manager: {fileID: 673312397}
+  spawnPoint: {fileID: 1146802968}
   level: 0
   numWaves: 0
   spawnWave: 0
@@ -5768,7 +5802,12 @@ MonoBehaviour:
   numEnemiesForMap: 05000000080000000c0000001300000079000000
   numWavesForMap: 0100000002000000030000000300000005000000
   enemyArray: 
-  subWave: -1
+--- !u!4 &1146802968 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2514786166073036886, guid: df3b422cf46af41d78e73c5b32b7e716,
+    type: 3}
+  m_PrefabInstance: {fileID: 1146802963}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1161613256
 PrefabInstance:
   m_ObjectHideFlags: 0
