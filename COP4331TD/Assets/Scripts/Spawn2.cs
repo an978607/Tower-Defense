@@ -8,6 +8,7 @@ public class Spawn2 : MonoBehaviour
     public GameObject Enemy; // basic
     public GameObject Enemy2; // tractor
     public GameObject Enemy3; // enraged
+    public GameObject manager;
 
     public Transform spawnPoint;
 
@@ -30,6 +31,8 @@ public class Spawn2 : MonoBehaviour
     public int[] numWavesForMap = new int[]{1, 2, 3, 3, 5};
 
     public int[] enemyArray;
+    
+    private int lives;
     //public int[] enemySubWave;
 
 
@@ -77,23 +80,29 @@ public class Spawn2 : MonoBehaviour
     void Update()
     {
         if(spawnWave){
+            // all enemies spawned and made it to end
+            if(enemiesLeftToSpawn <= 0 && enemiesAlive <= 0 && manager.GetComponent<startLevel>().currentLives <= 0){
+                Debug.Log("You lost this level!");
+                SceneManager.LoadScene("LevelSelection");
+                //Application.Quit(); // temporary for now
+            }
 
-        // all enemies spawned and have been defeated.
-        if(enemiesLeftToSpawn <= 0 && enemiesAlive <= 0){
-            Debug.Log("You won this level!");
-            SceneManager.LoadScene("LevelSelection");
-            //Application.Quit(); // temporary for now
-        }
+            // all enemies spawned and have been defeated.
+            else if(enemiesLeftToSpawn <= 0 && enemiesAlive <= 0){
+                Debug.Log("You won this level!");
+                SceneManager.LoadScene("LevelSelection");
+                //Application.Quit(); // temporary for now
+            }
 
-        // more enemies to spawn
-        if(enemiesLeftToSpawn > 0 && countdown <= 0f)
-        {
-            StartCoroutine(SpawnWave());
-            countdown = timeBetweenWaves;
-        }
+            // more enemies to spawn
+            if(enemiesLeftToSpawn > 0 && countdown <= 0f)
+            {
+                StartCoroutine(SpawnWave());
+                countdown = timeBetweenWaves;
+            }
 
-        // pause between waves.
-        countdown -= Time.deltaTime;
+            // pause between waves.
+            countdown -= Time.deltaTime;
         }
     }
 
