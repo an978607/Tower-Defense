@@ -7,7 +7,9 @@ public class ShootAtEnemy : MonoBehaviour {
     private GameObject turret;
     private TowerStats towerStats;
     private float deltaTime;
-    private float DPS, rateOfFire;
+    private float DPS = 25.0f, rateOfFire = 0.25f;
+    private string towerType = "basic";
+
     // using a queue because the first enemy in is the first enemy that should
     // be fired at, and then the next enemy, and so on
     // firing at enemies should be in order of which was in the range first
@@ -15,29 +17,27 @@ public class ShootAtEnemy : MonoBehaviour {
 
     void Start() {
         //turret = transform.parent.gameObject;
-        turret = this.transform.gameObject;
+        turret = this.transform.parent.gameObject;
         enemies = new Queue();
         towerStats = GetComponent<TowerStats>();
         deltaTime = 0.0f;
 
         //rateOfFire = towerStats.fireRate;
         //DPS = towerStats.damagePerShot;
-
-        rateOfFire = 1.0f;
-        DPS = 25.0f;
-
-        print(rateOfFire + " " + DPS);
+        //print(rateOfFire + " " + DPS);
 
     }
 
     void Update() {
+
+        // update how long its been since last frame
         deltaTime += Time.deltaTime;
-
-        print(deltaTime + " " + rateOfFire + " " + Time.deltaTime);
-
+        // when the amount of surpassed time is greater than the time it takes
+        // between shots, able to shoot again
         if (deltaTime >= rateOfFire) {
-            fire();
-            deltaTime = 0.0f;
+            if(fire()) {
+                deltaTime = 0.0f;
+        }
         }
 
         if (enemies == null) {
@@ -59,7 +59,7 @@ public class ShootAtEnemy : MonoBehaviour {
         // if the collision with the range sphere has the Enemy tag, it is an enemy
         // then, we enqueue them so we can fire at them when its time to
         // shoot at that enemy
-        if (collision.collider.tag == "Enemy") {
+        if (collision.collider.tag.ToLower().Contains("enemy")) {
             enemies.Enqueue(collision.gameObject);
         }
     }
@@ -68,23 +68,32 @@ public class ShootAtEnemy : MonoBehaviour {
         // an enemy not in range (i.e. leaves the range) cannot be fired at
         // in this case, dequeue
         // could cause weird issues later on. will need intensive testing
-        if (collision.collider.tag == "Enemy") {
+        if (collision.collider.tag.ToLower().Contains("enemy")) {
             enemies.Dequeue();
         }
      }
 
-     void fire() {
-         //print("Fire activated");
+     // attempts to fire at the first enemy in the queue
+     // if fails (such as if queue is empty or there is no queue), return false
+     // otherwise, return true
+     bool fire() {
          if (enemies == null) {
-             return;
+             return false;
          }
          else if ((int) enemies.Count <= 0) {
-             return;
+             return false;
          }
+
          GameObject enemy = (GameObject) enemies.Peek();
-         bool enemyIsDead = enemy.GetComponent<EnemyStats>().takeDamage(DPS);
+
+         EnemyStats enemyStats = enemy.GetComponent<EnemyStats>();
+         if (enemyStats == null) print("enemyStats is null");
+
+         print("Firing at enemy");
+         bool enemyIsDead = ( (EnemyStats) enemy.GetComponent<EnemyStats>()).takeDamage(DPS, towerType);
          if (enemyIsDead) {
              enemies.Dequeue();
          }
+         return true;
      }
 }
