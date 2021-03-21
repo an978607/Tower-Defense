@@ -46,4 +46,6 @@ MonoBehaviour:
   lives: {fileID: 0}
   balance: {fileID: 0}
   startingLives: 200
+  startingBalance: 650
   currentLives: 0
+  currentBalance: 0

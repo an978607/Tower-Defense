@@ -53,7 +53,6 @@ public class Spawn2 : MonoBehaviour
             totalEnemies = numEnemiesForMap[1];
             numWaves = numWavesForMap[1];
             this.level = 2;
-            Debug.Log("chose map 2");
         } else if(name.Equals("Map03")){
             totalEnemies = numEnemiesForMap[2];
             numWaves = numWavesForMap[2];
@@ -81,7 +80,6 @@ public class Spawn2 : MonoBehaviour
     void Update()
     {
         if(spawnWave){
-        Debug.Log("spawnWave active");
             // all enemies spawned and made it to end
             if(enemiesLeftToSpawn <= 0 && enemiesAlive <= 0 && manager.GetComponent<startLevel>().currentLives <= 0){
                 Debug.Log("You lost this level!");
@@ -105,8 +103,6 @@ public class Spawn2 : MonoBehaviour
 
             // pause between waves.
             countdown -= Time.deltaTime;
-        } else{
-            Debug.Log("spawnWave inactive");
         }
     }
 
