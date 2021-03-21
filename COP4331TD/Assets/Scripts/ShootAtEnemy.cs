@@ -85,6 +85,12 @@ public class ShootAtEnemy : MonoBehaviour {
          }
 
          GameObject enemy = (GameObject) enemies.Peek();
+         // check if enemy is null or not
+         // seems to be a bug where the enemy becomes null but never dequeues
+         if (enemy == null) {
+             enemies.Dequeue();
+             return false;
+         }
 
          EnemyStats enemyStats = enemy.GetComponent<EnemyStats>();
          if (enemyStats == null) print("enemyStats is null");

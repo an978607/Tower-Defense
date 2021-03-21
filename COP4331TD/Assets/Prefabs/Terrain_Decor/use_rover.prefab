@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 8838353658265371793}
   - component: {fileID: 6722982105711538267}
   m_Layer: 0
-  m_Name: rover
-  m_TagString: Untagged
+  m_Name: use_rover
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
