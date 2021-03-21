@@ -8,7 +8,7 @@ public class BuildManager : MonoBehaviour
 
     private void Awake()
     {
-        if(instance != null)
+        if (instance != null)
         {
             Debug.Log("More then one buildMannager");
         }
@@ -19,18 +19,33 @@ public class BuildManager : MonoBehaviour
     public GameObject weapon2Prefab;
     public GameObject weapon3Prefab;
 
-    private GameObject weaponToBuild;
+    public GameObject FundsDialoge;
+
+    private Turrent_BluePrint weaponToBuild;
 
 
-    public GameObject getWeaponToBuild()
+    //Node is empty and can be built on 
+    public bool CanBuild { get { return weaponToBuild != null; } }
+    //Does the player have enough 
+    public bool HasMoney { get { return CurrencyManager.currentBalance >= weaponToBuild.cost; } }
+
+    public void BuildWeaponOn(Node node)
     {
-        return weaponToBuild;
+        if (CurrencyManager.currentBalance < weaponToBuild.cost)
+        {
+            FundsDialoge.SetActive(true);
+            return;
+        }
+
+        //purchase upon build 
+        CurrencyManager.currentBalance -= weaponToBuild.cost;
+        GameObject weapon = (GameObject)Instantiate(weaponToBuild.prefab, node.getBuildPosition(), Quaternion.identity);
+        node.weapon = weapon;
     }
 
-    public void setWeaponToBuild(GameObject weapon)
+    public void selectWeaponToBuild(Turrent_BluePrint weapon)
     {
         weaponToBuild = weapon;
     }
 
-   
 }

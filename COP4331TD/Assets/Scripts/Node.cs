@@ -7,7 +7,8 @@ public class Node : MonoBehaviour
     public Color hoverColor;
     public Vector3 positionOffset;
 
-    private GameObject weapon; 
+    [Header("Optional")]
+    public GameObject weapon;
 
     private Renderer rend;
     private Color startColor;
@@ -19,28 +20,36 @@ public class Node : MonoBehaviour
         buildManager = BuildManager.instance;
     }
 
+    public Vector3 getBuildPosition()
+    {
+        return transform.position + positionOffset;
+    }
+
     private void OnMouseDown()
     {
-        if(buildManager.getWeaponToBuild() == null)
+        //cant build
+        if (!buildManager.CanBuild)
         {
             return;
         }
-        if(weapon != null)
+
+        if (weapon != null)
         {
             //can't build because something is already on this node. 
             return;
         }
 
         //build weapon
-        GameObject weaponToBuild = BuildManager.instance.getWeaponToBuild();
-        weapon = (GameObject)Instantiate(weaponToBuild, transform.position + positionOffset, transform.rotation);
+        buildManager.BuildWeaponOn(this);
     }
     void OnMouseEnter()
     {
-        if (buildManager.getWeaponToBuild() == null)
+        //cant build
+        if (!buildManager.CanBuild)
         {
             return;
         }
+
         rend.material.color = hoverColor;
     }
     private void OnMouseExit()
