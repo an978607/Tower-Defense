@@ -26,14 +26,19 @@ Map 3:
         Wave 3: 5 F 1 EF
 
 Map 4:
+<!--
     Description: Less looping, more fast-paced
     Enemies: 3 waves split by 2 seconds
         Wave 1: 2 FT, 1 EF (3)
         Wave 2: 3 EF, 1 FT, 3 F (7)
         Wave 3: 3 subwaves split by 1 seconds
             Each subwave consists of 1 FT, 1 F, 1 EF (9)
+-->
+
+    **19 enemies as specified in the file**
         
 Map 5:
+<!--
     Description: Lots of loops but lots of enemies too.
     Enemies: 5 Waves split by 5 seconds, some waves have subwaves
         Wave 1: 15 farmers (sets of 5 split by 1 second) (total: 15)
@@ -42,7 +47,8 @@ Map 5:
             Ex: 1 tractor comes out followed quickly by 2 enraged farmers, wait 1 second, and the next subwave comes.
         Wave 4: Repeat wave 2, wait 5 seconds, and then launch 10 enraged farmers (total: 18 + 10 = 28)
         Wave 5: 5 subwaves, each consisting of 2 FT, 5 F, 2 EF. Each subwave is split by 3 seconds. (total: 5*9 = 45)
+-->
         
         
-    
+    map 4 but also more (18 more to be exact) 
 

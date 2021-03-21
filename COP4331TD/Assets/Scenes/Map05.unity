@@ -865,6 +865,14 @@ PrefabInstance:
       propertyPath: Enemy3
       value: 
       objectReference: {fileID: 2111955701}
+    - target: {fileID: 156103136, guid: df3b422cf46af41d78e73c5b32b7e716, type: 3}
+      propertyPath: manager
+      value: 
+      objectReference: {fileID: 1044022580}
+    - target: {fileID: 156103136, guid: df3b422cf46af41d78e73c5b32b7e716, type: 3}
+      propertyPath: numEnemiesForMap.Array.data[4]
+      value: 37
+      objectReference: {fileID: 0}
     - target: {fileID: 2514786166073036884, guid: df3b422cf46af41d78e73c5b32b7e716,
         type: 3}
       propertyPath: m_Name

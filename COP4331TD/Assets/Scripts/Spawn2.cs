@@ -27,13 +27,15 @@ public class Spawn2 : MonoBehaviour
 
     public float speed = 10f; // temporary speed for all enemies
 
-    public int[] numEnemiesForMap = new int[]{5, 8, 12, 19, 121};
+    public int[] numEnemiesForMap = new int[]{5, 8, 12, 19, 37};
     public int[] numWavesForMap = new int[]{1, 2, 3, 3, 5};
 
     public int[] enemyArray;
     
     private int lives;
     //public int[] enemySubWave;
+    
+    //public int level4loop = 0;
 
 
 
@@ -194,10 +196,93 @@ public class Spawn2 : MonoBehaviour
             case(4):
                 enemyArray = new int[]{2, 2, 3, 3, 3, 3, 2, 1, 1, 1, 2, 1, 3, 2, 1, 3, 2, 1, 3};
 
+                if(waveNumber == 0){
+                    for(int i = 0; i < 4; i++){
+                        SpawnEnemy(enemyArray[i]);
+                        enemiesLeftToSpawn--;
+                        enemiesAlive++;
+
+                        Debug.Log("enemies left to spawn: " + enemiesLeftToSpawn + " enemies alive: " + enemiesAlive);
+                        yield return new WaitForSeconds(1.0f);
+                    }
+                } else if(waveNumber == 1){
+                    for(int i = 4; i < 10; i++){
+                        SpawnEnemy(enemyArray[i]);
+                        enemiesLeftToSpawn--;
+                        enemiesAlive++;
+
+                        Debug.Log("enemies left to spawn: " + enemiesLeftToSpawn + " enemies alive: " + enemiesAlive);
+                        yield return new WaitForSeconds(1.0f);
+                    }
+                } else if(waveNumber == 2){
+                    yield return new WaitForSeconds(5.0f);
+                    for(int i = 10; i < 19; i++){
+                        SpawnEnemy(enemyArray[i]);
+                        enemiesLeftToSpawn--;
+                        enemiesAlive++;
+
+                        Debug.Log("enemies left to spawn: " + enemiesLeftToSpawn + " enemies alive: " + enemiesAlive);
+                        yield return new WaitForSeconds(1.0f);
+                    }
+                } else{
+                    
+                }
 
                 break;
+                
+            // like level 4 but more
             case(5):
-                // TO DO
+                enemyArray = new int[]{2, 2, 3, 3, 3, 3, 2, 1, 1, 1, 2, 1, 3, 2, 1, 3, 2, 1, 3};
+                
+                if(waveNumber == 0){
+                    for(int i = 0; i < 4; i++){
+                        SpawnEnemy(enemyArray[i]);
+                        enemiesLeftToSpawn--;
+                        enemiesAlive++;
+
+                        Debug.Log("enemies left to spawn: " + enemiesLeftToSpawn + " enemies alive: " + enemiesAlive);
+                        yield return new WaitForSeconds(1.0f);
+                    }
+                } else if(waveNumber == 1){
+                    for(int i = 4; i < 10; i++){
+                        SpawnEnemy(enemyArray[i]);
+                        enemiesLeftToSpawn--;
+                        enemiesAlive++;
+
+                        Debug.Log("enemies left to spawn: " + enemiesLeftToSpawn + " enemies alive: " + enemiesAlive);
+                        yield return new WaitForSeconds(1.0f);
+                    }
+                } else if(waveNumber == 2){
+                    yield return new WaitForSeconds(5.0f);
+                    for(int i = 10; i < 19; i++){
+                        SpawnEnemy(enemyArray[i]);
+                        enemiesLeftToSpawn--;
+                        enemiesAlive++;
+
+                        Debug.Log("enemies left to spawn: " + enemiesLeftToSpawn + " enemies alive: " + enemiesAlive);
+                        yield return new WaitForSeconds(1.0f);
+                    }
+                } else if(waveNumber == 3){
+                    yield return new WaitForSeconds(4.5f);
+                    for(int i = 10; i < 19; i++){
+                        SpawnEnemy(enemyArray[i]);
+                        enemiesLeftToSpawn--;
+                        enemiesAlive++;
+
+                        Debug.Log("enemies left to spawn: " + enemiesLeftToSpawn + " enemies alive: " + enemiesAlive);
+                        yield return new WaitForSeconds(1.0f);
+                    } 
+                } else if(waveNumber == 4){
+                    yield return new WaitForSeconds(3.7f);
+                    for(int i = 10; i < 19; i++){
+                        SpawnEnemy(enemyArray[i]);
+                        enemiesLeftToSpawn--;
+                        enemiesAlive++;
+
+                        Debug.Log("enemies left to spawn: " + enemiesLeftToSpawn + " enemies alive: " + enemiesAlive);
+                        yield return new WaitForSeconds(1.0f);
+                    }
+                }
                 break;
         }
     }

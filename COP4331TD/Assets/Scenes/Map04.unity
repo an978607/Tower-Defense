@@ -865,6 +865,10 @@ PrefabInstance:
       propertyPath: spawnPoint
       value: 
       objectReference: {fileID: 640452376}
+    - target: {fileID: 156103136, guid: df3b422cf46af41d78e73c5b32b7e716, type: 3}
+      propertyPath: manager
+      value: 
+      objectReference: {fileID: 580989692}
     - target: {fileID: 2514786166073036884, guid: df3b422cf46af41d78e73c5b32b7e716,
         type: 3}
       propertyPath: m_Name
