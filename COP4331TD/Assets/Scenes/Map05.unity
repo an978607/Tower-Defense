@@ -2070,6 +2070,7 @@ MonoBehaviour:
   weapon1Prefab: {fileID: 0}
   weapon2Prefab: {fileID: 0}
   weapon3Prefab: {fileID: 0}
+  FundsDialoge: {fileID: 0}
 --- !u!1001 &397756664
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11118,6 +11119,19 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 2111955700}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &2111955704
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2111955702}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.3, y: 0.385264, z: 0.35}
+  m_Center: {x: 0, y: 0.199331, z: 0}
 --- !u!1001 &2118104006
 PrefabInstance:
   m_ObjectHideFlags: 0

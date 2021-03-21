@@ -43,6 +43,8 @@
      <Compile Include="Assets\Scripts\DemonstrationEffect.cs" />
      <Compile Include="Assets\Scripts\BM_Prep.cs" />
      <Compile Include="Assets\Scripts\BM_Map00a.cs" />
+     <Compile Include="Assets\Scripts\Turrent_BluePrint.cs" />
+     <Compile Include="Assets\Scripts\Turrent.cs" />
      <Compile Include="Assets\Scripts\ShootAtEnemy.cs" />
      <Compile Include="Assets\Scripts\FollowPath.cs" />
      <Compile Include="Assets\Scripts\BM_MainMenu.cs" />
@@ -52,6 +54,7 @@
      <Compile Include="Assets\Scripts\BuildManager.cs" />
      <Compile Include="Assets\Scripts\startLevel.cs" />
      <Compile Include="Assets\Scripts\CurrencyManager.cs" />
+     <Compile Include="Assets\Scripts\Bullet.cs" />
      <Compile Include="Assets\Scripts\Node.cs" />
      <Compile Include="Assets\Scripts\TowerStats.cs" />
      <Compile Include="Assets\Scripts\BM_LevelSelect.cs" />

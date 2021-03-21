@@ -1468,6 +1468,11 @@ PrefabInstance:
       propertyPath: pathCreator
       value: 
       objectReference: {fileID: 1907374930}
+    - target: {fileID: 4911833543958780597, guid: 6cc8d792d2b364b829a5c92f7832f8db,
+        type: 3}
+      propertyPath: pathCreator
+      value: 
+      objectReference: {fileID: 1907374930}
     - target: {fileID: 4911833545476081321, guid: 6cc8d792d2b364b829a5c92f7832f8db,
         type: 3}
       propertyPath: m_Name
@@ -1528,6 +1533,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4911833545830415794, guid: 6cc8d792d2b364b829a5c92f7832f8db,
+        type: 3}
+      propertyPath: pathCreator
+      value: 
+      objectReference: {fileID: 1907374930}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6cc8d792d2b364b829a5c92f7832f8db, type: 3}
 --- !u!1 &284621794 stripped
@@ -1548,6 +1558,35 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 284621793}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &284621810
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 284621795}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.3, y: 0.385264, z: 0.35}
+  m_Center: {x: 0, y: 0.199331, z: -0.0000009536743}
+--- !u!54 &284621811
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 284621795}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &306998422
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2069,6 +2108,7 @@ MonoBehaviour:
   weapon2Prefab: {fileID: 919132149155446097, guid: 82595ee8729ba4f18b1d0ab7754c468a,
     type: 3}
   weapon3Prefab: {fileID: 0}
+  FundsDialoge: {fileID: 0}
 --- !u!1001 &395210718
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4098,6 +4138,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: hangar_smallB Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 7301640052423547798, guid: f2cf4a724e3b64093988bb89168e2868,
+        type: 3}
+      propertyPath: m_TagString
+      value: End
+      objectReference: {fileID: 0}
     - target: {fileID: 7840899136966793222, guid: f2cf4a724e3b64093988bb89168e2868,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5652,6 +5697,14 @@ PrefabInstance:
       propertyPath: Enemy3
       value: 
       objectReference: {fileID: 284621794}
+    - target: {fileID: 156103136, guid: df3b422cf46af41d78e73c5b32b7e716, type: 3}
+      propertyPath: manager
+      value: 
+      objectReference: {fileID: 673312397}
+    - target: {fileID: 156103136, guid: df3b422cf46af41d78e73c5b32b7e716, type: 3}
+      propertyPath: spawnPoint
+      value: 
+      objectReference: {fileID: 271432154}
     - target: {fileID: 2514786166073036884, guid: df3b422cf46af41d78e73c5b32b7e716,
         type: 3}
       propertyPath: m_Name
@@ -5755,6 +5808,7 @@ MonoBehaviour:
   Enemy: {fileID: 0}
   Enemy2: {fileID: 0}
   Enemy3: {fileID: 0}
+  manager: {fileID: 0}
   spawnPoint: {fileID: 0}
   level: 0
   numWaves: 0
@@ -5768,7 +5822,6 @@ MonoBehaviour:
   numEnemiesForMap: 05000000080000000c0000001300000079000000
   numWavesForMap: 0100000002000000030000000300000005000000
   enemyArray: 
-  subWave: -1
 --- !u!1001 &1161613256
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6528,6 +6581,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5c341cd22e75454d9bf5053ec3fe566, type: 3}
+--- !u!1 &1330977770 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7747875932467358369, guid: d0cfde024c11b48c0b171362452f18ec,
+    type: 3}
+  m_PrefabInstance: {fileID: 1388823370}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1330977773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1330977770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03475a0c6d7ef8a4a8d990131ab70c9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  costToSell: 0
+  enemiesDefeated: 0
+  shotsFired: 0
+  towerRange: 0
+  fireRate: 0
+  damagePerShot: 0
+  towerType: 
 --- !u!4 &1367769052 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1968275852670227351, guid: a5c341cd22e75454d9bf5053ec3fe566,
@@ -6740,6 +6818,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7441237195780874997, guid: d0cfde024c11b48c0b171362452f18ec,
+        type: 3}
+      propertyPath: towerStats
+      value: 
+      objectReference: {fileID: 1330977773}
     - target: {fileID: 7747875932467358369, guid: d0cfde024c11b48c0b171362452f18ec,
         type: 3}
       propertyPath: m_Name
