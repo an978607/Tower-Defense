@@ -144,12 +144,12 @@ PrefabInstance:
     - target: {fileID: 819941774116766672, guid: 6cc8d792d2b364b829a5c92f7832f8db,
         type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: Enemy3
       objectReference: {fileID: 0}
     - target: {fileID: 3652588969209045534, guid: 6cc8d792d2b364b829a5c92f7832f8db,
         type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: Enemy2
       objectReference: {fileID: 0}
     - target: {fileID: 4911833543958780597, guid: 6cc8d792d2b364b829a5c92f7832f8db,
         type: 3}
@@ -1823,6 +1823,7 @@ MonoBehaviour:
     type: 3}
   weapon3Prefab: {fileID: 5713750877714061656, guid: c7d4fddda632f004cadc5c8c68e2d7ac,
     type: 3}
+  FundsDialoge: {fileID: 0}
 --- !u!1001 &395210718
 PrefabInstance:
   m_ObjectHideFlags: 0

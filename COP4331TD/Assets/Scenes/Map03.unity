@@ -9590,6 +9590,19 @@ MonoBehaviour:
   pathCreator: {fileID: 3769472240642722274}
   speed: 0
   isCopy: 0
+--- !u!65 &1952030684
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1952030682}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.3, y: 0.385264, z: 0.35}
+  m_Center: {x: -0.00000008195639, y: 0.199331, z: 0}
 --- !u!1001 &1970029990
 PrefabInstance:
   m_ObjectHideFlags: 0
