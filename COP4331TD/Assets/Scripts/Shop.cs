@@ -1,13 +1,8 @@
 ﻿
 using UnityEngine;
-using UnityEngine.UI;
 
 public class Shop : MonoBehaviour
 {
-    public Turrent_BluePrint rayGun;
-    public Turrent_BluePrint GattlingGun;
-    public Turrent_BluePrint CowAcid;
-
     BuildManager buildManager;
     public GameObject FundsDialogue;
 
@@ -15,21 +10,34 @@ public class Shop : MonoBehaviour
     {
         buildManager = BuildManager.instance;
     }
+    public void purchaseWeapon1()
+    {
+        Debug.Log("Weapon1 Purchased");
+        SufficentFundsCheck(50);
+        buildManager.setWeaponToBuild(buildManager.weapon1Prefab);
+    }
+    public void purchaseWeapon2()
+    {
+        Debug.Log("Weapon2 Purchased");
+        SufficentFundsCheck(100);
+        buildManager.setWeaponToBuild(buildManager.weapon2Prefab);
+    }
+    public void purchaseWeapon3()
+    {
+        Debug.Log("Weapon3 Purchased");
+        SufficentFundsCheck(150);
+        buildManager.setWeaponToBuild(buildManager.weapon3Prefab);
+    }
 
-    public void selectRayGun()
+    void SufficentFundsCheck(int price)
     {
-        Debug.Log("RayGun Selected");
-        buildManager.selectWeaponToBuild(rayGun);
-    }
-    public void selectGattling()
-    {
-        Debug.Log("Gattling Selected");
-        buildManager.selectWeaponToBuild(GattlingGun);
-    }
-    public void selectAcid()
-    {
-        Debug.Log("Cow Acid Selected");
-        buildManager.selectWeaponToBuild(CowAcid);
+        if (CurrencyManager.currentBalance < price)
+        {
+            FundsDialogue.SetActive(true);
+            return;
+        }
+        
+        CurrencyManager.purchaseItem(price);
     }
 
     public void InsufficentFundsAcknowledged()
