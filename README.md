@@ -107,5 +107,21 @@ With 3D Tower Defense, we aim to solve these problems and provide a more engagin
 - Dalton Kajander (Skirtle)
 - Amber McCullah (ambermcc127) 
 - Annemarie Blanco (an978607)Shop can Spawn enemies where user selects, added a pause UI. 
-- Kevin Ramos (kevinrwh: Added final levels, updated the spawning script to be able to send out different enemies.
+- Kevin Ramos (kevinrwh): Added final levels, updated the spawning script to be able to send out different enemies.
+- Shawn Guydeene (NinjaDino13)
+
+# Sprint 7
+- [Trello Board (Backlogs and Requirements)](https://trello.com/b/jldNMwlQ/agile-sprint-board)
+- [Burndown Chart](https://user-images.githubusercontent.com/78228038/111932234-64267680-8a93-11eb-9b02-2c1c2e605811.png)
+- [Velocity Chart](https://user-images.githubusercontent.com/78228038/111932235-64bf0d00-8a93-11eb-9f39-930deaa32e82.png)
+- [System Architecture](https://github.com/an978607/Tower-Defense/blob/main/architecture.md)
+- [Source Code](https://github.com/an978607/Tower-Defense/tree/main/COP4331TD/Assets/Scripts)
+- [Automated Tests](https://github.com/an978607/Tower-Defense/tree/main/COP4331TD/Assets/Scripts/Tests)
+- Product Demonstration
+
+## Task Allocation
+- Dalton Kajander (Skirtle)
+- Amber McCullah (ambermcc127) 
+- Annemarie Blanco (an978607)
+- Kevin Ramos (kevinrwh)
 - Shawn Guydeene (NinjaDino13)
