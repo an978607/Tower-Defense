@@ -117,11 +117,11 @@ With 3D Tower Defense, we aim to solve these problems and provide a more engagin
 - [System Architecture](https://github.com/an978607/Tower-Defense/blob/main/architecture.md)
 - [Source Code](https://github.com/an978607/Tower-Defense/tree/main/COP4331TD/Assets/Scripts)
 - [Automated Tests](https://github.com/an978607/Tower-Defense/tree/main/COP4331TD/Assets/Scripts/Tests)
-- Product Demonstration
+- [Product Demonstration](https://youtu.be/D7U1ypdGBUQ)
 
 ## Task Allocation
 - Dalton Kajander (Skirtle)
 - Amber McCullah (ambermcc127) 
 - Annemarie Blanco (an978607)
-- Kevin Ramos (kevinrwh)
+- Kevin Ramos (kevinrwh): Finished implementing wave spawning code for all levels, updated enemy types, created and uploaded product demonstration
 - Shawn Guydeene (NinjaDino13)
