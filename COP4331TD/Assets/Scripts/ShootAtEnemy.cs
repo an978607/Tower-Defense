@@ -59,7 +59,7 @@ public class ShootAtEnemy : MonoBehaviour {
         // if the collision with the range sphere has the Enemy tag, it is an enemy
         // then, we enqueue them so we can fire at them when its time to
         // shoot at that enemy
-        if (collision.collider.tag.ToLower().Contains("enemy")) {
+        if (collision.collider.tag.ToLower().Contains("enemy") || collision.collider.tag == "Enemy2" || collision.collider.tag == "Enemy3") {
             enemies.Enqueue(collision.gameObject);
         }
     }
@@ -68,7 +68,7 @@ public class ShootAtEnemy : MonoBehaviour {
         // an enemy not in range (i.e. leaves the range) cannot be fired at
         // in this case, dequeue
         // could cause weird issues later on. will need intensive testing
-        if (collision.collider.tag.ToLower().Contains("enemy")) {
+        if (collision.collider.tag.ToLower().Contains("enemy") || collision.collider.tag == "Enemy2" || collision.collider.tag == "Enemy3") {
             enemies.Dequeue();
         }
      }
@@ -96,7 +96,7 @@ public class ShootAtEnemy : MonoBehaviour {
          if (enemyStats == null) print("enemyStats is null");
 
          print("Firing at enemy");
-         bool enemyIsDead = ( (EnemyStats) enemy.GetComponent<EnemyStats>()).takeDamage(DPS, towerType);
+         bool enemyIsDead = ( (EnemyStats) enemy.GetComponent<EnemyStats>()).takeDamage(DPS);
          if (enemyIsDead) {
              enemies.Dequeue();
          }

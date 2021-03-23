@@ -22,6 +22,11 @@ public class startLevel : MonoBehaviour {
     void updateStats() {
         lives.text = "♥" + currentLives;
         balance.text = "$" + CurrencyManager.currentBalance;
+        
+        /* To Do 
+            Update lives and currency on level selection screen
+        */
+        
     }
 
     public void loseLives(int livesLost) {

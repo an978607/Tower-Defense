@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class Spawn2 : MonoBehaviour
 {
     public GameObject Enemy; // basic
-    public GameObject Enemy2; // tractor
+    public GameObject Enemy2; // rover
     public GameObject Enemy3; // enraged
     public GameObject manager;
 
@@ -82,21 +82,23 @@ public class Spawn2 : MonoBehaviour
     void Update()
     {
         if(spawnWave){
-            // all enemies spawned and made it to end
+        
+            // Loss Condition: No more enemies to spawn nor alive but no lives left
             if(enemiesLeftToSpawn <= 0 && enemiesAlive <= 0 && manager.GetComponent<startLevel>().currentLives <= 0){
                 Debug.Log("You lost this level!");
                 SceneManager.LoadScene("LevelSelection");
                 //Application.Quit(); // temporary for now
             }
 
-            // all enemies spawned and have been defeated.
+            // Win condition, no more enemies to spawn or alive
             else if(enemiesLeftToSpawn <= 0 && enemiesAlive <= 0){
-                Debug.Log("You won this level!");
-                SceneManager.LoadScene("LevelSelection");
-                //Application.Quit(); // temporary for now
+                Debug.Log("Level won!");
+                PlayerPrefs.SetInt("LevelPassed", this.level);
+                Debug.Log("Beat" + PlayerPrefs.GetInt("LevelPassed") + "level"); // verify the correct level was passed
+                SceneManager.LoadScene("LevelSelection"); // return to pick level
             }
 
-            // more enemies to spawn
+            // More enemies to spawn
             if(enemiesLeftToSpawn > 0 && countdown <= 0f)
             {
                 StartCoroutine(SpawnWave());

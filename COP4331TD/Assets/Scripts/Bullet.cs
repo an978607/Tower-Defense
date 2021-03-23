@@ -7,7 +7,8 @@ public class Bullet : MonoBehaviour
     private Transform target;
 
     public float bulletSpeed = 70f;
-
+    public bool hit;
+    
     public void Seek(Transform _target)
     {
         target = _target;
@@ -40,7 +41,10 @@ public class Bullet : MonoBehaviour
 
     void HitTarget()
     {
-        Destroy(target.gameObject);
-        Destroy(gameObject);
+        // call enemy stats to take damage and destroy enemy
+        // bool for other methods...
+        hit = target.gameObject.GetComponent<EnemyStats>().takeDamage(5.0f);
+//        Destroy(target.gameObject);
+        Destroy(gameObject); // destroy the bullet
     }
 }

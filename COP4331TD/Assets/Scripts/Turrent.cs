@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class Turrent : MonoBehaviour
 {
@@ -30,7 +31,17 @@ public class Turrent : MonoBehaviour
     // Find target to aim at in range
     void updateTarget()
     {
-        GameObject[] enemies = GameObject.FindGameObjectsWithTag(enemyTag);
+        //GameObject[] enemies = GameObject.FindGameObjectsWithTag(enemyTag);
+        
+        /* Test this out */
+        GameObject[] tag_1 = GameObject.FindGameObjectsWithTag("Enemy");  
+        GameObject[] tag_2 = GameObject.FindGameObjectsWithTag("Enemy2");  
+        GameObject[] tag_3 = GameObject.FindGameObjectsWithTag("Enemy3");
+
+        GameObject[] intermediate = tag_2.Concat(tag_3).ToArray();
+        
+        GameObject[] enemies = tag_1.Concat(intermediate).ToArray();
+        
         float shortestDistance = Mathf.Infinity;
         GameObject nearestEnemy = null;
 

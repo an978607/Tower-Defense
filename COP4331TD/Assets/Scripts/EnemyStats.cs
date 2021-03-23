@@ -12,7 +12,19 @@ public class EnemyStats : MonoBehaviour {
 
     // Start is called before the first frame update
     void Start() {
-        currentHealth = maxHealth;
+        
+        // Enemies of type 1 have health of 10, type 2 have 10, last is 30
+        if(this.gameObject.CompareTag("Enemy")){
+            currentHealth = 30;
+            speed = 10;
+        } else if(this.gameObject.CompareTag("Enemy2")){
+            currentHealth = 50;
+            speed = 30;
+        } else{
+            currentHealth = 100;
+            speed = 2;
+        }
+        //currentHealth = maxHealth;
     }
 
     // Update is called once per frame
@@ -25,11 +37,12 @@ public class EnemyStats : MonoBehaviour {
     }
 
     // call from another script to deal damage
-    public bool takeDamage(float dmg, string damageType) {
-        // basic attacks cannot hurt metal enemies
-        if (type == "metal" && damageType == "basic") {
-            return false;
-        }
+//    public void takeDamage(float dmg, string damageType) {
+    public bool takeDamage(float dmg){
+        // basic attacks cannot hurt metal enemies **Kevin Deleted this for now**
+//        if (type == "metal" && damageType == "basic") {
+//            return false;
+//        }
 
         currentHealth -= dmg;
         if (currentHealth <= 0) {

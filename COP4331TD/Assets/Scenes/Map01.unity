@@ -3895,6 +3895,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: use_rover
       objectReference: {fileID: 0}
+    - target: {fileID: 5065468669670314382, guid: 0052808f8eba8441bba80f3d2755f3f1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 5550678046868081460, guid: 0052808f8eba8441bba80f3d2755f3f1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8479,6 +8484,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: rover
+      objectReference: {fileID: 0}
+    - target: {fileID: 5065468669670314382, guid: 0052808f8eba8441bba80f3d2755f3f1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 5550678046868081460, guid: 0052808f8eba8441bba80f3d2755f3f1,
         type: 3}

@@ -8,9 +8,13 @@ public class BM_LevelSelect : MonoBehaviour
 {
     public Button[] lockedLevels = new Button[5];
     int levelPassed;
-
+    
+    int currLevel; // player's current level
+    
     void Start()
     {
+    
+        // Get how many levels have been passed
         if (PlayerPrefs.HasKey("LevelPassed"))
         {
             levelPassed = PlayerPrefs.GetInt("LevelPassed");
@@ -21,8 +25,15 @@ public class BM_LevelSelect : MonoBehaviour
             PlayerPrefs.SetInt("LevelPassed", levelPassed);
         }
 
-        for (int i = levelPassed + 1; i < lockedLevels.Length; i++)
-            lockedLevels[i].interactable = false;
+        // Beat the game, display to the user OR let user choose next
+        if(levelPassed >= 5){
+            Debug.Log("Game won!");
+        } 
+        else{
+            // locks the other levels from being clickable
+            for (int i = levelPassed + 1; i < lockedLevels.Length; i++)
+                lockedLevels[i].interactable = false;
+        }
     }
 
 
