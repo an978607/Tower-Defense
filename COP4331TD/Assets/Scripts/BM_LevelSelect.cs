@@ -18,6 +18,7 @@ public class BM_LevelSelect : MonoBehaviour
         if (PlayerPrefs.HasKey("LevelPassed"))
         {
             levelPassed = PlayerPrefs.GetInt("LevelPassed");
+            Debug.Log("levelPassed = " + levelPassed);
         }
         else
         {
@@ -31,8 +32,23 @@ public class BM_LevelSelect : MonoBehaviour
         } 
         else{
             // locks the other levels from being clickable
-            for (int i = levelPassed + 1; i < lockedLevels.Length; i++)
+            for (int i = levelPassed + 1; i < lockedLevels.Length; i++){
                 lockedLevels[i].interactable = false;
+            }
+            
+            /*if(levelPassed < 4){
+                for (int i = levelPassed + 1; i < lockedLevels.Length; i++){
+                    lockedLevels[i].interactable = false;
+                }
+            }
+            else if(levelPassed == 4){
+                for(int i = levelPassed; i < lockedLevels.Length;i++){
+                    lockedLevels[i].interactable = true;
+                }
+            }
+            else{
+                Debug.Log("Something went wrong");
+            }*/
         }
     }
 

@@ -11,6 +11,7 @@ public class BM_MainMenu : MonoBehaviour {
 
     //private bool settingsOpen = false;
     void Start() {
+        PlayerPrefs.SetInt("LevelPassed", 0);
         music.volume = 0.5f;
         volumeSlider.gameObject.SetActive(false);
     }
