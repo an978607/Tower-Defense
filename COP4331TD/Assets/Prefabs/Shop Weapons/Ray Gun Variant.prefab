@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1619438145}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.508, z: 0.75}
+  m_LocalPosition: {x: 0, y: 0.508, z: 0.409}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3993718466301686759}
@@ -115,7 +115,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: cb50ce0801e34420aa4eb92d443f3ce9,
         type: 3}
       propertyPath: m_Name
-      value: Ray Gun
+      value: Ray Gun Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb50ce0801e34420aa4eb92d443f3ce9, type: 3}

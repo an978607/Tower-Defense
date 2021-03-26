@@ -108,7 +108,7 @@ Halo:
   m_Color:
     serializedVersion: 2
     rgba: 4294967295
-  m_Size: 1
+  m_Size: 0.5
 --- !u!114 &9016281802104442645
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -122,3 +122,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletSpeed: 50
+  hit: 0

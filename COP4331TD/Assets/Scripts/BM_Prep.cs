@@ -16,5 +16,6 @@ public class BM_Prep : MonoBehaviour
     {
         Spawner.GetComponent<Spawn>().spawnWave = true;
         Spawner.GetComponent<Spawn2>().spawnWave = true;
+        Time.timeScale = 1f;
     }
 }
