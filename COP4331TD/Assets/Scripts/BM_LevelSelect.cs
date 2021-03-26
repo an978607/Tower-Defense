@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class BM_LevelSelect : MonoBehaviour
 {
     public Button[] lockedLevels = new Button[5];
+    public GameObject[] checks = new GameObject[5];
     int levelPassed;
     
     int currLevel; // player's current level
@@ -52,7 +53,17 @@ public class BM_LevelSelect : MonoBehaviour
         }
     }
 
-
+    public void Update()
+    {
+        if(levelPassed > 0)
+        {
+            for(int i = 0; i < levelPassed; i++)
+            {
+                //make the checkmark visable for each level passed
+                checks[i].SetActive(true);
+            }
+        }
+    }
     public void levelOneButtonPressed()
     {
         SceneManager.LoadScene("Map01");
