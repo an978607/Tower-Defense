@@ -95,7 +95,9 @@ public class Spawn2 : MonoBehaviour
                 Debug.Log("Level won!");
                 PlayerPrefs.SetInt("LevelPassed", this.level);
                 Debug.Log("Beat" + PlayerPrefs.GetInt("LevelPassed") + "level"); // verify the correct level was passed
-                SceneManager.LoadScene("LevelSelection"); // return to pick level
+               
+               PlayerPrefs.SetInt("CurrentScore", manager.GetComponent<ScoreManager>().getScore());
+               SceneManager.LoadScene("LevelSelection"); // return to pick level
             }
 
             // More enemies to spawn

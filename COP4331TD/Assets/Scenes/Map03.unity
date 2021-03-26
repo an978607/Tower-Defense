@@ -849,6 +849,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 147664684, guid: df3b422cf46af41d78e73c5b32b7e716, type: 3}
+      propertyPath: scoreDisplay
+      value: 
+      objectReference: {fileID: 2074619094}
     - target: {fileID: 156103136, guid: df3b422cf46af41d78e73c5b32b7e716, type: 3}
       propertyPath: Enemy
       value: 
@@ -1343,7 +1347,7 @@ MonoBehaviour:
   spawner: {fileID: 156103135}
   maxHealth: 0
   speed: 0
-  type: 
+  scoreValue: 0
 --- !u!1 &272160852 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3417065010033890591, guid: a81f3128a7e93412b933d3553154dd3c,
@@ -4578,6 +4582,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1044022581, guid: a81f3128a7e93412b933d3553154dd3c, type: 3}
+      propertyPath: scoreDisplay
+      value: 
+      objectReference: {fileID: 2074619094}
     - target: {fileID: 3417065010033890584, guid: a81f3128a7e93412b933d3553154dd3c,
         type: 3}
       propertyPath: lives
@@ -4588,6 +4596,16 @@ PrefabInstance:
       propertyPath: balance
       value: 
       objectReference: {fileID: 1612513750}
+    - target: {fileID: 3417065010033890584, guid: a81f3128a7e93412b933d3553154dd3c,
+        type: 3}
+      propertyPath: startingLives
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3417065010033890584, guid: a81f3128a7e93412b933d3553154dd3c,
+        type: 3}
+      propertyPath: score
+      value: 
+      objectReference: {fileID: 2074619094}
     - target: {fileID: 3417065010033890585, guid: a81f3128a7e93412b933d3553154dd3c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8598,7 +8616,7 @@ MonoBehaviour:
   spawner: {fileID: 156103135}
   maxHealth: 0
   speed: 0
-  type: 
+  scoreValue: 0
 --- !u!1001 &1795556735
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9650,7 +9668,7 @@ MonoBehaviour:
   spawner: {fileID: 156103135}
   maxHealth: 0
   speed: 0
-  type: 
+  scoreValue: 0
 --- !u!1001 &1970029990
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10404,6 +10422,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8cbc9703dd92ac443ae11cf65375a4b6, type: 3}
+--- !u!114 &2074619094 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2096093715, guid: 8cbc9703dd92ac443ae11cf65375a4b6,
+    type: 3}
+  m_PrefabInstance: {fileID: 2074619093}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2074889231
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -19,7 +19,7 @@ public class CurrencyManager : MonoBehaviour
         }
         else
         {
-            currentBalance = 500;
+            currentBalance = 100;
             PlayerPrefs.SetInt("CurrentBalance", currentBalance);
         }
 

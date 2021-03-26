@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class startLevel : MonoBehaviour {
-    public Text lives, balance;
+    public Text lives, balance, score;
     public int startingLives;
 
     [HideInInspector]
@@ -22,6 +22,7 @@ public class startLevel : MonoBehaviour {
     void updateStats() {
         lives.text = "♥" + currentLives;
         balance.text = "$" + CurrencyManager.currentBalance;
+        score.text = "Score: " + ScoreManager.currentScore;
         
         /* To Do 
             Update lives and currency on level selection screen

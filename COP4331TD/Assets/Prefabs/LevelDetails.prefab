@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3417065010033890585}
   - component: {fileID: 3417065010033890584}
+  - component: {fileID: 1044022581}
   m_Layer: 0
   m_Name: LevelDetails
   m_TagString: Untagged
@@ -45,7 +46,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lives: {fileID: 0}
   balance: {fileID: 0}
-  startingLives: 200
-  startingBalance: 650
+  score: {fileID: 0}
+  startingLives: 5
   currentLives: 0
-  currentBalance: 0
+--- !u!114 &1044022581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3417065010033890591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abd316aa2cc844a75a468144aeb44a4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreDisplay: {fileID: 0}
+  currentScoreRef: 500

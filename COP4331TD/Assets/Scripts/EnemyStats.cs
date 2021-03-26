@@ -5,7 +5,8 @@ using UnityEngine;
 public class EnemyStats : MonoBehaviour {
     public GameObject spawner;
     public float maxHealth, speed;
-    public string type;
+    //public string type;
+    public int scoreValue;
 
     private float currentHealth;
 
@@ -17,12 +18,15 @@ public class EnemyStats : MonoBehaviour {
         if(this.gameObject.CompareTag("Enemy")){
             currentHealth = 30;
             speed = 10;
+            scoreValue = 100;
         } else if(this.gameObject.CompareTag("Enemy2")){
             currentHealth = 50;
             speed = 30;
+            scoreValue = 200;
         } else{
             currentHealth = 100;
             speed = 2;
+            scoreValue = 500;
         }
         //currentHealth = maxHealth;
     }
@@ -53,6 +57,7 @@ public class EnemyStats : MonoBehaviour {
 
     void destroyEnemy() {
         spawner.GetComponent<Spawn2>().destroyEnemy();
+        spawner.GetComponent<ScoreManager>().AddScore(scoreValue);
         Destroy(this.gameObject);
     }
 }

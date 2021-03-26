@@ -12,6 +12,9 @@ public class BM_MainMenu : MonoBehaviour {
     //private bool settingsOpen = false;
     void Start() {
         PlayerPrefs.SetInt("LevelPassed", 0);
+        PlayerPrefs.SetInt("CurrentBalance", 200);
+        PlayerPrefs.SetInt("CurrentLives", 5);
+        PlayerPrefs.SetInt("CurrentScore", 0);
         music.volume = 0.5f;
         volumeSlider.gameObject.SetActive(false);
     }
