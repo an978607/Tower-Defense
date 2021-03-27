@@ -812,7 +812,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreDisplay: {fileID: 5277086814291633875}
-  currentScoreRef: 1700
+  currentScoreRef: 0
 --- !u!114 &5277086815578075701
 MonoBehaviour:
   m_ObjectHideFlags: 0
