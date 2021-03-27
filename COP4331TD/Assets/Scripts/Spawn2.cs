@@ -10,6 +10,10 @@ public class Spawn2 : MonoBehaviour
     public GameObject Enemy3; // enraged
     public GameObject manager;
 
+    [Header("Win/Lose UI")]
+    public GameObject winUI;
+    public GameObject LoseUI;
+
     public Transform spawnPoint;
 
     public int level = 0;
@@ -86,7 +90,8 @@ public class Spawn2 : MonoBehaviour
             // Loss Condition: No more enemies to spawn nor alive but no lives left
             if(enemiesLeftToSpawn <= 0 && enemiesAlive <= 0 && manager.GetComponent<startLevel>().currentLives <= 0){
                 Debug.Log("You lost this level!");
-                SceneManager.LoadScene("LevelSelection");
+                LoseUI.SetActive(true);
+                //SceneManager.LoadScene("LevelSelection");
                 //Application.Quit(); // temporary for now
             }
 
@@ -97,7 +102,8 @@ public class Spawn2 : MonoBehaviour
                 Debug.Log("Beat" + PlayerPrefs.GetInt("LevelPassed") + "level"); // verify the correct level was passed
                
                PlayerPrefs.SetInt("CurrentScore", manager.GetComponent<ScoreManager>().getScore());
-               SceneManager.LoadScene("LevelSelection"); // return to pick level
+                winUI.SetActive(true);
+              // SceneManager.LoadScene("LevelSelection"); // return to pick level
             }
 
             // More enemies to spawn
