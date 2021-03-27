@@ -4,22 +4,39 @@ using UnityEngine;
 
 public class Camera : MonoBehaviour
 {
-    public GameObject overheadCam;
-    public GameObject towerCam;
-    private void Update()
+    public GameObject mainC;
+    public GameObject towerC;
+    public GameObject attackUI;
+    Camera mainCamera;
+    Camera towerCamera;
+    AudioListener bur;
+
+    // Start is called before the first frame update
+    void Start()
     {
-        //Space takes you back to the over head view
-        if(Input.GetKeyDown(KeyCode.Space))
+        mainCamera = mainC.GetComponent("Camera") as Camera;
+        towerCamera = towerC.GetComponent("Camera") as Camera;
+        bur = mainC.GetComponent<AudioListener>();
+
+        mainCamera.enabled = true;
+        towerCamera.enabled = false;
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+        if (Input.GetKeyDown(KeyCode.RightArrow))
         {
-            overheadCam.SetActive(true);
-            towerCam.SetActive(false);
+            mainCamera.enabled = !mainCamera.enabled;
+            towerCamera.enabled = !towerCamera.enabled;
         }
 
-        //arrow keys move you up and down a list of cameras
-        if(Input.GetKeyDown(KeyCode.RightArrow))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            overheadCam.SetActive(false);
-            towerCam.SetActive(true);
+            mainCamera.enabled = true;
+            towerCamera.enabled = false;
         }
+
     }
 }

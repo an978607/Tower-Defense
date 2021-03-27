@@ -5565,7 +5565,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 29.144, z: 0}
 --- !u!1 &1305125070 stripped
 GameObject:
@@ -5991,22 +5991,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dad46ade1bb404e488e7e7d2d0347796, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  overheadCam: {fileID: 0}
-  towerCam: {fileID: 0}
---- !u!114 &1409063771
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1409063769}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dad46ade1bb404e488e7e7d2d0347796, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  overheadCam: {fileID: 127951869}
-  towerCam: {fileID: 1272872693}
+  mainC: {fileID: 127951869}
+  towerC: {fileID: 1272872693}
+  attackUI: {fileID: 1305125070}
 --- !u!4 &1430513216 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1968275852670227351, guid: a5c341cd22e75454d9bf5053ec3fe566,
@@ -9342,7 +9329,7 @@ PrefabInstance:
     - target: {fileID: 5277086815578075703, guid: 2505bd3c2d2f7d144bc9a7a6269260ce,
         type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 5277086815578075703, guid: 2505bd3c2d2f7d144bc9a7a6269260ce,
         type: 3}
@@ -9716,7 +9703,7 @@ PrefabInstance:
     - target: {fileID: 6872033825979127844, guid: ae2ae85630af6bc458b00d5e39160895,
         type: 3}
       propertyPath: m_RootOrder
-      value: 18
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 6872033825979127844, guid: ae2ae85630af6bc458b00d5e39160895,
         type: 3}
