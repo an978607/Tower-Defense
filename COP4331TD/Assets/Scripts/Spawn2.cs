@@ -101,7 +101,14 @@ public class Spawn2 : MonoBehaviour
                 PlayerPrefs.SetInt("LevelPassed", this.level);
                 Debug.Log("Beat" + PlayerPrefs.GetInt("LevelPassed") + "level"); // verify the correct level was passed
                
-               PlayerPrefs.SetInt("CurrentScore", manager.GetComponent<ScoreManager>().getScore());
+               // update score and currency
+               // which is equal to score
+               int scoreAndCurrencyUpdater = manager.GetComponent<ScoreManager>().getScore();
+               
+               PlayerPrefs.SetInt("CurrentScore", scoreAndCurrencyUpdater);
+               
+               PlayerPrefs.SetInt("CurrentBalance", scoreAndCurrencyUpdater);
+               
                 winUI.SetActive(true);
               // SceneManager.LoadScene("LevelSelection"); // return to pick level
             }
