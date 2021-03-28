@@ -12,6 +12,7 @@ public class Turrent : MonoBehaviour
 
     public float range = 15f;
     public float fireRate = 1f;
+    public string towerType = "basic";
     private float fireCountdown = 0f;
 
     [Header("Unity Setup Fields")]
@@ -32,16 +33,16 @@ public class Turrent : MonoBehaviour
     void updateTarget()
     {
         //GameObject[] enemies = GameObject.FindGameObjectsWithTag(enemyTag);
-        
+
         /* Test this out */
-        GameObject[] tag_1 = GameObject.FindGameObjectsWithTag("Enemy");  
-        GameObject[] tag_2 = GameObject.FindGameObjectsWithTag("Enemy2");  
+        GameObject[] tag_1 = GameObject.FindGameObjectsWithTag("Enemy");
+        GameObject[] tag_2 = GameObject.FindGameObjectsWithTag("Enemy2");
         GameObject[] tag_3 = GameObject.FindGameObjectsWithTag("Enemy3");
 
         GameObject[] intermediate = tag_2.Concat(tag_3).ToArray();
-        
+
         GameObject[] enemies = tag_1.Concat(intermediate).ToArray();
-        
+
         float shortestDistance = Mathf.Infinity;
         GameObject nearestEnemy = null;
 
@@ -92,6 +93,7 @@ public class Turrent : MonoBehaviour
     {
         GameObject BulletGO = (GameObject)Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
         Bullet bullet = BulletGO.GetComponent<Bullet>();
+        bullet.bulletType = towerType;
 
         if (bullet != null)
         {

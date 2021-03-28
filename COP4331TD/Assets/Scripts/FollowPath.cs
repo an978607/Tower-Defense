@@ -8,6 +8,8 @@ public class FollowPath : MonoBehaviour {
     public PathCreator pathCreator;
     public float speed;
     float distanceTraveled;
+    private float originalSpeed;
+    private float frozenTimeLeft;
 
     [HideInInspector]
     public bool isCopy = false;
@@ -17,10 +19,16 @@ public class FollowPath : MonoBehaviour {
     void Start() {
         distanceTraveled -= 0.0001f;
         transform.position = pathCreator.path.GetPointAtDistance(distanceTraveled);
+        originalSpeed = speed;
     }
 
     // Update is called once per frame
     void Update() {
+        if (frozenTimeLeft > 0) {
+            frozenTimeLeft -= Time.deltaTime;
+            return;
+        }
+
         distanceTraveled -= speed*Time.deltaTime;
         transform.position = pathCreator.path.GetPointAtDistance(distanceTraveled);
     }
@@ -35,5 +43,10 @@ public class FollowPath : MonoBehaviour {
         if (other.name == "End") {
             print("wahoo");
         }
+    }
+
+    public void freezeEnemy(float t) {
+        frozenTimeLeft = t;
+        print(this.gameObject.name);
     }
 }

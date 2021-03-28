@@ -8,7 +8,7 @@ public class ShootAtEnemy : MonoBehaviour {
     private TowerStats towerStats;
     private float deltaTime;
     private float DPS = 25.0f, rateOfFire = 0.25f;
-    private string towerType = "basic";
+    public string towerType;
 
     // using a queue because the first enemy in is the first enemy that should
     // be fired at, and then the next enemy, and so on
@@ -96,7 +96,7 @@ public class ShootAtEnemy : MonoBehaviour {
          if (enemyStats == null) print("enemyStats is null");
 
          print("Firing at enemy");
-         bool enemyIsDead = ( (EnemyStats) enemy.GetComponent<EnemyStats>()).takeDamage(DPS);
+         bool enemyIsDead = ( (EnemyStats) enemy.GetComponent<EnemyStats>()).takeDamage(DPS, towerType);
          if (enemyIsDead) {
              enemies.Dequeue();
          }

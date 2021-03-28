@@ -8,7 +8,9 @@ public class Bullet : MonoBehaviour
 
     public float bulletSpeed = 70f;
     public bool hit;
-    
+    [HideInInspector]
+    public string bulletType;
+
     public void Seek(Transform _target)
     {
         target = _target;
@@ -17,7 +19,7 @@ public class Bullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //target is no longer visable 
+        //target is no longer visable
         if (target == null)
         {
             Destroy(gameObject);
@@ -43,7 +45,7 @@ public class Bullet : MonoBehaviour
     {
         // call enemy stats to take damage and destroy enemy
         // bool for other methods...
-        hit = target.gameObject.GetComponent<EnemyStats>().takeDamage(5.0f);
+        hit = target.gameObject.GetComponent<EnemyStats>().takeDamage(5.0f, bulletType);
 //        Destroy(target.gameObject);
         Destroy(gameObject); // destroy the bullet
     }

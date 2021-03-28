@@ -44,6 +44,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: 15
   fireRate: 1
+  towerType: freeze
   partToRotate: {fileID: 4164332420857437271}
   enemyTag: Enemy
   turrentspeed: 10
