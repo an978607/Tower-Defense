@@ -9,7 +9,9 @@ public class LivesManager : MonoBehaviour
     static public int currentLives;
     static public bool quit = false;
     public int currentLivesRef = currentLives;
-    float timeLeft = 30f;
+    float lifeReplenishTime = 600f;
+    int maxLives = 5;
+    double timerForLife = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -30,32 +32,46 @@ public class LivesManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (currentLives < 5)
+        if (currentLives < maxLives)
         {
-            timeLeft -= Time.deltaTime;
-            if (timeLeft < 0)
+            timerForLife += Time.deltaTime;
+            if (timerForLife > lifeReplenishTime)
             {
-                currentLives += 1;
-                PlayerPrefs.SetInt("CurrentLives", currentLives);
+                UpdateLives(timerForLife);
                 livesDisplay.text = currentLives.ToString();
             }
         }
+    }
 
+
+    void UpdateLives(double timerToAdd)
+    {
+        if (currentLives < maxLives)
+        {
+            timerForLife = (float)timerToAdd % lifeReplenishTime;
+             currentLives++;
+             PlayerPrefs.SetInt("CurrentLives", currentLives);
+
+            if (currentLives > maxLives)
+            {
+                currentLives = maxLives;
+                timerForLife = 0;
+            }
+        }
+        PlayerPrefs.SetString("LifeUpdateTime", System.DateTime.Now.ToString());
     }
 
     public void quitLevel()
     {
         quit = true;
-        updateLives();
+        subLife();
     }
 
-    private void updateLives()
+    private void subLife()
     {
         if (quit != true)
             return;
         currentLives--;
-        if (currentLives <= 0)
-            currentLives = 5;
         PlayerPrefs.SetInt("CurrentLives", currentLives);
         quit = false;
     }

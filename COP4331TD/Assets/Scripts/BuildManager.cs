@@ -39,6 +39,7 @@ public class BuildManager : MonoBehaviour
 
         //purchase upon build 
         CurrencyManager.currentBalance -= weaponToBuild.cost;
+        PlayerPrefs.SetInt("CurrentBalance", CurrencyManager.currentBalance);
         GameObject weapon = (GameObject)Instantiate(weaponToBuild.prefab, node.getBuildPosition(), Quaternion.identity);
         node.weapon = weapon;
     }

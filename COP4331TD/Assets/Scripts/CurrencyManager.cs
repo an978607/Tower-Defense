@@ -8,7 +8,6 @@ public class CurrencyManager : MonoBehaviour
     public Text currencyDisplay;
     public static int currentBalance;
     public int currentBalanceRef = currentBalance;
-    float timeLeft = 86400f;
 
     // Start is called before the first frame update
     void Start()
@@ -19,7 +18,7 @@ public class CurrencyManager : MonoBehaviour
         }
         else
         {
-            currentBalance = 100;
+            currentBalance = 200;
             PlayerPrefs.SetInt("CurrentBalance", currentBalance);
         }
 
@@ -29,13 +28,7 @@ public class CurrencyManager : MonoBehaviour
 // Update is called once per frame
     void Update()
     {
-        timeLeft -= Time.deltaTime;
-        if (timeLeft < 0)
-        {
-            currentBalance += 100;
-            PlayerPrefs.SetInt("CurrentBalance", currentBalance);
-            currencyDisplay.text = currentBalance.ToString();
-        }
+
     }
 
     public static void AddBalance(int amount)
@@ -47,8 +40,6 @@ public class CurrencyManager : MonoBehaviour
     public static void purchaseItem(int price)
     {
         currentBalance -= price;
-        if (currentBalance <= 0)
-            AddBalance(500);
         PlayerPrefs.SetInt("CurrentBalance", currentBalance);
         Debug.Log("Balance : " + PlayerPrefs.GetInt("CurrentBalance"));
     }
