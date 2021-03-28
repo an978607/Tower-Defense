@@ -26,7 +26,7 @@ public class EnemyStats : MonoBehaviour {
         } else{
             currentHealth = 100;
             speed = 2;
-            scoreValue = 500;
+            scoreValue = 300;
         }
         //currentHealth = maxHealth;
     }

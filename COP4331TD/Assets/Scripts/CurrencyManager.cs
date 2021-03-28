@@ -36,6 +36,11 @@ public class CurrencyManager : MonoBehaviour
         currentBalance += amount;
         PlayerPrefs.SetInt("CurrentBalance", currentBalance);
     }
+    
+    public int getBalance()
+    {
+        return currentBalance;
+    }
 
     public static void purchaseItem(int price)
     {

@@ -37,6 +37,9 @@ public class Spawn2 : MonoBehaviour
     public int[] enemyArray;
     
     private int lives;
+    
+    public int startingBalance;
+    public int startingScore;
     //public int[] enemySubWave;
     
     //public int level4loop = 0;
@@ -79,6 +82,9 @@ public class Spawn2 : MonoBehaviour
         // Print out map information for debugging
         enemiesLeftToSpawn = totalEnemies;
         Debug.Log("current map: " + current.name + " current level: " + this.level +  " number of waves: " + numWaves + " total enemies: " + totalEnemies + " enemies left to spawn: " +enemiesLeftToSpawn);
+        
+        startingScore = manager.GetComponent<ScoreManager>().getScore();
+        startingBalance = manager.GetComponent<CurrencyManager>().getBalance();
     }
 
     // Update is called once per frame
@@ -90,6 +96,8 @@ public class Spawn2 : MonoBehaviour
             // Loss Condition: No more enemies to spawn nor alive but no lives left
             if(enemiesLeftToSpawn <= 0 && enemiesAlive <= 0 && manager.GetComponent<startLevel>().currentLives <= 0){
                 Debug.Log("You lost this level!");
+                PlayerPrefs.SetInt("CurrentBalance", startingBalance);
+                PlayerPrefs.SetInt("CurrentScore", startingScore);
                 LoseUI.SetActive(true);
                 //SceneManager.LoadScene("LevelSelection");
                 //Application.Quit(); // temporary for now

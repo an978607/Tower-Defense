@@ -1499,6 +1499,7 @@ MonoBehaviour:
   spawner: {fileID: 1146802964}
   maxHealth: 0
   speed: 0
+  type: 
   scoreValue: 0
 --- !u!114 &284621798
 MonoBehaviour:
@@ -1515,6 +1516,7 @@ MonoBehaviour:
   spawner: {fileID: 1146802964}
   maxHealth: 0
   speed: 0
+  type: 
   scoreValue: 0
 --- !u!114 &284621799
 MonoBehaviour:
@@ -1531,6 +1533,7 @@ MonoBehaviour:
   spawner: {fileID: 1146802964}
   maxHealth: 0
   speed: 0
+  type: 
   scoreValue: 0
 --- !u!1001 &306998422
 PrefabInstance:
@@ -3740,6 +3743,20 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 673312396}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &673312398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 673312397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdccde1a786a3c54db19dbf09fa6364c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currencyDisplay: {fileID: 1640838144}
+  currentBalanceRef: 0
 --- !u!1001 &684309500
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5479,6 +5496,8 @@ MonoBehaviour:
   numEnemiesForMap: 05000000080000000c0000001300000079000000
   numWavesForMap: 0100000002000000030000000300000005000000
   enemyArray: 
+  startingBalance: 0
+  startingScore: 0
 --- !u!4 &1146802968 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2514786166073036886, guid: df3b422cf46af41d78e73c5b32b7e716,

@@ -744,6 +744,7 @@ MonoBehaviour:
   currentCam: 0
   PrepUI: {fileID: 1759824842}
   runCheck: 0
+  k: 0
 --- !u!1001 &129584581
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2602,6 +2603,7 @@ GameObject:
   - component: {fileID: 517841014}
   - component: {fileID: 517841013}
   - component: {fileID: 517841015}
+  - component: {fileID: 517841016}
   m_Layer: 0
   m_Name: LevelDetails
   m_TagString: Manager
@@ -2654,6 +2656,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreDisplay: {fileID: 1543123263}
   currentScoreRef: 0
+--- !u!114 &517841016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 517841012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdccde1a786a3c54db19dbf09fa6364c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currencyDisplay: {fileID: 899907657}
+  currentBalanceRef: 0
 --- !u!1 &536776688
 GameObject:
   m_ObjectHideFlags: 0
@@ -5605,6 +5621,7 @@ MonoBehaviour:
   currentCam: 0
   PrepUI: {fileID: 1759824842}
   runCheck: 0
+  k: 0
 --- !u!1 &1305125070 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1305125070, guid: df3b422cf46af41d78e73c5b32b7e716,
@@ -7597,7 +7614,9 @@ PrefabInstance:
       propertyPath: Enemy
       value: 
       objectReference: {fileID: 1088211555}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2514786166073036887, guid: df3b422cf46af41d78e73c5b32b7e716, type: 3}
+    - {fileID: 147664682, guid: df3b422cf46af41d78e73c5b32b7e716, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: df3b422cf46af41d78e73c5b32b7e716, type: 3}
 --- !u!1 &1747180822
 GameObject:

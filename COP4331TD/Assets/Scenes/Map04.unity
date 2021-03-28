@@ -2711,6 +2711,20 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1044022579}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &580989693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 580989692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdccde1a786a3c54db19dbf09fa6364c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currencyDisplay: {fileID: 1612513750}
+  currentBalanceRef: 0
 --- !u!1001 &615298342
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3776,6 +3790,7 @@ MonoBehaviour:
   spawner: {fileID: 1465445277}
   maxHealth: 0
   speed: 0
+  type: 
   scoreValue: 0
 --- !u!1001 &730552715
 PrefabInstance:
@@ -5202,6 +5217,7 @@ MonoBehaviour:
   spawner: {fileID: 1465445277}
   maxHealth: 0
   speed: 0
+  type: 
   scoreValue: 0
 --- !u!1 &1146445499
 GameObject:
@@ -7443,6 +7459,7 @@ MonoBehaviour:
   spawner: {fileID: 1465445277}
   maxHealth: 0
   speed: 0
+  type: 
   scoreValue: 0
 --- !u!4 &1580764708 stripped
 Transform:
