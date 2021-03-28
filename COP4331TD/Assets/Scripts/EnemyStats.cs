@@ -9,11 +9,11 @@ public class EnemyStats : MonoBehaviour {
     public int scoreValue;
 
     private float currentHealth;
-
+    private bool damagedOverTime = false;
+    private float timeSinceLastDOT = 0f;
 
     // Start is called before the first frame update
     void Start() {
-
         // Enemies of type 1 have health of 10, type 2 have 10, last is 30
         if(this.gameObject.CompareTag("Enemy")){
             currentHealth = 30;
@@ -33,6 +33,11 @@ public class EnemyStats : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
+        timeSinceLastDOT += Time.deltaTime;
+        if (damagedOverTime && timeSinceLastDOT > 1f) {
+            currentHealth -= 5f;
+            timeSinceLastDOT = 0f;
+        }
         if (currentHealth <= 0) {
             destroyEnemy();
             print("Enemy is dead");
@@ -46,6 +51,10 @@ public class EnemyStats : MonoBehaviour {
         // basic attacks cannot hurt metal enemies
         if (type == "metal" && damageType == "basic") {
             return false;
+        }
+
+        if (damageType == "acid") {
+            this.damagedOverTime = true;
         }
 
         if (damageType == "freeze") {
