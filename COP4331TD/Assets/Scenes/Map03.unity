@@ -4513,7 +4513,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -7011,6 +7011,15 @@ PrefabInstance:
       propertyPath: livesDisplay
       value: 
       objectReference: {fileID: 626727803}
+    - target: {fileID: 1788344651993438195, guid: 5d038a6c6acdadf4eaa1da5b91ef7a30,
+        type: 3}
+      propertyPath: m_Text
+      value: 'Cost: $400
+
+        Speed: 1 Shot/Sec
+
+        Special: Freeze'
+      objectReference: {fileID: 0}
     - target: {fileID: 5418013700336108652, guid: 5d038a6c6acdadf4eaa1da5b91ef7a30,
         type: 3}
       propertyPath: Spawner
@@ -7055,6 +7064,24 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_BoolArgument
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6151082462450868253, guid: 5d038a6c6acdadf4eaa1da5b91ef7a30,
+        type: 3}
+      propertyPath: m_Text
+      value: 'Cost: $350
+
+        Speed: 2 Shot/Sec
+
+        Special: None'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6273729415152964742, guid: 5d038a6c6acdadf4eaa1da5b91ef7a30,
+        type: 3}
+      propertyPath: m_Text
+      value: 'Cost: $200
+
+        Speed: 1 Shot/Sec
+
+        Special: None'
       objectReference: {fileID: 0}
     - target: {fileID: 7324183796835118543, guid: 5d038a6c6acdadf4eaa1da5b91ef7a30,
         type: 3}
@@ -7175,6 +7202,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Preperation Overlay
+      objectReference: {fileID: 0}
+    - target: {fileID: 7561183651614192626, guid: 5d038a6c6acdadf4eaa1da5b91ef7a30,
+        type: 3}
+      propertyPath: rayGun.cost
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 7561183651614192626, guid: 5d038a6c6acdadf4eaa1da5b91ef7a30,
+        type: 3}
+      propertyPath: GattlingGun.cost
+      value: 350
+      objectReference: {fileID: 0}
+    - target: {fileID: 7561183651614192626, guid: 5d038a6c6acdadf4eaa1da5b91ef7a30,
+        type: 3}
+      propertyPath: CowAcid.cost
+      value: 400
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d038a6c6acdadf4eaa1da5b91ef7a30, type: 3}
@@ -9944,6 +9986,18 @@ PrefabInstance:
       objectReference: {fileID: 1418759742}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d02ecc7927ed6a6498a004a49126260e, type: 3}
+--- !u!114 &1897160740 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1138498668163976582, guid: d02ecc7927ed6a6498a004a49126260e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1897160739}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fa84bc7e4daf5f44a7ebaf6a36350b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1927326090
 GameObject:
   m_ObjectHideFlags: 0
@@ -10860,6 +10914,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 9089749342622564397, guid: 8cbc9703dd92ac443ae11cf65375a4b6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1897160740}
+    - target: {fileID: 9089749342622564397, guid: 8cbc9703dd92ac443ae11cf65375a4b6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Pause
+      objectReference: {fileID: 0}
+    - target: {fileID: 9089749342622564397, guid: 8cbc9703dd92ac443ae11cf65375a4b6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: pauseMenu, NewAssembly
+      objectReference: {fileID: 0}
+    - target: {fileID: 9089749342622564397, guid: 8cbc9703dd92ac443ae11cf65375a4b6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9089749343872004015, guid: 8cbc9703dd92ac443ae11cf65375a4b6,
         type: 3}
       propertyPath: m_Name
