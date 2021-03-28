@@ -49,9 +49,4 @@ public class Bullet : MonoBehaviour
 //        Destroy(target.gameObject);
         Destroy(gameObject); // destroy the bullet
     }
-
-    void Freeze()
-    {
-
-    }
 }

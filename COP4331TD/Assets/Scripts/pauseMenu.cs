@@ -13,7 +13,7 @@ public class pauseMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(prepUI.active == true)
+        if(prepUI.activeSelf == true)
         {
             Time.timeScale = 0f;
         }
@@ -33,14 +33,14 @@ public class pauseMenu : MonoBehaviour
     public void Resume()
     {
         pauseMenuUI.SetActive(false);
-        Time.timeScale = 1f;
+        Time.timeScale = 1;
         gameIsPaused = false;
     }
 
     public void Pause()
     {
         pauseMenuUI.SetActive(true);
-        Time.timeScale = 0f;
+        Time.timeScale = 0;
         gameIsPaused = true;
     }
 
