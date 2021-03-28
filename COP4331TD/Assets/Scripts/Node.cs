@@ -18,6 +18,7 @@ public class Node : MonoBehaviour
         rend = GetComponent<Renderer>();
         startColor = rend.material.color;
         buildManager = BuildManager.instance;
+        positionOffset.y = 0.7f;
     }
 
     public Vector3 getBuildPosition()
