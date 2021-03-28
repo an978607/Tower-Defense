@@ -8,6 +8,7 @@ public class BM_LevelSelect : MonoBehaviour
 {
     public Button[] lockedLevels = new Button[5];
     public GameObject[] checks = new GameObject[5];
+    public GameObject WinUI;
     int levelPassed;
     
     int currLevel; // player's current level
@@ -72,6 +73,11 @@ public class BM_LevelSelect : MonoBehaviour
                 checks[i].SetActive(true);
             }
         }
+
+        if(levelPassed >= 5)
+        {
+            WinUI.SetActive(true);
+        }
     }
     public void levelOneButtonPressed()
     {
@@ -96,5 +102,10 @@ public class BM_LevelSelect : MonoBehaviour
     public void levelFiveButtonPressed()
     {
         SceneManager.LoadScene("Map05");
+    }
+
+    public void winUIOK()
+    {
+        SceneManager.LoadScene("StartScreen");
     }
 }
