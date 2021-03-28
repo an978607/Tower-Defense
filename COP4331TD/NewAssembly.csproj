@@ -71,7 +71,6 @@
     <Compile Include="Assets\Scripts\Spawn.cs" />
     <Compile Include="Assets\Scripts\pauseMenu.cs" />
     <Compile Include="Assets\Scripts\SettingsMenu.cs" />
-    <Compile Include="Assets\Scripts\CameraControl.cs" />
     <Compile Include="Assets\Scripts\BuildManager.cs" />
     <Compile Include="Assets\Scripts\startLevel.cs" />
     <Compile Include="Assets\Scripts\CurrencyManager.cs" />
@@ -82,6 +81,7 @@
     <Compile Include="Assets\Scripts\BM_LevelSelect.cs" />
     <Compile Include="Assets\Scripts\detectAndFire.cs" />
     <Compile Include="Assets\Scripts\detectCollision.cs" />
+    <Compile Include="Assets\Scripts\CameraCon.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Scripts\GameAssembly.asmdef" />

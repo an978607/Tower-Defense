@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CameraControl : MonoBehaviour
+public class CameraCon: MonoBehaviour
 {
     public GameObject[] objects;
     public int currentCam;
@@ -22,10 +22,10 @@ public class CameraControl : MonoBehaviour
     private void Update()
     {
         //the preperation phase is over/ all weapons have been built. 
-        if(PrepUI.activeSelf == false)
+        if (PrepUI.activeSelf == false)
         {
             //only do once
-            if(runCheck < 1)
+            if (runCheck < 1)
             {
                 objects = GameObject.FindGameObjectsWithTag("Camera");
                 Debug.Log("Objects with Cameras found: " + objects.Length);
@@ -42,7 +42,7 @@ public class CameraControl : MonoBehaviour
             objects[0].GetComponent<Camera>().enabled = true;
 
             //disable other cams
-            if(currentCam != 0)
+            if (currentCam != 0)
             {
                 objects[currentCam].GetComponent<Camera>().enabled = false;
             }
@@ -73,10 +73,10 @@ public class CameraControl : MonoBehaviour
             currentCam = k;
         }
 
-        if(Input.GetKeyDown(KeyCode.LeftArrow))
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
             k--;
-            if(k < 0)
+            if (k < 0)
             {
                 k = 0;
             }
@@ -84,7 +84,7 @@ public class CameraControl : MonoBehaviour
             //activate current cam
             objects[k].GetComponent<Camera>().enabled = true;
 
-            if(k != currentCam)
+            if (k != currentCam)
             {
                 objects[currentCam].GetComponent<Camera>().enabled = false;
             }
