@@ -17,6 +17,7 @@ public class Turrent : MonoBehaviour
 
     [Header("Unity Setup Fields")]
     public Transform partToRotate;
+    public Transform Camera;
     public string enemyTag = "Enemy";
     public float turrentspeed = 10f;
 
@@ -78,6 +79,9 @@ public class Turrent : MonoBehaviour
         Quaternion lookRotation = Quaternion.LookRotation(dir);
         Vector3 rotation = Quaternion.Lerp(partToRotate.rotation, lookRotation, Time.deltaTime * turrentspeed).eulerAngles;
         partToRotate.rotation = Quaternion.Euler(0f, rotation.y, 0f);
+
+        Vector3 camrot = Quaternion.Lerp(Camera.rotation, lookRotation, Time.deltaTime * turrentspeed).eulerAngles;
+        Camera.rotation = Quaternion.Euler(0f, camrot.y, 0f);
 
         if (fireCountdown <= 0f)
         {

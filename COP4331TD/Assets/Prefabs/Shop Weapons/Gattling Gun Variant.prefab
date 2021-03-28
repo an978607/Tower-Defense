@@ -44,12 +44,114 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: 15
   fireRate: 2
+  towerType: basic
   partToRotate: {fileID: 1846759487250587789}
+  Camera: {fileID: 2174383258133540711}
   enemyTag: Enemy
   turrentspeed: 10
   bulletPrefab: {fileID: 7366120073413512634, guid: 894a9cc2110327b4e92c1254c8d46314,
     type: 3}
   firePoint: {fileID: 572973723}
+--- !u!1 &3349018355229851755
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2174383258133540711}
+  - component: {fileID: 8416125743223537007}
+  - component: {fileID: 2647804626531588000}
+  - component: {fileID: 3148298948171144882}
+  m_Layer: 0
+  m_Name: Camera
+  m_TagString: Camera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2174383258133540711
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3349018355229851755}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.899, z: -1.42}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1846759487250587789}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!20 &8416125743223537007
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3349018355229851755}
+  m_Enabled: 0
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!81 &2647804626531588000
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3349018355229851755}
+  m_Enabled: 0
+--- !u!114 &3148298948171144882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3349018355229851755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a95a61d8ea4db3a48aa207f916ad4eb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objects: []
+  currentCam: 0
+  PrepUI: {fileID: 7324183797058085195, guid: 5d038a6c6acdadf4eaa1da5b91ef7a30, type: 3}
+  runCheck: 0
 --- !u!1001 &2174034128278259558
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -65,7 +167,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 508185b3309734dc59b311d5a27011fa,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.588
+      value: 0.69
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 508185b3309734dc59b311d5a27011fa,
         type: 3}
@@ -130,7 +232,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 508185b3309734dc59b311d5a27011fa,
         type: 3}
       propertyPath: m_Name
-      value: Gattling Gun
+      value: Gattling Gun Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 508185b3309734dc59b311d5a27011fa, type: 3}

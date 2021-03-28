@@ -261,6 +261,7 @@ MonoBehaviour:
   spawner: {fileID: 147664679}
   maxHealth: 500
   speed: 2
+  type: 
   scoreValue: 0
 --- !u!114 &9634405
 MonoBehaviour:
@@ -277,6 +278,7 @@ MonoBehaviour:
   spawner: {fileID: 147664679}
   maxHealth: 250
   speed: 1
+  type: 
   scoreValue: 0
 --- !u!114 &9634406
 MonoBehaviour:
@@ -293,6 +295,7 @@ MonoBehaviour:
   spawner: {fileID: 147664679}
   maxHealth: 100
   speed: 2
+  type: 
   scoreValue: 0
 --- !u!65 &9634407
 BoxCollider:
@@ -652,9 +655,10 @@ GameObject:
   - component: {fileID: 127951872}
   - component: {fileID: 127951871}
   - component: {fileID: 127951870}
+  - component: {fileID: 127951873}
   m_Layer: 0
   m_Name: Main Camera
-  m_TagString: MainCamera
+  m_TagString: Camera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -724,6 +728,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 77, y: 0, z: 0}
+--- !u!114 &127951873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 127951869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a95a61d8ea4db3a48aa207f916ad4eb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objects: []
+  currentCam: 0
+  PrepUI: {fileID: 1759824842}
+  runCheck: 0
 --- !u!1001 &129584581
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4705,6 +4725,7 @@ MonoBehaviour:
   spawner: {fileID: 0}
   maxHealth: 100
   speed: 10
+  type: 
   scoreValue: 0
 --- !u!4 &1102938741 stripped
 Transform:
@@ -5495,13 +5516,14 @@ GameObject:
   - component: {fileID: 1272872696}
   - component: {fileID: 1272872695}
   - component: {fileID: 1272872694}
+  - component: {fileID: 1272872697}
   m_Layer: 0
   m_Name: Tower-View
-  m_TagString: Untagged
+  m_TagString: Camera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!81 &1272872694
 AudioListener:
   m_ObjectHideFlags: 0
@@ -5509,7 +5531,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1272872693}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &1272872695
 Camera:
   m_ObjectHideFlags: 0
@@ -5517,7 +5539,7 @@ Camera:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1272872693}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_ClearFlags: 1
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
@@ -5567,6 +5589,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 29.144, z: 0}
+--- !u!114 &1272872697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1272872693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a95a61d8ea4db3a48aa207f916ad4eb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objects: []
+  currentCam: 0
+  PrepUI: {fileID: 1759824842}
+  runCheck: 0
 --- !u!1 &1305125070 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1305125070, guid: df3b422cf46af41d78e73c5b32b7e716,
@@ -5973,27 +6011,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 468042512}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1409063769 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3897453450496278106, guid: 7493200512a3d49a0a7215b3888ab80c,
-    type: 3}
-  m_PrefabInstance: {fileID: 7484838600456552312}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1409063770
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1409063769}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dad46ade1bb404e488e7e7d2d0347796, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mainC: {fileID: 127951869}
-  towerC: {fileID: 1272872693}
-  attackUI: {fileID: 1305125070}
 --- !u!4 &1430513216 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1968275852670227351, guid: a5c341cd22e75454d9bf5053ec3fe566,
