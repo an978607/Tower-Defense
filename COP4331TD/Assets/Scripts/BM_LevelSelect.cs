@@ -55,15 +55,21 @@ public class BM_LevelSelect : MonoBehaviour
 
     public void Update()
     {
-        while (LivesManager.currentLives > 0)
+
+        if (LivesManager.currentLives <= 0)
         {
-            if (levelPassed > 0)
+            for (int i = 0; i < 5; i++)
             {
-                for (int i = 0; i < levelPassed; i++)
-                {
-                    //make the checkmark visable for each level passed
-                    checks[i].SetActive(true);
-                }
+                lockedLevels[i].interactable = false;
+            }
+        }
+
+        else if (levelPassed > 0)
+         {
+            for (int i = 0; i < levelPassed; i++)
+            {
+                //make the checkmark visable for each level passed
+                checks[i].SetActive(true);
             }
         }
     }
