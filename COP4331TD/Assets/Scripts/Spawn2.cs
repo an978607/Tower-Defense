@@ -94,7 +94,7 @@ public class Spawn2 : MonoBehaviour
         if(spawnWave){
         
             // Loss Condition: No more enemies to spawn nor alive but no lives left
-            if(enemiesLeftToSpawn <= 0 && enemiesAlive <= 0 && manager.GetComponent<startLevel>().currentLives <= 0){
+            if(manager.GetComponent<startLevel>().currentLives <= 0){
                 Debug.Log("You lost this level!");
                 PlayerPrefs.SetInt("CurrentBalance", startingBalance);
                 PlayerPrefs.SetInt("CurrentScore", startingScore);
