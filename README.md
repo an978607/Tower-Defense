@@ -125,3 +125,19 @@ With 3D Tower Defense, we aim to solve these problems and provide a more engagin
 - Annemarie Blanco (an978607)
 - Kevin Ramos (kevinrwh): Finished implementing wave spawning code for all levels, updated enemy types, created and uploaded product demonstration
 - Shawn Guydeene (NinjaDino13)
+
+# Sprint 8
+- [Trello Board (Backlogs and Requirements)](https://trello.com/b/jldNMwlQ/agile-sprint-board)
+- [Burndown Chart]
+- [Velocity Chart]
+- [System Architecture](https://github.com/an978607/Tower-Defense/blob/main/architecture.md)
+- [Source Code](https://github.com/an978607/Tower-Defense/tree/main/COP4331TD/Assets/Scripts)
+- [Automated Tests](https://github.com/an978607/Tower-Defense/tree/main/COP4331TD/Assets/Scripts/Tests)
+- [Product Demonstration]
+
+## Task Allocation
+- Dalton Kajander (Skirtle)
+- Amber McCullah (ambermcc127) 
+- Annemarie Blanco (an978607)
+- Kevin Ramos (kevinrwh): Many edits to enemy stats, game win and loss conditions, demonstration video creation, debugging, lives & balance manager updates, and various other things.
+- Shawn Guydeene (NinjaDino13)
