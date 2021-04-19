@@ -16,16 +16,16 @@ public class BM_MainMenu : MonoBehaviour {
         PlayerPrefs.SetInt("CurrentLives", 5);
         PlayerPrefs.SetInt("CurrentScore", 0);
         music.volume = 0.5f;
-        volumeSlider.gameObject.SetActive(false);
+        //volumeSlider.gameObject.SetActive(false);
     }
 
     public void playButtonPressed() {
         SceneManager.LoadScene("LevelSelection");
     }
 
-    public void settingsButtonPressed() {
+    /*public void settingsButtonPressed() {
         volumeSlider.gameObject.SetActive(!volumeSlider.gameObject.activeSelf);
-    }
+    }*/
 
     public void changeMusicVolume() {
         music.volume = volumeSlider.value;
