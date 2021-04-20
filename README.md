@@ -133,7 +133,7 @@ With 3D Tower Defense, we aim to solve these problems and provide a more engagin
 - [System Architecture](https://github.com/an978607/Tower-Defense/blob/main/architecture.md)
 - [Source Code](https://github.com/an978607/Tower-Defense/tree/main/COP4331TD/Assets/Scripts)
 - [Automated Tests](https://github.com/an978607/Tower-Defense/tree/main/COP4331TD/Assets/Scripts/Tests)
-- [Product Demonstration](https://youtu.be/3L4Ttxthxhs)
+- [Product Demonstration](https://youtu.be/Mzx9z_A_66A)
 
 ## Task Allocation
 - Dalton Kajander (Skirtle)
