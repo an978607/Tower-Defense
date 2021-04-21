@@ -1806,7 +1806,7 @@ MonoBehaviour:
     type: 3}
   weapon3Prefab: {fileID: 3639329515054417645, guid: b37feaebab1337a4bbe6dddab9ceef04,
     type: 3}
-  FundsDialoge: {fileID: 0}
+  FundsDialoge: {fileID: 5418013700177319582}
 --- !u!1001 &395210718
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9826,6 +9826,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d038a6c6acdadf4eaa1da5b91ef7a30, type: 3}
+--- !u!1 &5418013700177319582 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1219817795, guid: 5d038a6c6acdadf4eaa1da5b91ef7a30,
+    type: 3}
+  m_PrefabInstance: {fileID: 5418013700177319581}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6872033825361562451
 PrefabInstance:
   m_ObjectHideFlags: 0
