@@ -9,7 +9,7 @@ public class LivesManager : MonoBehaviour
     static public int currentLives;
     static public bool quit = false;
     public int currentLivesRef = currentLives;
-    float lifeReplenishTime = 600f;
+    float lifeReplenishTime = 60f;
     int maxLives = 5;
     double timerForLife = 0;
 

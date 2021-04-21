@@ -7,9 +7,10 @@ using UnityEngine.SceneManagement;
 public class BM_LevelSelect : MonoBehaviour
 {
     public Button[] lockedLevels = new Button[5];
-    public GameObject[] checks = new GameObject[5];
     public GameObject WinUI;
     public GameObject LoseUI;
+    public GameObject settingsMenuUI;
+    public GameObject pauseMenuUI;
     int levelPassed;
     
     int currLevel; // player's current level
@@ -38,20 +39,6 @@ public class BM_LevelSelect : MonoBehaviour
             for (int i = levelPassed + 1; i < lockedLevels.Length; i++){
                 lockedLevels[i].interactable = false;
             }
-            
-            /*if(levelPassed < 4){
-                for (int i = levelPassed + 1; i < lockedLevels.Length; i++){
-                    lockedLevels[i].interactable = false;
-                }
-            }
-            else if(levelPassed == 4){
-                for(int i = levelPassed; i < lockedLevels.Length;i++){
-                    lockedLevels[i].interactable = true;
-                }
-            }
-            else{
-                Debug.Log("Something went wrong");
-            }*/
         }
     }
 
@@ -71,7 +58,7 @@ public class BM_LevelSelect : MonoBehaviour
             for (int i = 0; i < levelPassed; i++)
             {
                 //make the checkmark visable for each level passed
-                checks[i].SetActive(true);
+                lockedLevels[i].interactable = true;
             }
         }
 
@@ -108,6 +95,26 @@ public class BM_LevelSelect : MonoBehaviour
     public void levelFiveButtonPressed()
     {
         SceneManager.LoadScene("Map05");
+    }
+
+    public void pauseBackButtonPressed()
+    {
+        pauseMenuUI.SetActive(false);
+    }
+
+    public void settingsBackButtonPressed()
+    {
+        settingsMenuUI.SetActive(false);
+    }
+
+    public void exitGame()
+    {
+        Application.Quit();
+    }
+
+    public void Back()
+    {
+        settingsMenuUI.SetActive(false);
     }
 
     public void winUIOK()

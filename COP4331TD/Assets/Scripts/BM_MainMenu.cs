@@ -27,6 +27,11 @@ public class BM_MainMenu : MonoBehaviour {
         volumeSlider.gameObject.SetActive(!volumeSlider.gameObject.activeSelf);
     }
 
+    public void quitButtonPressed()
+    {
+        Application.Quit();
+    }
+
     public void changeMusicVolume() {
         music.volume = volumeSlider.value;
     }
